@@ -28,6 +28,16 @@
           id: settings
         - title: Seaded → Muuda
           id: settings_change
+        - title: Seaded → Muuda → Statistika
+          id: settings_change_stats
+        - title: Seaded → Muuda → PHP seaded
+          id: settings_change_php
+        - title: Seaded → Muuda → MIME
+        - title: Seaded → Muuda → Vealehed
+        - title: Seaded → Muuda → Webalizer
+        - title: Seaded → Muuda → PHP laiendused
+        - title: Seaded → Muuda → Apache dir.
+        - title: Seaded → Muuda → FTP kontod
         - title: Seaded → Muuda FTP kasutajat
           id: settings_ftp
         - title: Seaded → Lisa SSL tugi

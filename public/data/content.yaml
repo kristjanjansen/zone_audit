@@ -253,6 +253,73 @@
 
     ~~Muuda~~ ~~Sulge aken~~
 
+    ## Lisavõimalused
+
+    Avalik statistika: ~~muuda~~
+    PHP seaded: ~~muuda~~
+    MIME tüübid: ~~vaata~~
+    Vealehed: ~~muuda~~
+    Webalizer: ~~muuda~~
+    PHP laiendused: ~~muuda~~
+    Apache direktiivid: ~~vaata~~
+    FTP kontod: ~~muuda~~ ~~x~~
+
+- title: Domeeni http://kristjanjansen.ee statistika muutmine
+  id: settings_change_stats
+  body: |
+
+    Avalik: ```( )``` JAH ```(●)``` EI
+
+    > Siit saate määrata, kas domeeni statistika on avalik või mitte.
+
+    URL: ```[/stats]```
+    
+    > Siit võite seadistada aadressi, millelt domeeni statistika on nähtav.
+
+    Salasõnaga kaitstud: ```( )``` JAH ```(●)``` EI   
+
+    > Siin on võimalik seadistada, kas statistika salasõnaga kaitsmine on aktiivne või mitte.
+
+    Kasutajanimi: ```[__________]```
+    
+    > Siit saate seadistada kasutajanime, kellel on lubatud näha avalikku statistikat.
+
+    Salasõna: ```[__________]```
+
+    > Siit on võimalik seadistada salasõna avaliku statistika kasutajale.
+
+    Realm: ```[Restricted WebStatistic Area]```
+
+    > Siin on võimalik seadistada "nimi" parooliga kaitstud alale.
+
+    Veateade (HTTP veakood 401): ```[__________]```  
+    
+    > Siit on võimalik seadistada veateade autoriseerimata kasutajale.
+
+    ~~muuda~~ ~~sulge aken~~
+
+- title: Domeeni http://kristjanjansen.ee statistika muutmine
+  id: settings_change_php
+  body: |
+
+    ```short_tags```: ```(●)``` JAH ```( )``` EI
+
+    > Seadistab kas PHP koodi alguse tunnusosas võib kasutada lühikeses vormis tunnuseid (<? ?>) . Juhul, kui te soovite kasutada PHP-d koos XML-iga, siis peaksite keelama lühikeste tunnuste kasutamise ning kasutama pikki tunnuseid (<?php ?>) .
+      **Vihje: Soovituslik on alati kasutada pikki tunnuseid!**
+
+    ```allow_url_fopen```:  ```(●)``` JAH ```( )``` EI
+
+    > See valik lubab käsitseda fopen() funktsioonis URL objekte, näiteks avada faile üle HTTP või FTP protokolli.
+      URL: [PHP Käsiraamat]()
+      **Vihje: Selle võimaluse kasutamine sisaldab endas turvariski. Võimalusel kasutage FTP failide alla laadimiseks FTP mooduli võimalusi ning HTTP päringute sooritamiseks ```fsockopen()``` funktsiooni.**
+
+    ```session.auto_start```:  ```( )``` JAH ```(●)``` EI
+
+    > Seadistab PHP sessioonide automaatse käivitamise.
+    URL: [PHP Käsiraamat]()
+
+    ~~muuda~~ ~~sulge aken~~
+
 - title: FTP konto muutmine
   id: settings_ftp
   body: |
@@ -333,6 +400,28 @@
     » uuesti: ```[__________]```
 
     ~~muuda~~ ~~sulge aken~~
+
+- title: Virtuaalserverile kristjanjansen.ee toe lisamine
+  id: settings_ssl
+  body: |
+
+    ## Apache seaded
+
+    **Kui domeenile pole määratud eraldi IP aadressi, peab HTTPS-i poole pöörduv veebibrauser toetama SNI-d.**
+
+    SSL sertifikaat: ```[ -- Automaatne -- | ▾ ]```
+
+    > Vali listist üleslaetud sertifikaat, mida soovitud antud virtualhosti puhul kasutada.
+    Sertifikaate saab hallata menüüst **Veebiserver -> SSL sertifikaadid**
+    Kui sertifikaati pole, siis võib kasutada valikut **Automaatne**, mis genereerib vaikimisi sertifikaadi.
+
+    Aktiveeri võimalusel HTTP2: ```(●)``` JAH ```( )``` EI 
+
+    > ?
+
+    Kasuta HTTP seadeid: ```(●)``` JAH ```( )``` EI 
+
+    > ?
 
 - title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
   id: errors

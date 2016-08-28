@@ -89,13 +89,13 @@
 
 <style>
     .MainMenu__first {
+        align-items: center;
         color: $blue;
+        cursor: pointer;
+        display: flex;
         font: $font-heading-lg;
         margin-bottom: $margin-md;
-        display: flex;
-        align-items: center;
         white-space: nowrap;
-        cursor: pointer;
     }
     .MainMenu__disabled {
         opacity: 0.15 !important;
@@ -103,18 +103,20 @@
     }
     .MainMenu__second {
         color: $blue;
-        font: $font-heading-sm;
-        margin-left: $margin-lg;
-        margin-bottom: $margin-sm;
-        opacity: $opacity-lg;
         cursor: pointer;
+        font: $font-heading-sm;
+        margin-bottom: $margin-sm;
+        margin-left: $margin-lg;
+        opacity: $opacity-lg;
+        white-space: nowrap;
     }
     .MainMenu__third {
         color: $blue;
-        font: $font-heading-xs;
-        margin-left: $margin-xl;
-        margin-bottom: $margin-sm;
-        opacity: $opacity-md;
         cursor: pointer;
+        font: $font-heading-xs;
+        margin-bottom: $margin-sm;
+        margin-left: $margin-xl;
+        opacity: $opacity-md;
+        white-space: nowrap;
     }
 </style>
