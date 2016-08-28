@@ -298,7 +298,7 @@
 
     ~~muuda~~ ~~sulge aken~~
 
-- title: Domeeni http://kristjanjansen.ee statistika muutmine
+- title: Domeeni http://kristjanjansen.ee PHP seaded
   id: settings_change_php
   body: |
 
@@ -319,6 +319,29 @@
     URL: [PHP Käsiraamat]()
 
     ~~muuda~~ ~~sulge aken~~
+
+- title: Domeeni http://kristjanjansen.ee MIME tüübid
+  id: settings_change_mime
+  body: |
+
+    ## Lisa uus MIME tüüp:
+
+    Failinime laiendid: ```[__________]```
+
+    > Failinime laiendid, mille peale server saadab soovitud MIME tüübi.
+    Laiendeid võib lisada nii punktiga kui ilma ning mitu laiendit tuleb eraldada tühikuga.
+    Näiteks: **.html .txt gif htm .php**
+    **NB!** Juhul, kui soovid lisada uusi laiendeid, millega lõppevaid faile PHP interpretaator töötlema peaks siis ära tee seda siit, vaid **domeeni seadete muutmise** vormist: Veebiserver » Seaded » Muuda.
+    Seal on spetsiaalne väli **PHP faililaiendid**, mida tuleb selleks puhuks kasutada ning seda just meie serverite konfiguratsiooni ülesehituse tõttu.
+
+    MIME tüüp ```[__________]```
+
+    > MIME tüüp, mille server saadab soovitud faililaiendite peale
+    MIME tüüp peaks olema stiilis **tüüp/alamtüüp**.
+    Näiteks **application/octet-stream**
+    **NB!** Juhul, kui soovid lisada MIME tüüpi (**application/x-httpd-php** vms) ning sellele vastavaid laiendeid, millega lõppevaid faile PHP interpretaator töötlema peaks siis ära tee seda siit, vaid **domeeni seadete muutmise** vormist:
+    Veebiserver » Seaded » Muuda.
+    Seal on spetsiaalne väli **PHP faililaiendid**, mida tuleb selleks puhuks kasutada ning seda just meie serverite konfiguratsiooni ülesehituse tõttu.
 
 - title: FTP konto muutmine
   id: settings_ftp

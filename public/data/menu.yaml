@@ -33,6 +33,7 @@
         - title: Seaded → Muuda → PHP seaded
           id: settings_change_php
         - title: Seaded → Muuda → MIME
+          id: settings_change_mime
         - title: Seaded → Muuda → Vealehed
         - title: Seaded → Muuda → Webalizer
         - title: Seaded → Muuda → PHP laiendused
