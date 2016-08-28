@@ -194,6 +194,146 @@
 
     ~~Lisa SSL tugi~~
 
+- title: Virtuaalserveri seadete muutmine
+  id: settings_change
+  body: |
+
+    ## Apache seaded
+
+    Kataloog: /data01/virt59090/...kristjanjansen.ee/```[ htdocs/ ]```
+
+    > Alamdomeeni kataloog. Sisesta kataloogi nimi, oma serveris, mis hakkab olema alamdomeeni juurkataloog.
+
+    ```[ ]``` Lisa alamdomeeni kataloog automaatselt
+
+    > Juhul, kui soovite, et alamdomeeni kataloog automaatselt süsteemi poolt loodaks, määrake see valik.
+
+    Kataloogi indeks lubatud: ```( )``` JAH ```(●)``` EI
+
+    > See valik lubab teil seadistada kataloogi indeksi kasutust domeenis.
+    **Vihje: Lubades kataloogi indeksi, näidatakse külastajale index.html või vastava indeksfaili puudumisel kataloogis olevate failide nimekirja.
+    Juhul, kui kataloogi indeksit ei lubata, siis kuvatakse veateade õiguste puudumise kohta.**
+
+    SSI lubatud: ```( )``` JAH ```(●)``` EI  
+  
+    > SSI lubamisel aktiveeritakse Server Side Includes direktiivide töötlemine domeenis.
+    Vihje: SSI käsustikku otsitakse ainult .shtml lõpulistest failidest.
+
+    WWW prefiks: ```(●)``` JAH ```( )``` EI 
+
+    > See valik lubab seadistada, kas domeenile tekitatakse automaatselt nimeserverisse ka vastav www DNS A kirje.
+      Kuna kasutajad on harjunud automaatselt aadresside ette WWW eesliite lisama, siis on see soovituslik.
+
+    mod_proxy sihtport ```[__________]```
+
+    Suunab mod_proxy abil pordi 80 (HTTPS puhul pordi 443) liikluse siin määratud porti kuulavale rakendusele, nt NodeJS veebiserverile. NB! Selle määramisel lakkab Apache toimimast tavapärase veebiserverina.
+
+    > Lubatud vahemik on 1024 kuni 65535.
+
+    ## PHP
+
+    Rezhiim: ```[ 7.0 FastCGI | ▾ ]```
+
+    > Rezhiimide kirjeldused:
+    Apache Module - PHP töötab veebiserveri (Apache) moodulina. Selles rezhiimis **puudub** exec(), system(), passthru() jne. funktsioonide tugi. Samuti saab seda rezhiimi valida vaid ühe PHP versiooni puhul.
+    FastCGI - PHP töötab veebiserveris FastCGI moodulina. Selles rezhiimis **on olemas** exec(), system(), passthru() jne. funktsioonide tugi.
+    **NB!** Meie serverites PHP skriptile edasiantavad keskkonnamuutujad (nt. PATH_INFO, SCRIPT_NAME, PHP_SELF jne.) FastCGI ega Apache Module rezhiimist ei sõltu! Et võimalikult paljude klientide skriptid alati ühilduksid, antakse sellised muutujad edasi Apache Module rezhiimist lähtuvalt.
+    Juhul kui muuta PHP rezhiimi (Apache Module -> FastCGI või vastupidi) tuleb silmas pidada seda, et kõik PHP abil veebiserverisse laetud failide õigused tuleb ümber muuta! Näiteks Apache Module rezhiimis laetud failid on alati veebiserveri kasutaja õigustes (FTP-ga neid faile muuta ei saa) ning FastCGI rezhiimis laetud failid virtuaalserveri kasutaja enda õigustes (FTP-ga saab neid faile muuta). Kui PHP on FastCGI rezhiimis, siis pole soovitatav muuta rezhiimi ümber Apache Module peale. Vajadusel tuleks vahetada vaid PHP versiooni. Kui rezhiimi muutmine on vältimatu, siis tuleks saata meie klienditoele täpsed kataloogid, mis tuleb ümber muuta uue rezhiimi kasutaja õigustesse.
+    **TÄHELEPANU!** Juhul kui PHP versiooni taga on kirjas **aegunud versioon** tuleks vastava virtuaalhosti skriptid ühildada sellise PHP versiooniga, mille taga seda kirjas pole. **Peale PHP versiooni muutmist enam tagasi aegunud versiooni peale minna ei saa!**
+
+    PHP faililaiendid: ```[__________]```
+
+    (olemasolevad laiendid: .php .php3 .phtml .inc) 
+
+    > Igas virtuaalserveris töötleb PHP parser vaikimisi järgmiste laienditega faile: .php, .php3, .phtml ning .inc. 
+    Kui soovid, et seda tehtaks ka siin mitte nimetatutega, siis saad vastavad laiendid lisada. (mitu laiendit tuleb omavahel eraldada tühikutega, laiend võib alata nii punktiga kui ka ilma)
+    Soovi korral saad määrata ka seda, et ilma laiendita failid PHP interpretaatori läbiksid.
+
+    Laiendita fail on PHP skript: ```( )``` JAH ```(●)``` EI
+
+    ~~Muuda~~ ~~Sulge aken~~
+
+- title: FTP konto muutmine
+  id: settings_ftp
+  body: |
+
+    **FTP serveri aadress:** kristjanjansen.ee 
+    
+    > FTP serveri nimi. See nimi tuleks teil sisestada oma FTP klienti.
+
+    **NB! Piiratud ligipääs !** FTP kasutaja pääseb ligi ainult domeeni kristjanjansen.ee  kataloogi **/data01/virt59090/domeenid/www.kristjanjansen.ee**
+
+    > Piiratud ligipääs tähendab seda, et kontol saab vaid konkreetsesse kataloogi (peadomeeni või alamdomeeni omasse) ning sellest ülespoole liikuda pole võimalik (alumistesse saab).
+
+    **Kasutajanimi(alias):** ```[_______www]```.kristjanjansen.ee
+
+    Süsteemne kasutajanimi: **d59087f132908** 
+
+    ## Lubatud tegevused
+
+    ```[✓]``` DN  ```[✓]```N ```[✓]``` R ```[✓]```O ```[✓]``` CHMOD ```[✓]``` DELETE  ```[✓]``` RENAME  ```[✓]``` MKD ```[✓]``` RMD ```[✓]``` CWD ```[✓]```DIRLIST
+    
+    > Iga kasutaja juures saate määrata, missugused tegevused talle FTP serveris lubatud on:
+    DN - download (failide alla laadimine)
+    UP - upload (failide üles laadimine)
+    N  - Võib uusi faile üles laadida
+    R  - Võib faile jätkata
+    O  - Võib faile ülekirjutada
+    CHMOD - chmod (faili õiguste muutmine)
+    DELETE - delete (kustutamine)
+    RENAME - rename (failinime muutmine)
+    MKD - mkdir (kataloogi tegemine)
+    RMD - rmdir (kataloogi kustutamine)
+    CWD - cd (kataloogi muutmine)
+    DIRLIST - nlst (kataloogi sisu nägemine)
+
+    ## FTP ühenduse turvalisus
+    
+    TLS/SSL ühendus on nõutud: ```[✓]```
+
+    > Määrab ära, et käesolevasse FTP kontosse saab siseneda ainult krüpteeritud TLS/SSL FTP ühenduse kaudu.
+    **NB!** Meie FTP server toetab krüpteeritud ühendusi ning juhul kui ka sinu FTP programm seda toetab, siis on tungivalt soovitatav krüpteeritud ühendust kasutada ning turvakaalutlustel antud checkbox aktiveerida.
+    Krüpteeritud ühenduse kasutamine tõstab oluliselt FTP ühenduse turvalisust ja vähendab ühenduse kuritahtliku pealtkuulamise ja konfidentsiaalsete andmete lekkimise riski. 
+
+    Ligipääs: ```[ kõikjalt (ebaturvaline) | ▾ ]```
+
+    > Ligipääsu piirang määrab ära reeglid, mille alusel kontrollitakse FTP kontosse sisenejat.
+    Reeglite puhul eristatakse 3 teineteist välistavat reeglit:
+    **lubatud nimekirja alusel** - kontosse saab siseneda vaid siis, kui siseneja IP on kantud lubatud IP nimekirja või tema IP kuulub lubatud riikide nimekirja
+    **lubatud nimekirja alusel või TLS/SSL ühendustelt** - kontosse saab siseneda vaid siis, kui siseneja IP on kantud lubatud IP nimekirja või tema IP kuulub lubatud riikide nimekirja või siseneja kasutab krüpteeritud FTP ühendust
+    **kõikjalt** - kontosse saab siseneda ükskõik milliselt IP-lt
+    Number 1 ja 3 valiku puhul kontrollitakse ka seadistuse nimega **TLS/SSL ühendus on nõutud** ning kui see on aktiveeritud siis saab siseneda ainult krüpteeritud ühendust kasutades.
+    Kõige turvalisem on kasutada valikut number 1. See nõuab aga esmalt **Lubatud IP nimekirja** või **Lubatud riikide nimekirja** seadistamist.
+    NB! Lubatud IP nimekirja saab muuta haldusliidese peamenüüst Veebiserver » **Lubatud IP-de nimekiri**
+
+    **Lubatud nimekiri:** Vali riigid...
+
+    ```
+    Euroopa       Euroopa
+      Ahvenamaa     Eesti 
+      Albaania
+      Andorra
+      Austria
+      ...
+    ```
+
+    > Lisa siia nimekirja riigid, mille IP-lt peab käesoleva FTP kasutajaga serverisse sisse saama. Seda nimekirja kasutatakse siis, kui seadistuses **Ligipääs:** on lubatud nimekirja alusel ligipääs lubatud.
+
+    ~~Lubatud IP nimekiri...~~
+
+    ---
+
+    NB! Muutes siin oma salasõna **EI MUUTU** teie haldusliidese salasõna, vaid AINULT FTP kasutaja salasõna !
+    Haldusliidese salasõna saate muuta menüüst KASUTAJAKONTO » kika seadistused
+
+    Muuda salasõna: ```[__________]```
+
+    > Salasõna peab sisaldama väikseid ja suuri tähti ning numbreid
+
+    » uuesti: ```[__________]```
+
+    ~~muuda~~ ~~sulge aken~~
+
 - title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
   id: errors
   body: |

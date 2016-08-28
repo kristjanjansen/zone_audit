@@ -26,6 +26,12 @@
           id: variables
         - title: Seaded
           id: settings
+        - title: Seaded → Muuda
+          id: settings_change
+        - title: Seaded → Muuda FTP kasutajat
+          id: settings_ftp
+        - title: Seaded → Lisa SSL tugi
+          id: settings_ssl
         - title: Vealehed
           id: errors
         - title: Alamdomeenid

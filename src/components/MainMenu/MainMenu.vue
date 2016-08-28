@@ -9,12 +9,6 @@
                 class="MainMenu__first"
             >
 
-                <div class="MainMenu__firstIcon">
-
-                    ◌
-
-                </div>
-
                 <div class="MainMenu__firstTitle">
 
                     {{ item1.title }}
@@ -106,9 +100,6 @@
     .MainMenu__disabled {
         opacity: 0.15 !important;
         cursor: auto !important;
-    }
-    .MainMenu__firstIcon {
-        margin-right: $margin-sm;
     }
     .MainMenu__second {
         color: $blue;

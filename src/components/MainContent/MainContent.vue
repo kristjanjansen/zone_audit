@@ -86,7 +86,7 @@
         margin: 0;
         padding-left: $padding-md;
         border-left: 4px solid $gray;
-        opacity: $opacity-lg;
+        opacity: $opacity-md;
     }
     .MainContent__body table {
         width: 100%;
