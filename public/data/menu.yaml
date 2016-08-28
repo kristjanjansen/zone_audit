@@ -1,0 +1,105 @@
+- title: Teenuste ülevaade
+  id: dashboard
+- title: Domeenid
+  id: domains
+  items:
+    - title: Minu domeenid
+    - title: Tellimused
+    - title: Pikenda
+    - title: Too domeen üle
+    - title: Vaheta omanikku
+    - title: Registreeri
+- title: Virtuaalserverid
+  id: shared
+  items:
+    - title: Serveri ülevaade
+    - title: Kasutajakonto
+      items:
+        - Delegeerimised
+        - Tagasiside
+        - Automaatsed teavitused
+    - title: Veebiserver
+      items:
+        - title: Monitooring
+          id: monitor
+        - title: Süsteemsed muutjad
+          id: variables
+        - title: Seaded
+          id: settings
+        - title: Vealehed
+          id: errors
+        - title: Alamdomeenid
+          id: subdomains
+        - title: SSL sertifikaadid
+          id: ssl2
+        - title: Let's Encrypt
+          id: letsencrypt
+        - title: Aliase tellimine
+          id: aliases
+        - title: Crontab
+          id: cron
+        - title: Node.js ja PM2
+          id: node
+        - title: Portide suunamine
+          id: ports
+    - title: FTP
+      items:
+        - title: FTP kontod
+          id: ftpaccounts
+        - title: Lubatud IPde nimekiri
+          id: ftpips
+        - title: WebFTP
+    - title: E-post
+      items:
+        - title: E-posti aadressid
+          id: emailaccounts
+        - title: E-posti aliased
+        - title: Postiloendid
+        - title: Väärposti suunamine
+        - title: Viirusetõrje
+        - title: Rämpspostifilter
+        - title: DKIM / SPF / DMARC 
+    - title: Statistika ja andmemaht
+      items:
+        - title: Statistika
+        - title: Avalik statistika
+        - title: Webalizer
+        - title: Andmesidemaht
+    - title: Andmebaasid
+      items:
+        - title: MYSQL
+        - title: phpMyAdmin
+        - title: Redis
+    - title: Nimeserver
+      items:
+        - title: Tsoonifail
+        - title: A/AAAA aadress
+        - title: CNAME / Canonical name
+        - title: MX / Mail eXchanger
+        - title: TXT
+        - title: SRV
+    - title: Logid
+      items:
+        - title: Apache access_log
+        - title: Apache error_log
+        - title: FTP access_log
+- title: Pilveserverid
+  id: cloud
+- title: Privaatserverid
+  id: private
+- title: SSL Sertifikaadid
+  id: ssl
+  items:
+    - title: Minu Sertifikaadid
+    - title: Tellimused
+    - title: Pikendamine
+    - title: CSR genereerimine
+    - title: Lisa serverile
+    - title: Abi
+- title: Zone+
+  id: zoneplus
+- title: SSH
+  id: ssh
+- title: ZoneCloud
+  id: zonecloud
+

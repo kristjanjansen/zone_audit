@@ -1,0 +1,467 @@
+- title: Teenuste ülevaade
+  id: dashboard
+  body: |
+    ## ◌ Kontoseis ◌ Teated ◌ Seaded
+
+    # Virtuaalserverid
+    
+    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver
+
+    # Domeenid
+    
+    ◌ Halda domeene ◌ Registreeri uus domeen
+
+    ---
+
+    Arved | Aktiivsed tellimused
+
+
+- title: Minu domeenid
+  id: domains
+  body: |
+
+    ```__________``` ~~Otsi domeeni~~
+
+    ## Lisa delegeering kasutajale
+
+    ```__________```` ~~Lisa~~
+
+    |Domeen|Staatus|Aegub|Vaata/Muuda|
+    |---|---|---|---|
+    |kristjanjansen.ee|Aktiivne|07.08.2017| [nimeserverid]() / [kontaktid]() / [halda serverit]()|
+
+- title: kristjanjansen.ee
+  id: shared
+  body: |
+    
+    # Virtuaalserveri haldus
+
+    Siin on sul võimalik kiiresti ning hõlpsalt seadistada oma Virtuaalserveri parameetreid. Kui peaksid meie teenuste või haldusliidese kasutamisel hätta jääma, siis vaata juhiseid [help.zone.eu]() või võta ühendust meie klienditoega aadressil [info@zone.ee]()
+
+    # Populaarseimad lingid
+
+    ◌ Installeeri Zone+ rakendus
+    ◌ Lisa uus andmebaas
+    ◌ Lisa FTP konto 
+    ◌ Vaata faile 
+    ◌ Lisa e-post aadress
+
+    # Serveri ülevaade
+
+    # **28 kb**
+
+    Kõvakettamaht
+
+    # **8**
+
+    Inodede kasutus
+
+    ---
+
+    # **0**
+
+    E-posti kontod
+
+    # **0**
+
+    Alamdomeenid
+
+    # **0** 
+
+    FTP lisakontod
+
+- title: Serveri ülevaade
+  id: monitor
+  body: |
+    
+    Sellel lehel saate ülevaate Teie virtuaalserveri protsessidest, põhiserveri kättesaadavusest, infoühikute kaost, andmesidepakettide liikumiskiirusest ja serveri nn. tervisest üldisemalt.
+
+    ## Veebiserveri (sn-69-30.tll07.zone.eu) ülevaade:
+    
+    ```
+    Disk:/  OK  Space: 65%, Inodes: 5%, Free: 1.57GB
+    Disk:/data01  OK  Space: 5%, Inodes: 1%, Free: 2048.00GB
+    Disk:/data02  OK  Space: 4%, Inodes: 1%, Free: 2048.00GB
+    Disk:/srvdata OK  Space: 8%, Inodes: 0%, Free: 41.61GB
+    Disk:/tmp OK  Space: 2%, Inodes: 0%, Free: 8.89GB
+    Disk:/var OK  Space: 4%, Inodes: 0%, Free: 8.72GB
+    FTP OK  FTP OK - 0.001 second response time on port 21
+    FTPS  OK  FTP OK - 0.021 second response time on port 990
+    HTTP  OK  HTTP OK: HTTP/1.1 200 OK - 12548 bytes in 0.003 second response time
+    HTTPS OK  HTTP OK: Status line output matched "HTTP/"
+    Load  OK  Current 5min load: 0.56
+    Memory  OK  9% (12.58GB) Memory Used
+    Ping  OK  PING OK - Packet loss = 0%, RTA = 0.20 ms
+    Procs OK  312 Procs with RSTDIZ Status
+    RAID:LSI  OK  RAID OK
+    Time  OK  Current diff: 0 Seconds
+    ZFPM  OK  HTTP OK: HTTP/1.1 200 OK - 228 bytes in 0.003 second response time
+    ```
+
+    NB! Serveri ülevaade näitab terves serveris olevat hetkekoormust, mitte ainult teie domeeni poolt tehtavat koormust.
+
+    ```
+    MySQL serveri (mysql-69-90.tll07.zone.eu) ülevaade:
+    Disk:/  OK  Space: 47%, Inodes: 4%, Free: 2.39GB
+    Disk:/srvdata OK  Space: 5%, Inodes: 0%, Free: 494.29GB
+    Disk:/tmp OK  Space: 1%, Inodes: 0%, Free: 9.85GB
+    Disk:/var OK  Space: 2%, Inodes: 0%, Free: 9.89GB
+    Load  OK  Current 5min load: 0.65
+    Memory  OK  10% (12.72GB) Memory Used
+    MySQL OK
+      Uptime: 2789316
+      Threads: 8
+      Questions: 630833575
+      Slow queries: 173
+      Opens: 10890536
+      Flush tables: 129
+      Open tables: 8183
+      Queries per second avg: 226.160
+    Ping  OK  PING OK - Packet loss = 0%, RTA = 0.20 ms
+    Procs OK  295 Procs with RSTDIZ Status
+    RAID:LSI  OK  RAID OK
+    Swap  OK  0 MB Swap Used
+    Time  OK  Current diff: 0 Seconds
+    ```
+    
+    NB! Serveri ülevaade näitab terves serveris olevat hetkekoormust, mitte ainult teie domeeni poolt tehtavat koormust.
+
+- title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
+  id: variables
+  body: |
+
+    ## Üldine
+
+    Domeen: kristjanjansen.ee
+    IP aadress: ```217.146.69.30```
+    Mysql hostname: ```d59087.mysql.zone.ee```
+    PERL-i asukoht: ```/usr/bin/perl```
+    SENDMAIL-i asukoht: ```/usr/sbin/sendmail```
+    CONVERT-i asukoht:  ```/usr/bin/convert```
+
+    ## Kataloogid
+
+    Virtuaalserveri juurkataloog: ```/data01/virt59090/domeenid/www.kristjanjansen.ee```
+    Veebifailide (htdocs) rada: ```/data01/virt59090/domeenid/www.kristjanjansen.ee/htdocs/```
+
+- title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
+  id: settings
+  body: |
+
+    ## Apache seaded
+
+    Kataloogi indeks lubatud: **EI**
+
+    > See valik lubab teil seadistada kataloogi indeksi kasutust domeenis.
+    **Vihje: Lubades kataloogi indeksi, näidatakse külastajale index.html või vastava indeksfaili puudumisel kataloogis olevate failide nimekirja.
+    Juhul, kui kataloogi indeksit ei lubata, siis kuvatakse veateade õiguste puudumise kohta.**
+
+    SSI lubatud: **EI**
+
+    > SSI lubamisel aktiveeritakse Server Side Includes direktiivide töötlemine domeenis.
+    Vihje: SSI käsustikku otsitakse ainult .shtml lõpulistest failidest.
+
+    WWW prefiks: **JAH** 
+    
+    > See valik lubab seadistada, kas domeenile tekitatakse automaatselt nimeserverisse ka vastav www DNS A kirje.
+      **Kuna kasutajad on harjunud automaatselt aadresside ette WWW eesliite lisama, siis on see soovituslik.**
+
+    ### PHP seaded
+
+    Rezhiim: **FastCGI rezhiimis (PHP 7.0)** 
+
+    > Rezhiimide kirjeldused:
+      Apache Module - PHP töötab veebiserveri (Apache) moodulina. Selles rezhiimis puudub exec(), system(), passthru() jne. funktsioonide tugi. Samuti saab seda rezhiimi valida vaid ühe PHP versiooni puhul.
+      FastCGI - PHP töötab veebiserveris FastCGI moodulina. Selles rezhiimis on olemas exec(), system(), passthru() jne. funktsioonide tugi.
+      **NB!** Meie serverites PHP skriptile edasiantavad keskkonnamuutujad (nt. PATH_INFO, SCRIPT_NAME, PHP_SELF jne.) FastCGI ega Apache Module rezhiimist ei sõltu! Et võimalikult paljude klientide skriptid alati ühilduksid, antakse sellised muutujad edasi Apache Module rezhiimist lähtuvalt.
+      Juhul kui muuta PHP rezhiimi (Apache Module -> FastCGI või vastupidi) tuleb silmas pidada seda, et kõik PHP abil veebiserverisse laetud failide õigused tuleb ümber muuta! Näiteks Apache Module rezhiimis laetud failid on alati veebiserveri kasutaja õigustes (FTP-ga neid faile muuta ei saa) ning FastCGI rezhiimis laetud failid virtuaalserveri kasutaja enda õigustes (FTP-ga saab neid faile muuta). Kui PHP on FastCGI rezhiimis, siis pole soovitatav muuta rezhiimi ümber Apache Module peale. Vajadusel tuleks vahetada vaid PHP versiooni. Kui rezhiimi muutmine on vältimatu, siis tuleks saata meie klienditoele täpsed kataloogid, mis tuleb ümber muuta uue rezhiimi kasutaja õigustesse.
+      **TÄHELEPANU!** Juhul kui PHP versiooni taga on kirjas aegunud versioon tuleks vastava virtuaalhosti skriptid ühildada sellise PHP versiooniga, mille taga seda kirjas pole. Peale PHP versiooni muutmist enam tagasi aegunud versiooni peale minna ei saa!
+
+    ```short_tags```: JAH
+
+    > Seadistab kas PHP koodi alguse tunnusosas võib kasutada lühikeses vormis tunnuseid (<? ?>) . Juhul, kui te soovite kasutada PHP-d koos XML-iga, siis peaksite keelama lühikeste tunnuste kasutamise ning kasutama pikki tunnuseid (<?php ?>) .
+      **Vihje: Soovituslik on alati kasutada pikki tunnuseid!**
+
+    ```allow_url_fopen```:  JAH
+
+    > See valik lubab käsitseda fopen() funktsioonis URL objekte, näiteks avada faile üle HTTP või FTP protokolli.
+      URL: [PHP Käsiraamat]()
+      **Vihje: Selle võimaluse kasutamine sisaldab endas turvariski. Võimalusel kasutage FTP failide alla laadimiseks FTP mooduli võimalusi ning HTTP päringute sooritamiseks ```fsockopen()``` funktsiooni.**
+
+    ~~Muuda~~ ~~Muuda FTP kasutajat~~ ~~Kustuta FTP kasutaja~~
+
+    ## SSL tugi
+
+    ~~Lisa SSL tugi~~
+
+- title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
+  id: errors
+  body: |
+    Käesoleval lehel on sul võimalik enda nimel olevate virtuaalserveri teenuste tehnilist haldust delegeerida teistele ZoneID kontot omavatele kasutajatele.
+    
+    Tehnilise halduse delegeerimine võimaldab määratud kasutajatel sooritada tehnilisi toiminguid (seadistada veebiserverit, luua/hallata MySQL kontosid jne.) nii, et teil säilib siiski täielik kontroll virtuaalserveriteenuse üle.
+    
+    Delegeeritud õiguseid saate igal ajahetkel tagasi võtta (kustutada).
+
+    ## Lisa uus alamdomeen
+
+    Domeeni algus: ```__________```.kristjanjansen.ee
+
+    > Alamdomeeni alguse väli. Siia sisestage soovitava alamdomeeni nimi.
+    Näide: kui soovid lisada alamdomeeni test.kristjanjansen.ee , siis sisestage siia lahtrisse sõna "test". ILMA ÜLAKOMADETA!
+    **Vihje: WWW eesliite võid alamdomeenile lisada hiljem, ära sisesta seda siia.**
+
+    Kataloog: ```__________```
+
+    > Alamdomeeni kataloog. Sisesta kataloogi nimi, oma serveris, mis hakkab olema alamdomeeni juurkataloog.
+      **Vihje: See kataloog võib olla enne siia sisestamist loodud, aga selle võib ka automaatselt lasta luua.**
+
+- title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
+  id: errors
+  body: |
+
+    Käesoleval lehel saate määrata Teie serveris kuvatavatele vealehtedele personaliseeritud sisu. Selleks tuleb Teil igale veatüübile valmistada oma leht. Need lehed tuleb tõsta FTP protokolli või failihalduri vahendusel serveris kataloogi /htdocs. Seejärel sisestage lehtede nimed siin lehel asuvatesse veakoodiga lahtritesse. Näiteks fail 400.html lahtrisse "Viga nr 400" jne.
+    
+    Näide: kui külastaja on veebilehitsejasse sisestanud aadressi, mis viitab failile, mida teie serveris tegelikult pole, kuvatakse tema arvuti ekraanile veakoodi 404 tähistav vealeht, see leht võib olla Teie valmistatud ning anda külastajale teada, et otsitud lehekülge või faili ei leitud.
+
+    Domeen/alamdomeen: ```[ kristjanjansen.ee | ▾ ]```
+
+    |&nbsp;|&nbsp;|
+    |---|---|
+    |Viga nr. 400|-|  
+    |Viga nr. 401|-|
+    |Viga nr. 403|-|
+    |Viga nr. 404|-| 
+    |Viga nr. 500|-|
+
+    > ## Vealehekoodide seletused:
+    Error 400: Bad Request  - Vigane päring!
+    Error 401: Unauthorized - Vale kasutajanimi või salasõna!
+    Error 403: Forbidden  - Kasutajal puudub õigus lehekülge või faili näha!
+    Error 404: Not found  - Lehekülg või fail ei ole leitav!
+    Error 500: Internal server error  - Puudulikust programmikoodist tingitud serveripoolne viga!
+
+- title: Sinu veebiserveri sertifikaadid (kristjanjansen.ee)
+  id: ssl2
+  body: |
+
+    ~~Lisa uus SSL/TLS sertifikaat
+
+- title: Esitage taotlus Let's Encrypt SSL/TLS turvasertifikaadile
+  id: letsencrypt
+  body: |
+  
+    Taotluse protsessimise käigus kontrollib Let's Encrypt SK teie õiguseid hosti nime kasutamisele, sooritades HTTP päringu. Veenduge, et ligipääs veebilehele ei oleks mingil moel piiratud.
+    Väljastatavate sertifikaatide arv on Let's Encrypt Sertifitseerimiskeskuse poolt piiratud viiele nädalas domeeni kohta. Allkirjastatud sertifikaadid aeguvad kolme kuuga. Vaikimisi uuendame neid automaatselt.
+
+    ```[ -- vali hosti nimi -- | ▾ ]```
+
+    ## Teile on väljastatud järgmised Let's Encrypt turvasertifikaadid:
+
+    |Hosti nimi (CN)|Sertifikaadi nimi|Aegumiskuupäev|
+    |---|---|---|
+    |&nbsp;|&nbsp;|&nbsp;|
+
+- title: Aliase lisamine
+  id: aliases
+  body: |
+
+    Aliasega saab domeeni suunata olemasolevale virtuaalserverile. Aliase puhul kuvatakse veebilehitseja aadressiribal aliaseks oleva domeeni nimi, aga sisu võetakse virtuaalserverist. Samuti on edasi suunatud e-post. Aliaseks oleva domeeni aadressile saadetavad kirjad sunatakse automaatselt edasi virtuaalserveri sama algusega postkastidesse.
+
+    ## Sisesta domeen mida soovid suunata
+    
+    # **1**
+
+    ```[__________]``` ```[____| ▾ ]```
+
+- title: Domeeni kristjanjansen.ee crontabi tööd
+  id: cron
+  body: |
+
+    # **0/5**
+    tööde arv
+
+    # Lisa uus töö crontabi 
+
+    Töö nimetus: ```[__________]```
+
+    > Crontab'i töö nimetusse võite kirjutada enda jaoks meeldetuletava nime. Tühjaks jättes kuvatakse nimeks vaikimisi süsteemi poolt määratud nimetus.
+
+    Faili URL: ```[ http://kristjanjansen.ee________]```
+
+    > Virtuaalserveri veebikataloogis oleva skripti aadress, mida periooditi HTTP päring sooritatakse.
+    Faili URL peab algama: **http://www.kristjanjansen.ee** võ **https://www.kristjanjansen.ee** või mõne alamdomeeni nimega.
+
+- title: Node.js rakendused
+  id: node
+  body: |
+
+    Siin saad lisada protsesse, mida käivitab automaatselt [PM2 protsessihaldur](). Lubatud on nii eraldiseisvad skriptid (app.js) kui ka PM2 rakenduse deklaratsioonid (app.[json|yml]). Protsesse saab muuta ja kustutada ainult siis, kui need on peatatud. Kui soovid kasutada rakendust veebiserverina, pead määrama veebiserveri või alamdomeeni seadetes mod_proxy abil suunatava sihtpordi või kasutama portide suunamist (eeldab eraldi IP-aadressi ja võimaldab WebSockets kasutust). Rakenduse lisamine, peatamine ja restart võivad võtta kuni 3 minutit.
+    Rakendused saavad kuulata localhost (127.0.0.1) peal porti, mis on määratud portide suunamise abil või seadistades mod_proxy virtuaalserveri või alamdomeeni seadetes. Läbikostvuse vältimiseks jõustab süsteem igale virtuaalserveri kontole unikaalse loopback IP.
+
+    ## ◌ Lisa uus Node.js rakendus
+
+    |Rakenduse nimi|Rakenduse asukoht|Staatus|Maksimaalne mälukasutus|
+    |---|---|---|---|
+    |&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+- title: Portide suunamine
+  id: ports
+  body: |
+
+    Portide suunamine (port forwarding) võimaldab Apache veebiserveri asendamist oma rakendusega - selleks võib olla näiteks NodeJS server või PHP skript mis implementeerib WebSocket toe.
+    Seda saavad kasutada virtuaalserverid millele on eraldatud oma IP-aadress, järgides meie kasutustingimusi - portide suunamine kasutamine torrenti- või mänguserveri, proxy vms teenuse jaoks on rangelt keelatud seoses võimalike juriidiliste ja serveri koormuse probleemidega. Kui kahtled plaanitava kasutuse lubatavuses kirjuta palun meie kasutajatoele ning kirjelda oma rakendust ja eeldatavat kasutajate hulka.
+    Rakendused saavad kuulata localhost (127.0.0.1) peal olevat porti. Läbikostvuse vältimiseks jõustab süsteem igale virtuaalserveri kontole unikaalse loopback IP. Lisatud suunamise aktiveerumiseks võib kuluda kuni 10 minutit.
+
+    **Puudub virtuaalserverile eraldatud IP-aadress**
+
+- title: Domeeni kristjanjansen.ee FTP kontod
+  id: ftpaccounts
+  body: |
+
+    ## Uue FTP kasutaja lisamine
+
+    ```[/data01/virt5...janjansen.ee/|▾][__________]``` ~~Lisa FTP kasutaja~~
+
+    > Kataloog millele FTP kasutajale on ligipääs ning millest ülespoole pole tal võimalik liikuda.
+
+    ## Kasutusel olevad FTP kontod
+
+    Süsteemne kasutajanimi: **www.kristjanjansen.ee** või **d59087f132908**
+    
+    > FTP kasutajanimi lisatakse süsteemi poolt automaatselt.
+
+    Kataloog: ```[/data01/virt59090/domeenid/www.kristjanjansen.ee]```
+
+    > Kataloog millele FTP kasutajale on ligipääs ning millest ülespoole pole tal võimalik liikuda.
+
+    Lubatud tegevused: **DN UP NRO DELETE RENAME CHMOD MKD RMD CWD**
+
+    > Iga kasutaja juures saate määrata, missugused tegevused talle FTP serveris lubatud on:
+    DN - download (failide alla laadimine)
+    UP - upload (failide üles laadimine)
+    N  - Võib uusi faile üles laadida
+    R  - Võib faile jätkata
+    O  - Võib faile ülekirjutada
+    CHMOD - chmod (faili õiguste muutmine)
+    DELETE - delete (kustutamine)
+    RENAME - rename (failinime muutmine)
+    MKD - mkdir (kataloogi tegemine)
+    RMD - rmdir (kataloogi kustutamine)
+    CWD - cd (kataloogi muutmine)
+    DIRLIST - nlst (kataloogi sisu nägemine)
+
+    ~~Muuda~~ ~~X~~ ~~WebFTP~~
+
+- title: Domeeni kristjanjansen.ee FTP kontod
+  id: ftpips
+  body: |
+
+    Siin lehel saad määrata ära IP aadressid, millelt on käesoleva domeeni FTP serverisse alati ligipääs lubatud.
+    Nimekiri on ühine kõikidele käesoleva domeeni FTP kontodele.
+    Sinu IP aadress on praegu 217.71.46.107 Kui soovid sellelt samalt IP-lt FTP-sse siseneda, siis lisa see IP alljärgneva vormi kaudu lubatud nimekirja.
+
+    ## ◌ Uue IP aadressi lisamine
+
+    IP aadress ```[__________]```
+
+    ~~~Lisa IP~~~
+
+- title: Domeeni kristjanjansen.ee e-posti aadresside lisamine ja seadistamine.
+  id: emailaccounts
+  body: |
+
+    Sellel lehel saad lihtsalt ja kiiresti lisada ning seadistada e-posti aadresse. E-posti aadressi lisamiseks sisesta e-posti aadressi algus ja vajuta nupule "Lisa".
+
+    ## Kõvakettamaht failidele ja andmebaasidele 
+
+    E-postile, failidele ja andmebaasidele rakendub ühine kõvakettamaht (256 GiB), mille jaotamine toimub automaatselt vastavalt loodud e-posti kontode mahtudele. Iga loodud e-posti konto vähendab failidele ja andmebaasidele eraldatud ruumi. E-posti konto kustutamisel või selle piirmahu vähendamisel tekib failidele/andmebaasidele ruumi juurde.
+
+    # **28 KiB/256 GiB**
+  
+    Kõvakettamaht failidele ja andmebaasidele
+
+    # **0**
+
+    E-posti aadresse
+
+    # **0B/256GiB**
+
+    Kontode piirsuurus
+
+    ## Lisa uus E-posti aadress
+
+    ```__________```.kristjanjansen.ee ~~Lisa~~
+
+    ## Kasutusel olevad E-posti aadressid
+
+- title: Pilveserverid
+  id: cloud
+  body: |
+
+    ## ◌ Telli uus Pilveserver PRO SSD ◌ Telli uus Pilveserver VPS
+
+    |Nimi|Kiirviited|Host|Pakett||
+    |---|---|---|---|---|
+    |gn256.zone.eu|◌ Muuda ressursse|gn256.zone.eu|Pilverserver VPS|◌ Halda|
+
+
+- title: Privaatserverid
+  id: private
+  body: |
+    ## ◌ Telli uus Privaatserver ◌ Telli uus Nutikas Privaatserver
+
+    |Nimi|Leping|IP aadress|Nutikas platvorm|
+    |---|---|---|---|
+    |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
+
+
+- title: Minu sertifikaadid
+  id: ssl
+  body: |
+
+    ## ◌ Telli uus sertifikaat ◌ Pikendamine
+
+    |Serveri nimi (CN)|Staatus|Aegub|Sertifikaadi väljastaja|
+    |---|---|---|---|
+    |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
+
+- title: Zone+
+  id: zoneplus
+  body: |
+
+    ## ◌ Paiguta uus rakendus
+
+    |Asukoht|&nbsp;|Kiirviited|
+    |---|---|---|
+    |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|
+
+- title: SSH haldamine
+  id: ssh
+  body: |
+    
+    SSH kasutajanimi on seotud samanimelise virtuaalserverite grupiga. Kui gruppi kuulub mitu virtuaalserverit, pääseb sama SSH kasutajanimega ligi neile kõigile.
+
+    SSH ligipääsu reguleeritakse autentimisvõtme abil. Ühe SSH kasutajanimega võib olla seotud mitu avalikku võtit, mis võimaldab ühte SSH kasutajanime kasutada mitmel inimesel. Kõigil sama SSH kasutajanime kasutajatel on süsteemis võrdsed õigused.
+
+    Uue avaliku võtme jõudmine serverisse võtab aega kuni 10 minutit.
+
+    Virtuaalserver saab korraga olla seotud ainult ühe grupiga. Kui soovid virtuaalserverit gruppide vahel liigutada, võta ühendust klienditeenindusega.
+
+    |SSH kasutajanimi|Serverid|Lubatud IP aadressid||
+    |---|---|---|---|
+    |virt59090|kristjanjansen.ee|**Lisa uus+**|[Halda avalikke võtmeid]()|
+
+- title: ZoneCloud
+  id: zonecloud
+  body: |
+
+    ZoneCloud teenus aktiveeritakse, kui kasutaja oma e-posti konto andmetega esimest korda ZoneCloud keskkonda sisse logib. Iga e-posti kasutaja saab ZoneCloud keskkonnas 5 GiB kettamahtu tasuta.
+
+    Kasutajale on võimalik tellida „Premium“ pakett, mis tõstab ZoneCloud keskkonnas kasutatava kettamahu 100 GiB peale. „Premium“ paketi kuutasu on 2,5 € (+ km) ja see summa lisatakse Virtuaalserveri arvele.
+
+    **Kasutajakontole saad 100 GiB kettamahtu tellida või tellimust tühistada „Premium“ lüliti abil.**
+
+    |ZoneCloud konto|Andmete maht|Premium|
+    |---|---|---|
+    |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|
