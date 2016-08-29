@@ -423,6 +423,8 @@
   id: settings_change_phpext
   body: |
 
+    ~~Abilingid viivad otse http://php.net/manual/en/ref.bc.php jne lehtedele~~
+    
     ```[✓]``` BCMath:  (BCMath Arbitrary Precision Mathematics Functions) 
     ```[✓]``` Calendar:  (Calendar Functions) 
     ```...``` dBase:  N/A 
