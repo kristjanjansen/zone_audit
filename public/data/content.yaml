@@ -1,20 +1,42 @@
 - title: Teenuste ülevaade
   id: dashboard
   body: |
+    
     ## ◌ Kontoseis ◌ Teated ◌ Seaded
 
     # Virtuaalserverid
     
     ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver
 
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Nimi|Pakett|Kiirviited||
+    |---|---|---|---|
+    |kristjanjansen.ee|II|**[Kiirviited ▾]()**| **[◌ Halda]()**|
+
+    > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
+
     # Domeenid
     
-    ◌ Halda domeene ◌ Registreeri uus domeen
+    ## ◌ Halda domeene ◌ Registreeri uus domeen
 
-    ---
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
-    Arved | Aktiivsed tellimused
+    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC|
+    |---|---|---|---|---|
+    |kristjanjansen.ee|Registreeritud|**[Kiirviited ▾]()**|07.08.2017|◌|
 
+    > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
+
+    ## Arved | **Aktiivsed tellimused**
+
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Kuupäev|Teenus|Kirjeldus|Staatus||
+    |---|---|---|---|---|
+    |Otsing ei andnud tulemusi|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+    > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
 - title: Minu domeenid
   id: domains
@@ -40,11 +62,7 @@
 
     # Populaarseimad lingid
 
-    ◌ Installeeri Zone+ rakendus
-    ◌ Lisa uus andmebaas
-    ◌ Lisa FTP konto 
-    ◌ Vaata faile 
-    ◌ Lisa e-post aadress
+    ## ◌ Installeeri Zone+ rakendus ◌ Lisa uus andmebaas ◌ Lisa FTP konto  ◌ Vaata faile  ◌ Lisa e-post aadress
 
     # Serveri ülevaade
 
@@ -55,8 +73,6 @@
     # **8**
 
     Inodede kasutus
-
-    ---
 
     # **0**
 
@@ -1520,6 +1536,78 @@
     Target: ```[webmail.zone.ee]```
 
     **[muuda]()** **[sulge aken]()**
+
+- title: Apache access_log
+  id: accesslog
+  body: |
+
+    Tihti on kolmandate osapoolte logianalüsaatori kasutamiseks või mõnel muul põhjusel vaja Apache access_log faili. Käesoleval lehel võitegi soovi korral selle faili endale tellida.
+    Access_log fail kopeeritakse Teile logs/kristjanjansen.ee/access_log/AAAA_KK/ kataloogi pakitud kujul igakordselt peale statistika genereerimist.
+
+    ```Domeen/alamdomeen:``` ```[mx.zone.eu ▾]```
+
+    access_log tellitud: **EI**
+
+    > Kui tellite külastuste logi (access_log) endale faili kujul, kopeeritakse see Teile ettemääratud kataloogi pakitud kujul igakordselt peale statistika genereerimist. Külastuslogi kopeeritakse gzipiga pakitult!
+    Vihje: SSL-iga turvatud serveri logid tuleb tellida eraldi!
+
+    access_log kustutatakse: iga **kuu** tagant
+
+    > Külastuslogi kustutatakse vaikimisi peale nädalast ~~nädal või kuu?~~ perioodi. Siit võite endale seadistada pikema säilitusperioodi.
+
+     **[muuda]()**
+
+- title: http://kristjanjansen.ee access_log tellimuse muutmine
+  id: accesslog_edit
+  body: |
+
+     access_log tellitud: ```( )``` JAH ```(●)``` EI
+
+     > Kui tellite külastuste logi (access_log) endale faili kujul, kopeeritakse see Teile ettemääratud kataloogi pakitud kujul igakordselt peale statistika genereerimist. Külastuslogi kopeeritakse gzipiga pakitult!
+     Vihje: SSL-iga turvatud serveri logid tuleb tellida eraldi!
+
+     access_log kustutatakse: ```[iga kuu tagant ▾]```
+
+     > Külastuslogi kustutatakse vaikimisi peale nädalast ~~nädal või kuu?~~ perioodi. Siit võite endale seadistada pikema säilitusperioodi.
+
+     **[muuda]()** **[sulge aken]()**
+
+- title: Apache error_log
+  id: errorlog
+  body: |
+
+    Käesoleval lehel saate valida, millal tühjendatakse Teie error_log ehk vealogi faili. Valides kord päevas, tühjendatakse error_log igal südaööl kell 00.00
+    Valides kord nädalas, tühjendatakse error_log igal pühapäeva öösel vastu esmaspäeva kell 00.00
+    Valides kord kuus, tühjendatakse error_log iga kuu viimasel kuupäeval kell 00.00
+
+    ```Domeen/alamdomeen:``` ```[mx.zone.eu ▾]```
+
+    error_log kustutatakse: iga **kuu** tagant
+
+     **[muuda]()**
+
+- title: http://kristjanjansen.ee error_log seadistuse muutmine
+  id: errorlog_edit
+  body: |
+
+     error_log kustutatakse iga: ```[iga kuu tagant ▾]```
+
+     **[muuda]()** **[sulge aken]()**
+
+- title: FTP logifailid
+  id: ftplog
+  body: |
+  
+    Kui soovite kontrollida kõiki FTP-sse sisselogimisi ning teostatud operatsioone, siis tuleks tellida FTP logid.
+    Logifailid kopeeritakse teie virtuaalserverisse kataloogi **logs/ftp_log_packs/Y_M/**, kus **Y=jooksev aasta** ja **M=kuu**
+
+    **FTP logid tellitud**: ```( )``` JAH ```(●)``` EI
+
+    FTP logid aeguvad: ```[päeva tagant ▾]```
+
+    > Kui vanad logid automaatselt ära kustutatakse. Näiteks, kui on valitud **nädal*, siis kustutatakse automaatselt nädala aja vanuseks saanud logid.
+    
+    **[muuda]()**
 
 - title: Pilveserverid
   id: cloud

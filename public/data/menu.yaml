@@ -144,8 +144,15 @@
     - title: Logid
       items:
         - title: Apache access_log
+          id: accesslog
+        - title: Apache access_log → Muuda
+          id: accesslog_edit
         - title: Apache error_log
+          id: errorlog
+        - title: Apache error_log → Muuda
+          id: errorlog_edit
         - title: FTP access_log
+          id: ftplog
 - title: Pilveserverid
   id: cloud
 - title: Privaatserverid
