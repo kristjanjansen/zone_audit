@@ -120,8 +120,15 @@
     - title: Nimeserver
       items:
         - title: Tsoonifail
+          id: zonefile
         - title: A/AAAA aadress
+          id: aaaa
+        - title: A/AAAA aadress → Muuda
+          id: aaaa_edit
         - title: CNAME / Canonical name
+          id: cname
+        - title: CNAME / Canonical name → Muuda
+          id: cname_edit
         - title: MX / Mail eXchanger
         - title: TXT
         - title: SRV
