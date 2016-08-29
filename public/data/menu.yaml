@@ -110,6 +110,7 @@
     - title: Andmebaasid
       items:
         - title: MYSQL
+          id: mysql
         - title: phpMyAdmin
         - title: Redis
     - title: Nimeserver

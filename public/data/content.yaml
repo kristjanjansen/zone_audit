@@ -1104,7 +1104,7 @@
     Ajavahemik: ```[August/2016 ▾]```
 
     > Vali listist aasta ja kuu, mille kohta andmesidemahtu kuvatakse.
-    
+
     |Virtuaalhost| Keskm. päevas|Kokku|
     |---|---|---|
     |kristjanjansen.ee (http)|61.15 KiB|1.67 MiB|
@@ -1114,6 +1114,66 @@
 
     **31 päeva x 61.15 KiB = 1.85 MiB**
 
+- title: Domeeni kristjanjansen.ee MySQLi kasutajad/andmebaaside
+  id: mysql
+  body: |
+
+    Domeeni **kristjanjansen.ee** MySQL serveri aadress on: **d59087.mysql.zone.ee**
+    
+    > MySQL serveri aadress on vajalik teie skriptide jaoks, kuna need peavad teadma, millisele aadressile tuleb veebiserverist luua MySQL ühendus
+    NB! Juhul, kui soovite MySQL serverisse luua ühendust väljaspoolt veebiserverit, tuleb välise arvuti IP aadress lisada MySQL kasutaja Välised hostid nimekirja. Alles seejärel saate luua ühenduse aadressile d59087.mysql.zone.ee
+
+    # **1/20 ◌** 
+
+    MySQL kasutajaid
+
+    **[lisa MySQL kasutaja]()**
+
+    > Uue MySQL kasutaja nimi genereeritakse lisamisel automaatselt ning seda ise muuta ei saa.
+
+    # **0/32 ◌** 
+
+    MySQL andmebaase
+
+    **[lisa MySQL andmebaas]()**
+
+    > Uuele andmebaasi nimele saab määrata vabalt valitud sufiksi. Määramata sufiksi puhul genereeritakse kogu nimi automaatselt.
+
+    ##  Olemasolevad MySQL kasutajad
+
+    |Kasutajanimi|Hostid:|Andmebaasid:|
+    |---|---|---|
+    |**d59087sa118706** (Main account)|WS PMA|**Kasutaja ei pääse ühelegi baasile ligi !**~~Pole tõsi, andmebaase veel ei ole~~|
+
+    > Uuele MySQL konto kasutajanimele saab määrata vabalt valitud sufiksi. Määramata sufiksi puhul genereeritakse kogu nimi automaatselt.
+
+    > **WS** - MySQL kasutaja tohib ühendust luua veebiserverist
+    **PMA** - MySQL kasutaja tohib ühendust luua phpMyAdminnist
+    **Välised hostid** on (komadega/tühikutega eraldatud) IP aadresside nimekiri, **MILLELT** käesoleval kasutajal on õigus luua ühendusi MySQL serveriga
+    Aadresside nimekiri tohib sisaldada vaid IPv4 formaadis täispikki aadresse (netmask-i või wildcard-i alusel IP-sid lisada ei saa!).
+    **NB!** Väliste hostide muudatused jõustuvad **10 minuti** jooksul!
+
+    > Siin kuvatakse kõik andmebaasid, kuhu sellel kasutajal ligipääs on.
+    Iga andmebaasi juures on konkreetsed õigused, mida antud kasutaja seal teha tohib:
+    Select - Select_priv
+    Insert - Insert_priv
+    Update - Update_priv
+    Delete - Delete_priv
+    Create - Create_priv
+    Drop - Drop_priv
+    Index - Index_priv
+    Alter - Alter_priv
+    Temp - Create_tmp_table_priv
+    Lock - Lock_tables_priv
+    Crview - Create_view_priv
+    Shview - Show_view_priv
+    Crrtn - Create_routine_priv
+    Alrtn - Alter_routine_priv
+    Exec - Execute_priv
+    Trigger - Trigger_priv
+    Event - Event_priv
+    References - References_priv
+    
 - title: Pilveserverid
   id: cloud
   body: |
