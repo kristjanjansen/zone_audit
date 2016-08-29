@@ -28,7 +28,8 @@ var paddings = _
 var fontFamilies = {
     text: 'Rubik',
     heading: 'Rubik',
-    code: 'Source Code Pro'
+    code: 'Source Code Pro',
+    comment: 'Gochi Hand'
 }
 
 var textSizes = { sm: 14, md: 16, lg: 20 }
@@ -43,11 +44,15 @@ var headingSizes = { xs: 14, sm: 16, md: 20, lg: 24, xl: 36}
 var headingFonts = _
     .chain(headingSizes)
     .mapKeys((value, key) => 'font-heading-' + key)
-    .mapValues((value, key) => `normal ${value}px / 100% ${fontFamilies.heading}, sans-serif`)
+    .mapValues((value, key) => `normal ${value}px / 100% "${fontFamilies.heading}", sans-serif`)
     .value()
 
 var codeFonts = {
-    'font-code-md': `normal ${textSizes.md}px / 100% ${fontFamilies.code}, monospace`
+    'font-code-md': `normal ${textSizes.md}px / 100% "${fontFamilies.code}", monospace`
+}
+
+var commentFonts = {
+    'font-comment-md': `normal ${textSizes.lg}px / 100% "${fontFamilies.comment}", sans-serif`
 }
 
 var lineHeights = _
@@ -70,6 +75,7 @@ module.exports = Object.assign(
     textFonts,
     headingFonts,
     codeFonts,
+    commentFonts,
     lineHeights,
     opacities
 )

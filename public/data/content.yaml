@@ -20,11 +20,11 @@
   id: domains
   body: |
 
-    ```__________``` ~~Otsi domeeni~~
+    ```[__________]``` **[Otsi domeeni]()**
 
     ## Lisa delegeering kasutajale
 
-    ```__________```` ~~Lisa~~
+    ```[__________]``` **[Lisa]()**
 
     |Domeen|Staatus|Aegub|Vaata/Muuda|
     |---|---|---|---|
@@ -188,11 +188,11 @@
       URL: [PHP Käsiraamat]()
       **Vihje: Selle võimaluse kasutamine sisaldab endas turvariski. Võimalusel kasutage FTP failide alla laadimiseks FTP mooduli võimalusi ning HTTP päringute sooritamiseks ```fsockopen()``` funktsiooni.**
 
-    ~~Muuda~~ ~~Muuda FTP kasutajat~~ ~~Kustuta FTP kasutaja~~
+    **[Muuda]()** **[Muuda FTP kasutajat]()** **[Kustuta FTP kasutaja]()** 
 
     ## SSL tugi
 
-    ~~Lisa SSL tugi~~
+    **[Lisa SSL tugi]()**
 
 - title: Virtuaalserveri seadete muutmine
   id: settings_change
@@ -232,7 +232,7 @@
 
     ## PHP
 
-    Rezhiim: ```[ 7.0 FastCGI | ▾ ]```
+    Rezhiim: ```[7.0 FastCGI|▾]```
 
     > Rezhiimide kirjeldused:
     Apache Module - PHP töötab veebiserveri (Apache) moodulina. Selles rezhiimis **puudub** exec(), system(), passthru() jne. funktsioonide tugi. Samuti saab seda rezhiimi valida vaid ühe PHP versiooni puhul.
@@ -251,18 +251,18 @@
 
     Laiendita fail on PHP skript: ```( )``` JAH ```(●)``` EI
 
-    ~~Muuda~~ ~~Sulge aken~~
+    **[Muuda]()** **[Sulge aken]()**
 
     ## Lisavõimalused
 
-    Avalik statistika: ~~muuda~~
-    PHP seaded: ~~muuda~~
-    MIME tüübid: ~~vaata~~
-    Vealehed: ~~muuda~~
-    Webalizer: ~~muuda~~
-    PHP laiendused: ~~muuda~~
-    Apache direktiivid: ~~vaata~~
-    FTP kontod: ~~muuda~~ ~~x~~
+    Avalik statistika: **[muuda]()**
+    PHP seaded: **[muuda]()**
+    MIME tüübid: **[vaata]()**
+    Vealehed: **[muuda]()**
+    Webalizer: **[muuda]()**
+    PHP laiendused: **[muuda]()**
+    Apache direktiivid: **[vaata]()**
+    FTP kontod: **[muuda]()** **[x]()**
 
 - title: Domeeni http://kristjanjansen.ee statistika muutmine
   id: settings_change_stats
@@ -296,7 +296,7 @@
     
     > Siit on võimalik seadistada veateade autoriseerimata kasutajale.
 
-    ~~muuda~~ ~~sulge aken~~
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni http://kristjanjansen.ee PHP seaded
   id: settings_change_php
@@ -318,7 +318,7 @@
     > Seadistab PHP sessioonide automaatse käivitamise.
     URL: [PHP Käsiraamat]()
 
-    ~~muuda~~ ~~sulge aken~~
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni http://kristjanjansen.ee MIME tüübid
   id: settings_change_mime
@@ -342,6 +342,133 @@
     **NB!** Juhul, kui soovid lisada MIME tüüpi (**application/x-httpd-php** vms) ning sellele vastavaid laiendeid, millega lõppevaid faile PHP interpretaator töötlema peaks siis ära tee seda siit, vaid **domeeni seadete muutmise** vormist:
     Veebiserver » Seaded » Muuda.
     Seal on spetsiaalne väli **PHP faililaiendid**, mida tuleb selleks puhuks kasutada ning seda just meie serverite konfiguratsiooni ülesehituse tõttu.
+
+    **[muuda]()** **[sulge aken]()**
+
+- title: Domeeni http://kristjanjansen.ee vealehed
+  id: settings_change_errors
+  body: |
+
+    # Viga nr 400
+
+    ```(●)``` Vealehe URI ```[__________]```
+
+    > Juhul, kui on valitud vealehe URI, tuleks sellesse lahtrisse sisestada vealehe suhteline URL. Näiteks juhul, kui fail 404.html asub sellisel aadressil http://www.kristjanjansen.ee/404.html, tuleks sisestada siia /404.html.
+
+    ```( )``` Veateade```[__________]```
+
+    > Juhul kui Te soovite vea korral kuvada lihtsat teadet, valige vastava vea kõrvalt **veateade** ning sisestage lahtrisse teade. Näiteks kui soovite, et puuduliku URL-i korral kuvataks teade 'Sellist faili ei leitud !' siis sisestage **Viga nr. 404** juurde see teade.
+
+    # Viga nr 401
+
+    ```(●)``` Vealehe URI ```[__________]```
+
+    ```( )``` Veateade```[__________]```
+
+    # Viga nr 403
+
+    ```(●)``` Vealehe URI ```[__________]```
+
+    ```( )``` Veateade```[__________]```
+
+    # Viga nr 404
+
+    ```(●)``` Vealehe URI ```[__________]```
+
+    ```( )``` Veateade```[__________]```
+
+    # Viga nr 500
+
+    ```(●)``` Vealehe URI ```[__________]```
+
+    ```( )``` Veateade```[__________]```
+
+    **[muuda]()** **[sulge aken]()**
+
+- title: Domeeni http://kristjanjansen.ee Webalizeri seadistused
+  id: settings_change_webalizer
+  body: |
+
+    Keel: ```[Inglise keel |▾]```
+
+    CountryGraph: ```( )``` JAH ```(●)``` EI
+
+    > CountryGraph-ga saab määrata, kas riikide statistika juurde joonistatakse graafik või mitte.
+    
+    GraphLines ```[2_________]```
+
+    > GraphLines-ga saab määrata, kas graafikutele joonistatakse horisontaalsed jooned või mitte. Seda saab keelata, kui väärtus panna 0. Maksimum väärtus on 20.
+
+    ~~...siit tuleb veel 38 sarnast välja. Kõigel on piir.~~
+
+    **[muuda]()** **[sulge aken]()**
+
+- title: Domeeni http://kristjanjansen.ee PHP moodulid
+  id: settings_change_phpext
+  body: |
+
+    ```[✓]``` BCMath:  (BCMath Arbitrary Precision Mathematics Functions) 
+    ```[✓]``` Calendar:  (Calendar Functions) 
+    ```...``` dBase:  N/A 
+    ```...``` DOM XML:  N/A 
+    ```...``` FFMpeg: N/A 
+    ```...``` Fileinfo: N/A 
+    ```[✓]``` FTP:   (FTP Functions)  
+    ```[✓]``` GD:  (GD Graphics Library)  
+    ```[✓]``` GeoIP:   (GeoIP Functions)  
+    ```[✓]``` Gettext:   (gettext functions)  
+    ```[✓]``` GMP:   (GNU MP (Multiple Precision) Arithmetic Library) 
+    ```...``` igBinary: N/A 
+    ```...``` ImageMagick:  N/A 
+    ```...``` iMagick (PHP7): N/A 
+    ```[✓]``` IMAP:  (IMAP, POP3 and NNTP Functions)  
+    ```...``` Interbase:  N/A 
+    ```[✓]``` Intl:  (Internationalization Extension. A wrapper for ICU Library)  
+    ```...``` ionCube:  N/A 
+    ```[✓]``` LDAP:  (LDAP functions) 
+    ```[✓]``` MCrypt:  (Mcrypt Encryption Functions)  
+    ```...``` Memcache: N/A 
+    ```...``` Memcached:  N/A 
+    ```...``` Ming: N/A 
+    ```...``` Mnogosearch:  N/A 
+    ```...``` MySQLi: N/A 
+    ```...``` ODBC: N/A 
+    ```[✓]``` OPCache:   (Zend OPCode Cache)  
+    ```[✓]``` PDO / DBLib:   (Microsoft SQL Server and Sybase Functions)  
+    ```[✓]``` PDO / ODBC:  (ODBC and DB2 Functions) 
+    ```[✓]``` PDO / PgSQL:   (PostgreSQL Functions) 
+    ```[✓]``` PHAR:  (Phar functions) 
+    ```[✓]``` PostgreSQL:  (PostgreSQL functions) 
+    ```[✓]``` Pspell:  (Pspell Functions) 
+    ```[✓]``` Redis:   (Extension for Interfacing with Redis Server)  
+    ```[✓]``` SOAP:  (SOAP Functions) 
+    ```...``` Sockets:  N/A 
+    ```...``` SourceGuardian (phpSHIELD): N/A 
+    ```...``` Subversion: N/A 
+    ```...``` Sybase/MSSQL: N/A 
+    ```...``` Zend Guard: N/A 
+    ```[✓]``` ZIP:   (Zip Functions)  
+    ```...``` ZIP (PHP-4.4.x):  N/A 
+    ```[✓]``` Tidy:  (Tidy Functions) 
+    ```...``` Translit: N/A 
+    ```[✓]``` WDDX:  (WDDX (Web Distributed Data Exchange) Functions) 
+    ```[✓]``` XML-RPC:   (XML-RPC Functions)  
+    ```[✓]``` XSL:   (XSL functions)  
+    ```...``` XSLT: N/A
+
+    **[muuda]()** **[sulge aken]()**
+
+- title:
+  id: settings_change_apache
+  body: |
+    
+    **[muuda]()** **[sulge aken]()**
+
+- title:
+  id: settings_change_ftp
+  body: |
+  
+    **[muuda]()** **[sulge aken]()**
 
 - title: FTP konto muutmine
   id: settings_ftp
@@ -385,7 +512,7 @@
     **NB!** Meie FTP server toetab krüpteeritud ühendusi ning juhul kui ka sinu FTP programm seda toetab, siis on tungivalt soovitatav krüpteeritud ühendust kasutada ning turvakaalutlustel antud checkbox aktiveerida.
     Krüpteeritud ühenduse kasutamine tõstab oluliselt FTP ühenduse turvalisust ja vähendab ühenduse kuritahtliku pealtkuulamise ja konfidentsiaalsete andmete lekkimise riski. 
 
-    Ligipääs: ```[ kõikjalt (ebaturvaline) | ▾ ]```
+    Ligipääs: ```[kõikjalt (ebaturvaline)|▾]```
 
     > Ligipääsu piirang määrab ära reeglid, mille alusel kontrollitakse FTP kontosse sisenejat.
     Reeglite puhul eristatakse 3 teineteist välistavat reeglit:
@@ -409,7 +536,7 @@
 
     > Lisa siia nimekirja riigid, mille IP-lt peab käesoleva FTP kasutajaga serverisse sisse saama. Seda nimekirja kasutatakse siis, kui seadistuses **Ligipääs:** on lubatud nimekirja alusel ligipääs lubatud.
 
-    ~~Lubatud IP nimekiri...~~
+    **[Lubatud IP nimekiri...]()**
 
     ---
 
@@ -422,7 +549,7 @@
 
     » uuesti: ```[__________]```
 
-    ~~muuda~~ ~~sulge aken~~
+    **[muuda]()** **[sulge aken]()**
 
 - title: Virtuaalserverile kristjanjansen.ee toe lisamine
   id: settings_ssl
@@ -432,7 +559,7 @@
 
     **Kui domeenile pole määratud eraldi IP aadressi, peab HTTPS-i poole pöörduv veebibrauser toetama SNI-d.**
 
-    SSL sertifikaat: ```[ -- Automaatne -- | ▾ ]```
+    SSL sertifikaat: ```[-- Automaatne --|▾]```
 
     > Vali listist üleslaetud sertifikaat, mida soovitud antud virtualhosti puhul kasutada.
     Sertifikaate saab hallata menüüst **Veebiserver -> SSL sertifikaadid**
@@ -447,7 +574,7 @@
     > ?
 
 - title: Virtuaalserveri kristjanjansen.ee süsteemsed muutujad
-  id: errors
+  id: domains
   body: |
     Käesoleval lehel on sul võimalik enda nimel olevate virtuaalserveri teenuste tehnilist haldust delegeerida teistele ZoneID kontot omavatele kasutajatele.
     
@@ -476,7 +603,7 @@
     
     Näide: kui külastaja on veebilehitsejasse sisestanud aadressi, mis viitab failile, mida teie serveris tegelikult pole, kuvatakse tema arvuti ekraanile veakoodi 404 tähistav vealeht, see leht võib olla Teie valmistatud ning anda külastajale teada, et otsitud lehekülge või faili ei leitud.
 
-    Domeen/alamdomeen: ```[ kristjanjansen.ee | ▾ ]```
+    Domeen/alamdomeen: ```[kristjanjansen.ee|▾]```
 
     |&nbsp;|&nbsp;|
     |---|---|
@@ -497,7 +624,7 @@
   id: ssl2
   body: |
 
-    ~~Lisa uus SSL/TLS sertifikaat
+    **[Lisa uus SSL/TLS sertifikaat]()**
 
 - title: Esitage taotlus Let's Encrypt SSL/TLS turvasertifikaadile
   id: letsencrypt
@@ -506,7 +633,7 @@
     Taotluse protsessimise käigus kontrollib Let's Encrypt SK teie õiguseid hosti nime kasutamisele, sooritades HTTP päringu. Veenduge, et ligipääs veebilehele ei oleks mingil moel piiratud.
     Väljastatavate sertifikaatide arv on Let's Encrypt Sertifitseerimiskeskuse poolt piiratud viiele nädalas domeeni kohta. Allkirjastatud sertifikaadid aeguvad kolme kuuga. Vaikimisi uuendame neid automaatselt.
 
-    ```[ -- vali hosti nimi -- | ▾ ]```
+    ```[-- vali hosti nimi --|▾]```
 
     ## Teile on väljastatud järgmised Let's Encrypt turvasertifikaadid:
 
@@ -524,7 +651,7 @@
     
     # **1**
 
-    ```[__________]``` ```[____| ▾ ]```
+    ```[__________]``` ```[____|▾]```
 
 - title: Domeeni kristjanjansen.ee crontabi tööd
   id: cron
@@ -573,7 +700,7 @@
 
     ## Uue FTP kasutaja lisamine
 
-    ```[/data01/virt5...janjansen.ee/|▾][__________]``` ~~Lisa FTP kasutaja~~
+    ```[/data01/virt5...janjansen.ee/|▾][__________]``` **[Lisa uus SSL/TLS sertifikaat]()**
 
     > Kataloog millele FTP kasutajale on ligipääs ning millest ülespoole pole tal võimalik liikuda.
 
@@ -603,7 +730,7 @@
     CWD - cd (kataloogi muutmine)
     DIRLIST - nlst (kataloogi sisu nägemine)
 
-    ~~Muuda~~ ~~X~~ ~~WebFTP~~
+    **[muuda]()** **[x]()** **[WebFTP]()**
 
 - title: Domeeni kristjanjansen.ee FTP kontod
   id: ftpips
@@ -617,7 +744,7 @@
 
     IP aadress ```[__________]```
 
-    ~~~Lisa IP~~~
+    **[Lisa IP]()**
 
 - title: Domeeni kristjanjansen.ee e-posti aadresside lisamine ja seadistamine.
   id: emailaccounts
@@ -643,7 +770,7 @@
 
     ## Lisa uus E-posti aadress
 
-    ```__________```.kristjanjansen.ee ~~Lisa~~
+    ```__________```.kristjanjansen.ee **[Lisa]()**
 
     ## Kasutusel olevad E-posti aadressid
 

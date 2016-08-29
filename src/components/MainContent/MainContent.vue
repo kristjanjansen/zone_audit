@@ -130,13 +130,22 @@
         border-radius: 0;
         margin: 0;
     }
-    .MainContent__body del {
+    .MainContent__body strong a {
+        display: inline-block;
         padding: $padding-xs $padding-sm;
-        background: $gray;
-        color: $cool;
+        background: $cool;
+        color: $gray;
         font: $font-text-md;
         border-radius: 3px;
         text-decoration: none;
+    }
+    .MainContent__body del {
+        background: yellow;
+        text-decoration: none;
+        font: $font-comment-md;
+        padding-right: $padding-xs;
+        padding-left: $padding-xs;
+        opacity: $opacity-lg;
     }
 
 </style>

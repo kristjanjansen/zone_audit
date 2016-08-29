@@ -35,10 +35,15 @@
         - title: Seaded → Muuda → MIME
           id: settings_change_mime
         - title: Seaded → Muuda → Vealehed
+          id: settings_change_errors
         - title: Seaded → Muuda → Webalizer
+          id: settings_change_webalizer
         - title: Seaded → Muuda → PHP laiendused
+          id: settings_change_phpext
         - title: Seaded → Muuda → Apache dir.
+          id: settings_change_apache
         - title: Seaded → Muuda → FTP kontod
+          id: settings_change_ftp
         - title: Seaded → Muuda FTP kasutajat
           id: settings_ftp
         - title: Seaded → Lisa SSL tugi
@@ -46,7 +51,7 @@
         - title: Vealehed
           id: errors
         - title: Alamdomeenid
-          id: subdomains
+          id: domains
         - title: SSL sertifikaadid
           id: ssl2
         - title: Let's Encrypt
