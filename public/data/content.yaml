@@ -415,7 +415,7 @@
     ```...``` Fileinfo: N/A 
     ```[✓]``` FTP:   (FTP Functions)  
     ```[✓]``` GD:  (GD Graphics Library)  
-    ```[✓]``` GeoIP:   (GeoIP Functions)  
+    ```[ ]``` GeoIP:   (GeoIP Functions)  
     ```[✓]``` Gettext:   (gettext functions)  
     ```[✓]``` GMP:   (GNU MP (Multiple Precision) Arithmetic Library) 
     ```...``` igBinary: N/A 
@@ -425,7 +425,7 @@
     ```...``` Interbase:  N/A 
     ```[✓]``` Intl:  (Internationalization Extension. A wrapper for ICU Library)  
     ```...``` ionCube:  N/A 
-    ```[✓]``` LDAP:  (LDAP functions) 
+    ```[ ]``` LDAP:  (LDAP functions) 
     ```[✓]``` MCrypt:  (Mcrypt Encryption Functions)  
     ```...``` Memcache: N/A 
     ```...``` Memcached:  N/A 
@@ -434,12 +434,12 @@
     ```...``` MySQLi: N/A 
     ```...``` ODBC: N/A 
     ```[✓]``` OPCache:   (Zend OPCode Cache)  
-    ```[✓]``` PDO / DBLib:   (Microsoft SQL Server and Sybase Functions)  
-    ```[✓]``` PDO / ODBC:  (ODBC and DB2 Functions) 
-    ```[✓]``` PDO / PgSQL:   (PostgreSQL Functions) 
+    ```[ ]``` PDO / DBLib:   (Microsoft SQL Server and Sybase Functions)  
+    ```[ ]``` PDO / ODBC:  (ODBC and DB2 Functions) 
+    ```[ ]``` PDO / PgSQL:   (PostgreSQL Functions) 
     ```[✓]``` PHAR:  (Phar functions) 
-    ```[✓]``` PostgreSQL:  (PostgreSQL functions) 
-    ```[✓]``` Pspell:  (Pspell Functions) 
+    ```[ ]``` PostgreSQL:  (PostgreSQL functions) 
+    ```[ ]``` Pspell:  (Pspell Functions) 
     ```[✓]``` Redis:   (Extension for Interfacing with Redis Server)  
     ```[✓]``` SOAP:  (SOAP Functions) 
     ```...``` Sockets:  N/A 
@@ -451,23 +451,38 @@
     ```...``` ZIP (PHP-4.4.x):  N/A 
     ```[✓]``` Tidy:  (Tidy Functions) 
     ```...``` Translit: N/A 
-    ```[✓]``` WDDX:  (WDDX (Web Distributed Data Exchange) Functions) 
+    ```[ ]``` WDDX:  (WDDX (Web Distributed Data Exchange) Functions) 
     ```[✓]``` XML-RPC:   (XML-RPC Functions)  
-    ```[✓]``` XSL:   (XSL functions)  
+    ```[ ]``` XSL:   (XSL functions)  
     ```...``` XSLT: N/A
 
     **[muuda]()** **[sulge aken]()**
 
-- title:
+- title: Apache direktiiviblokid domeenile http://kristjanjansen.ee
   id: settings_change_apache
   body: |
     
-    **[muuda]()** **[sulge aken]()**
+    > Siin on võimalik Apache veebiserveri konfiguratsioonis muuta direktiive (konfiguratsiooni seadistusi), mille jaoks haldusliideses eraldi seadistusnuppu pole. Sisestada on võimalik praktiliselt kõiki enamlevinuid direktiive.
+    Arvestada tuleb järgmiste nüanssidega:
+    * **NB!** Siit lisatud direktiivid EI JÕUSTU momentaalselt peale sisestamist vaid 10-15 minuti pärast. Seega kui tungivat vajadust pole, soovitame direktiivid (nt. **Rewrite reeglid, Order/Deny piirangud, Options** jne.) sisestada hoopis .htaccess faili.
+    * Direktiive on võimalik sisestada blokkide kaupa. See võimaldab grupeerida mitme(kümne)st direktiivist moodustuva "funktsiooni" kokku üheks blokiks ning hiljem saab neid blokke siit samast korraga aktiveerida, deaktiveerida või kustutada.
+    * Kõik aktiveeritud blokid lisatakse veebiserveri konfiguratsioonifaili domeeni www.kristjanjansen.ee **<VirtualHost> ... </VirtualHost>** direktiivide vahele (virtual host scope) täpselt samas järjekorras nagu neid all kuvatavas nimekirjas näidatakse. Sellega saab arvestada näiteks teatud tüüpi **Rewrite** reeglite lisamisel.
+    * Sisestatud bloki süntaks kontrollitakse enne lisamist/muutmist alati automaatselt üle. Seega kui oletegi sisestamisel teinud juhuslikult mõne näpuvea, antakse sellest koheselt teada.
+    * **NB!** Veebiserveri seadistamine direktiividega eeldab keskmisest arvutikasutajast tunduvalt rohkem teadmisi. Seda nii veebi kui ka konkreetselt [Apache]() veebiserveri tööpõhimõtete, direktiivide ning nende mõju kohta erinevates skoopides (tegevusraadiustes)!
+    **NB! Vigaste või läbimõtlemata direktiivide sisestamine võib suure tõenäosusega halvata teie domeeni töö!**
+    
+    ## Lisatud blokid
+
+    Direktiiviblokke kokku 0/5
+
+    **[lisa direktiiviblokk]()**
 
 - title:
   id: settings_change_ftp
   body: |
-  
+    
+    ~~Sama mis Virtuaalserver › Seaded › Muuda FTP kasutajat~~
+
     **[muuda]()** **[sulge aken]()**
 
 - title: FTP konto muutmine
@@ -773,6 +788,95 @@
     ```__________```.kristjanjansen.ee **[Lisa]()**
 
     ## Kasutusel olevad E-posti aadressid
+
+- title: Domeeni kristjanjansen.ee e-posti aliased
+  id: emailaliases
+  body: |
+  
+    Sellel lehel saad lihtsalt ja kiiresti ise luua oma serveri e-posti aliaseid, täites vaid allpoololeva lahtri ning vajutades nupule "lisa uus alias".
+    E-Posti alias võimaldab ühele e-posti kontole suunata mitu erinevat e-posti aadressi.
+
+    ```[__________]```@kristjanjansen.ee **[lisa]()**
+
+    > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
+    Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
+    Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+
+    ## Kasutusel olevad e-posti aadressid
+
+    Kokku 1 e-posti alias(t)
+
+    ```[E-posti aadressi otsing]``` **[otsi]()**
+
+    || Aadress/kasutajanimi |Näita ```[20 kaupa ▾]```|
+    |---|---|---|
+    |**[‹]()** **[›]()**|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
+    |&nbsp;|&nbsp;|Lehekülgi (1)|
+
+- title: Domeeni kristjanjansen.ee postiloendid
+  id: emaillists
+  body: |
+  
+    Postiloend (meilinglist) on e-posti aadresside haldur, mille eesmärgiks on pakkuda automaatset loendiga liitumise ja sealt lahkumise teenust ning toimetada kirju kohale loendi liikmetele.
+    Sisuliselt on postiloend võrreldav tavalise e-posti aadressiga, mis on edasi suunatud mitmetele üksikutele aadressidele. Vahe on vaid selles, et postiloendit juhib automaatne programm, mis lisaks kirjade toimetamisele loendi liikmeteni võimaldab automaatset loendiga liitumist ja sealt lahkumist. Piisab vaid kirja saatmisest loendi käsuaadressile.
+    Iga loendi juurde kuulub alati 4 käsuaadressi. Oletame, et meil on loodud postiloend **uudiskiri@kristjanjansen.ee**. Seljuhul aktiveeritakse ka järgmised 4 käsuaadressi:
+    * **uudiskiri-owner@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis toimetatakse saadetud kiri (privaatselt) otse loendi omaniku aadressile (või olenevalt listi seadistusest ignoreeritakse või lükatakse saatjale tagasi)
+    * **uudiskiri-subscribe@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis lisab programm saatja aadressi automaatselt loendi liikmete nimekirja.
+    * **uudiskiri-unsubscribe@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis kustutab programm saatja aadressi automaatselt loendi liikmete nimekirjast.
+    * **uudiskiri-confirm@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Kui loendi seadistustes on aktiveeritud seadistus E-posti kinnitus, siis tuleb loendiga liituda või lahkuja soovijal pärast liitumis- või lahkumissoovi avaldamist ka oma soov kinnitada vastates loendi programmi poolt saadetud kirjale. Kinnitussoovid võetaksegi sellel aadressil vastu.
+    * **uudiskiri-bounces@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Sellele aadressile põrkavad tagasi loendi poolt mittetoimivatele aadressidele saadetud kirjad. Põrkamine võib esineda näiteks juhul, kui inimene lisab oma aadressi postiloendi liikmete nimekirja, kuid mõne aja pärast see aadress mingil põhjusel enam ei tööta (näiteks aadress on kustutatud). Loendi programm oskab ise automaatselt vastava aadressi liikmete nimekirjast kustutada. Programm ei eemalda aadressi nimekirjast kohe, vaid alles siis, kui vastavalt aadressilt on hakanud regulaarselt kirju tagasi põrkama.
+    **Tähelepanu! Postiloendit on võimalik kustutada, kui selle loomisest on möödunud 7 päeva.**
+
+    ## Lisa uus postiloend
+
+    ```[__________]```@kristjanjansen.ee **[lisa]()**
+
+    > Postiloendi (põhi)aadress, kuhu saadetud kirjad toimetatakse laiali loendi liikmetele.
+    Iga loendi juurde kuulub alati 4 käsuaadressi. Oletame, et meil on loodud postiloend **uudiskiri@kristjanjansen.ee**. Seljuhul aktiveeritakse ka järgmised 4 käsuaadressi:
+    * **uudiskiri-owner@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis toimetatakse saadetud kiri (privaatselt) otse loendi omaniku aadressile (või olenevalt listi seadistusest ignoreeritakse või lükatakse saatjale tagasi)
+    * **uudiskiri-subscribe@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis lisab programm saatja aadressi automaatselt loendi liikmete nimekirja.
+    * **uudiskiri-unsubscribe@kristjanjansen.ee** - Kui saata kiri sellele aadressile, siis kustutab programm saatja aadressi automaatselt loendi liikmete nimekirjast.
+    * **uudiskiri-confirm@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Kui loendi seadistustes on aktiveeritud seadistus E-posti kinnitus, siis tuleb loendiga liituda või lahkuja soovijal pärast liitumis- või lahkumissoovi avaldamist ka oma soov kinnitada vastates loendi programmi poolt saadetud kirjale. Kinnitussoovid võetaksegi sellel aadressil vastu.
+    * **uudiskiri-bounces@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Sellele aadressile põrkavad tagasi loendi poolt mittetoimivatele aadressidele saadetud kirjad. Põrkamine võib esineda näiteks juhul, kui inimene lisab oma aadressi postiloendi liikmete nimekirja, kuid mõne aja pärast see aadress mingil põhjusel enam ei tööta (näiteks aadress on kustutatud). Loendi programm oskab ise automaatselt vastava aadressi liikmete nimekirjast kustutada. Programm ei eemalda aadressi nimekirjast kohe, vaid alles siis, kui vastavalt aadressilt on hakanud regulaarselt kirju tagasi põrkama.
+
+- title: Domeeni kristjanjansen.ee väärposti suunamine
+  id: emailredirect
+  body: |
+    
+    Täites allolevas tabelis "Väärposti suunamine aktiveeritud" valikukasti linnukesega, aktiveerite väärposti suunamise Teie poolt valitud e-posti aadressile.
+    Juhul, kui väärposti suunamine on aktiveeritud, suunatakse kõik selliseid kirjad, mis on saatja poolt edastatud Teie virtuaalserveris mitteeksisteerivale aadressile, hoopiski aadressile, mille olete ära määranud kastikeses "Aadress, kuhu suunata".
+    Näiteks kui Teie virtuaalserveris on ainult kaks e-posti kontot, info@domeen.ee ja abi@domeen.ee ning kui keegi üritab saata e-kirja olematule aadressile, näiteks nimi@domeen.ee, siis edastatakse see kiri hoopiski aadressile info@domeen.ee juhul, kui olete väärposti juuresolevatel väljadel nimetatud aadressile ära suunanud.
+
+    Aktiveeritud:  ```( )``` JAH ```(●)``` EI
+
+    Aadress, kuhu suunata: ```[__________]```
+
+    > Sellega saab määrata, kas väärposti suunamine on aktiivne või mitte.
+
+    ```[ ]``` Põrkamine aktiveeritud
+
+    > Juhul kui väärposti suunamine on aktiveeritud, saab aktiveerida ka kirjade põrkamise funktsiooni. Ehk et väärale aadressile saadetud kiri suunatakse automaatselt määratud aadressile edasi ning samas põrgatatakse saatjale veateatega tagasi.
+    Kui veateadet pole sisestatud, saadetakse süsteemne vaikimisi olev teade, et kasutajat ei eksisteeri
+
+    Aadress, kuhu suunata: ```[__________]```
+
+    **[muuda]()**
+
+- title: Domeeni kristjanjansen.ee antiviirus
+  id: emailvirus
+  body: |
+
+- title: Domeeni kristjanjansen.ee antiviirus
+  id: emailvirus
+  body: |
+
+- title: Domeeni kristjanjansen.ee rämpspostifiltri seadistamine
+  id: emailspam
+  body: |
+
+- title: ...
+  id: emaildkim
+  body: |
 
 - title: Pilveserverid
   id: cloud

@@ -76,11 +76,17 @@
         - title: E-posti aadressid
           id: emailaccounts
         - title: E-posti aliased
+          id: emailaliases
         - title: Postiloendid
+          id: emaillists
         - title: Väärposti suunamine
+          id: emailredirect
         - title: Viirusetõrje
+          id: emailvirus
         - title: Rämpspostifilter
+          id: emailspam
         - title: DKIM / SPF / DMARC 
+          id: emaildkim
     - title: Statistika ja andmemaht
       items:
         - title: Statistika
