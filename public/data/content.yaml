@@ -1174,6 +1174,45 @@
     Event - Event_priv
     References - References_priv
 
+
+- title: MySQL kasutaja lisamine
+  id: mysql_edit
+  body: |
+
+    Kasutajanimi: ```d59087_[__________]``` 
+
+    > Uuele MySQL konto kasutajanimele saab määrata vabalt valitud sufiksi. Määramata sufiksi puhul genereeritakse kogu nimi automaatselt.
+
+    Kommentaar: 
+    ```
+
+    ```
+    
+    > Kommentaar on abistav lühikirjeldus, mis peaks aitama meeles pidada kasutajanime otstarvet.
+    
+    Hostid: 
+    ```[✓]```WebServer (WS)
+    ```[✓]```phpMyAdmin (PMA)
+
+    Välised hostid: 
+    ```
+
+    ```
+
+    > **WS** - MySQL kasutaja tohib ühendust luua veebiserverist
+    **PMA** - MySQL kasutaja tohib ühendust luua phpMyAdminnist
+    **Välised hostid** on (komadega/tühikutega eraldatud) IP aadresside nimekiri, **MILLELT** käesoleval kasutajal on õigus luua ühendusi MySQL serveriga
+    Aadresside nimekiri tohib sisaldada vaid IPv4 formaadis täispikki aadresse (netmask-i või wildcard-i alusel IP-sid lisada ei saa!).
+    **NB!** Väliste hostide muudatused jõustuvad **10 minuti** jooksul!
+
+    Sisesta salasõna: ```[__________]```
+
+    Salasõna peab sisaldama väikseid ja suuri tähti ning numbreid
+    
+    » uuesti: ```[__________]```
+
+    **[lisa]()** **[sulge aken]()**
+
 - title: PhpMyAdmin
   id: phpmyadmin
   body: |

@@ -111,6 +111,8 @@
       items:
         - title: MYSQL
           id: mysql
+        - title: MYSQL → Muuda
+          id: mysql_edit
         - title: phpMyAdmin
           id: phpmyadmin
         - title: Redis
