@@ -789,6 +789,10 @@
 
     ## Kasutusel olevad E-posti aadressid
 
+- title: E-posti konto lisamine PUUDU
+  id: emailaccounts_add
+  body: |
+
 - title: Domeeni kristjanjansen.ee e-posti aliased
   id: emailaliases
   body: |
@@ -812,6 +816,10 @@
     |---|---|---|
     |**[‹]()** **[›]()**|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
     |&nbsp;|&nbsp;|Lehekülgi (1)|
+
+- title: E-posti konto lisamine PUUDU
+  id: emailaliases_edit
+  body: |
 
 - title: Domeeni kristjanjansen.ee postiloendid
   id: emaillists
@@ -839,6 +847,10 @@
     * **uudiskiri-confirm@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Kui loendi seadistustes on aktiveeritud seadistus E-posti kinnitus, siis tuleb loendiga liituda või lahkuja soovijal pärast liitumis- või lahkumissoovi avaldamist ka oma soov kinnitada vastates loendi programmi poolt saadetud kirjale. Kinnitussoovid võetaksegi sellel aadressil vastu.
     * **uudiskiri-bounces@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Sellele aadressile põrkavad tagasi loendi poolt mittetoimivatele aadressidele saadetud kirjad. Põrkamine võib esineda näiteks juhul, kui inimene lisab oma aadressi postiloendi liikmete nimekirja, kuid mõne aja pärast see aadress mingil põhjusel enam ei tööta (näiteks aadress on kustutatud). Loendi programm oskab ise automaatselt vastava aadressi liikmete nimekirjast kustutada. Programm ei eemalda aadressi nimekirjast kohe, vaid alles siis, kui vastavalt aadressilt on hakanud regulaarselt kirju tagasi põrkama.
 
+- title: Domeeni kristjanjansen.ee postiloendid PUUDU
+  id: emaillists_edit
+  body: |
+
 - title: Domeeni kristjanjansen.ee väärposti suunamine
   id: emailredirect
   body: |
@@ -865,18 +877,242 @@
 - title: Domeeni kristjanjansen.ee antiviirus
   id: emailvirus
   body: |
+    
+    Siin saab e-posti viirusetõrjet aktiveerida ja deaktiveerida. Ühtlasi on võimalik määrata viirusetõrje tegevus viiruse eduka avastamise korral.
 
-- title: Domeeni kristjanjansen.ee antiviirus
-  id: emailvirus
-  body: |
+    Aktiveeritud: ```(●)``` JAH ```( )``` EI
+
+    > Siit saate aktiveerida või deaktiveerida antiviiruse oma e-postile.
+
+    Viiruse avastamisel: ```Blokeeri kiri ja teavita adressaati ▾]```
+
+    > Käesolev säte võimaldab määrata, mida tehakse siis, kui sissetulevas e-kirjas avastatakse viirus.
 
 - title: Domeeni kristjanjansen.ee rämpspostifiltri seadistamine
   id: emailspam
+  body: |
+  
+    Rämpspostifilter SpamAssassin võimaldab märgistada või blokeerida sissetulevas e-postivoos kirju, mille sisus on viiteid sellele, et tegu võib olla rämpspostiga.
+    Rämpsposti filtrit on võimalik seadistada erinevatele rangusastmetele. Mida madalam on rangusastet tähistav punktide arv, seda karmimalt suhtub SpamAssassin sissetulevatesse kirjadesse.
+    **Kui te määrate rämpsuks tunnistamise kriteeriumiks 3 punkti saamise filtrilt, on rämpspostifilter häälestatud rangeks. Keskmine raskusaste on 5-10 punkti. 10 punktist ülespoole võib filtrit lugeda suhteliselt leebeks.**
+    Täpsemalt on SpamAssassini testide kohta võimalik lugeda aadressilt http://www.spamassassin.org/tests.html .
+    **NB! Kuna SpamAssassin on kolmanda osapoole toode, siis ei vastuta "Zone Media" selle eest, millised kirjad spämmiks märgistatakse.**
+
+    **Rämpsposti kontroll aktiveeritud: JAH**
+    
+    Rämpsposti märge: **[[[SPAM]]]**
+
+    > Sellega saab määrata, milline märge lisatakse kirja pealkirjale, mille punktide arv saab täis. Selle järgi on lihtne teha mailiklienti reeglit, et see kiri automaatselt SPAM kataloogi liigutataks.
+    Märke sees võib kasutada muutujat **%hits%**, mis asendatakse punktide arvuga, mida kiri sai
+    Näiteks:
+    [[[SPAM]]] (%hits%)
+    
+    Rämpsuks liigitamise punktide arv: **5** 
+    
+    > Siin saab määrata punktide arvu, alates millest loetakse kirja rämpspostiks. Mida madalam on raskusastet tähistav punktide arv, seda rangemalt suhtub SpamAssassin sissetulevatesse kirjadesse.
+    Kui te määrate rämpsuks liigitamise kriteeriumiks 3 punkti, on rämpspostifilter häälestatud rangeks. Keskmine raskusaste on 5-10 punkti, 10 punktist ülespoole võib filtrit lugeda leebeks.
+
+    Blokeerimiseks vajalik punktide arv: **-**
+
+    > Millisest punktide arvust alates kirja enam teile edasi ei saadeta vaid blokeeritakse. See on suhteliselt riskantne seadistus, sest rämpspostifilter ei pruugi alati 100% adekvaatsusega posti filtreerida. Soovitatav on kasutada oma lokaalse e-posti kliendi filtreid ning jätta see parameeter kas määramata või sisestada lahtrisse punktide arvuks 0.
+      Juhul kui siiski otsustate selle seadistuse kasuks, tuleks siia määrata suurem number, kui on seadistuses "**Rämpsuks liigitamise punktide arv**:"
+
+- title: Rämpsposti filtri seadistused
+  id: emailspam_edit
+  body: |
+
+    Järgnevad seadistused mõjuvad
+    kogu domeeni kristjanjansen.ee e-posti aadressidele
+
+    Rämpsposti kontroll aktiveeritud: ```(●)``` JAH ```( )``` EI
+
+    Rämpsposti märge:  ```[__________]```
+    vaikimisi väärtus: [[[SPAM]]]
+
+    > Sellega saab määrata, milline märge lisatakse kirja pealkirjale, mille punktide arv saab täis. Selle järgi on lihtne teha mailiklienti reeglit, et see kiri automaatselt SPAM kataloogi liigutataks.
+    Märke sees võib kasutada muutujat **%hits%**, mis asendatakse punktide arvuga, mida kiri sai
+    Näiteks:
+    [[[SPAM]]] (%hits%)
+
+    Rämpsuks liigitamise punktide arv:  ```[__________]```
+    vaikimisi väärtus: 5
+
+    > Siin saab määrata punktide arvu, alates millest loetakse kirja rämpspostiks. Mida madalam on raskusastet tähistav punktide arv, seda rangemalt suhtub SpamAssassin sissetulevatesse kirjadesse.
+    Kui te määrate rämpsuks liigitamise kriteeriumiks 3 punkti, on rämpspostifilter häälestatud rangeks. Keskmine raskusaste on 5-10 punkti, 10 punktist ülespoole võib filtrit lugeda leebeks.
+
+    Blokeerimiseks vajalik punktide arv: ```[__________]```
+    NB! loe enne kindlasti [siit]() vaikimisi väärtus: -
+
+    > Millisest punktide arvust alates kirja enam teile edasi ei saadeta vaid blokeeritakse. See on suhteliselt riskantne seadistus, sest rämpspostifilter ei pruugi alati 100% adekvaatsusega posti filtreerida. Soovitatav on kasutada oma lokaalse e-posti kliendi filtreid ning jätta see parameeter kas määramata või sisestada lahtrisse punktide arvuks 0.
+      Juhul kui siiski otsustate selle seadistuse kasuks, tuleks siia määrata suurem number, kui on seadistuses "**Rämpsuks liigitamise punktide arv**:"
+
+    **[muuda]()**
+
+    ---
+
+    Järgnev nimekiri on mõeldud kirja FROM ja SUBJECT väljade järgi filtreerimiseks. Rohelise taustaga filtrid tunnistavad kirja kindlasti mitte rämpsuks või lahutavad tema rämpsuastmelt punkte. Punase ja kollase taustaga filtrid tunnistavad kirja kindlasti rämpsuks või lisavad tema rämpsuastmele teatud hulga punkte. Filtreid käivitatakse selles järjekorras nagu neid all nimekirjas kuvatakse. Nimekirja kasti kõrval on kaks nuppu  , millega filtreid üles alla liigutades saab nende prioriteete võrreldes teistega muuta.
+
+    ```[]``` Pole kindlasti rämps. Kiri tuleb rämpsufiltritest muutmata kujul läbi.
+    ```[]``` Ehk ei ole rämps. Kirja rämpsuastmelt lahutatakse punkte ning kõige lõpus vaadatakse, kas on rämps või mitte.
+    ```[]``` Kustutatav rämps. Filtri rakendumisel kiri kustutakse koheselt ning teie postkasti ta ei jõua.
+    ```[]``` Ehk on rämps. Kirja rämpsuastmele lisatakse punkte ning kõige lõpus vaadatakse, kas on rämps või mitte.
+    ```[]``` Kindel rämps. Kiri tunnistatakse koheselt rämpsuks ning ta jõuab teie postkasti, kus te saate ta lokaalse e-posti kliendiga välja filtreerida.
+
+    # Praeguste filtrite nimekiri
+
+    ```
+
+
+    ```
+    **[kustuta]()** **[↑]()** **[↓]()** 
+
+- title: Filtri lisamine PUUDU
+  id: emailspam_edit_add
   body: |
 
 - title: ...
   id: emaildkim
   body: |
+  
+    # ◌ DKIM
+
+    DKIM (DomainKeys Identified Mail) lisab saadetavale e-postile digitempli mis kinnitab, et serveril on õigus selle domeeni nimel e-posti saata. DKIM aktiveerimisel lisatakse nimeserverisse digitempli kontrollimist võimaldav kirje ning seadistatakse meie väljuva e-posti ehk SMTP serverid digitemplit lisama.
+    Pakett I puhul rakendub DKIM digitempel kirjadele, mis saadetkase kasutades veebimaili või Zone SMTP serverit kasutama seadistatud e-posti tarkvarast, pakettide II ja III puhul ka Zone veebiserveritest saadetavatele kirjadele. Soovides lisada DKIM tuge mujalt saadetavale e-postile (nt MailChimp) tuleb vastav TXT-kirje seadistada käsitsi vastavalt teenusepakkuja juhenditele. Voog sisuhaldus hetkel DKIM'i ei toeta.
+
+    **[Aktiveeri]()**
+
+    ---
+
+    # ◌ SPF
+
+    SPF (Sender Policy Framework) määrab ära serverid, millel on lubatud selle domeeni e-posti saata. SPF aktiveerimisel lisatakse nimeserverisse kirje, mis lubab e-posti saatmise kõigilt meie võrgus olevatelt serveritelt, sh. väljuva e-posti ehk SMTP, veebimaili, postilistide ja veebiserverid. Samuti on vaikimisi lubatud e-posti saatmine kõigist domeeni A või MX kirjet omavatest serveritest. Muudest serveritest (nt MailChimp, raamatupidamistarkvara) e-posti saatmine ei ole välistatud, vajadusel on võimalik need käsitsi TXT-kirjele lisada vastavalt teenusepakkuja juhenditele.
+
+    **[Aktiveeri]()**
+
+    ---
+
+    # ◌ DMARC
+
+    DMARC (Domain-based Message Authentication, Reporting & Conformance) annab vastuvõtvale e-postiserverile teada, et domeeni puhul on kasutusel SPF ja/või DKIM ning määrab soovitava käitumise: vastuvõtmisest keeldumine või spämmiks märkimine. Täiendavalt on võimalik määrata teavitamine, mis võimaldab olla teadlik domeeni nimel saadetavast spämmist ja õngitsemiskirjadest. DMARC aktiveerimisel lisatav TXT-kirje viitab SPF ja/või DKIM kasutamisele, aga ei sätesta nende kohustuslikkust - soovi korral saate kirjet käsitsi peenhäälestada.
+
+    **DMARCi aktiveerimiseks on vaja kas SPF või DKIM olemasolu**
+
+- title: Stats
+  id: stats
+  body: |
+  
+    ## Hits (Pöördumisi)
+
+    Kõik päringud, mis kajastuvad kirjena serveri logifailides, loetakse “hitiks”. Selliseks Päringuks võib olla ükskõik mis, html lehekülg, pilt, helifail, CGI programm jne. 
+    See number näitab kõikide päringute, mis serverile määratud ajaperioodi jooksul on tehtud, koguarvu.  
+
+    ## Files (Faile)
+
+    Serverile esitatud päringud, mis nõuavad mingite materjalide ( html lehekülg, pilt, helifail jne.) päringu esitajale tagasi saatmist, kajastuvad käesolevas muutujas. Suhet “Hits” ja “Files” muutujate vahel võiks nimetada ka nii, et esimene kajastab sissetulevaid päringuid ning teine päringutele vastuseks saadetavaid materjale.  
+
+    ## Pages (Lehekülgi)
+
+    "Page" ehk lehekülg on HTML dokument või programm, mille väljundina tekib HTML dokument . Selle hulka ei loeta materjale, mis moodustavad dokumendi, dokumendi osadeks võivad olla pildid, helifailid, videofilmid jms. “Pages” muutuja kajastab ainult päritud lehekülgi, ega sisalda lehekülge moodustavate objektide arvu.
+    Osa teisi statistikaprogramme käsitleb seda muutujat kui "Pageviews". 
+
+    ## Sites (Arvuteid)
+
+    Iga päring, mis serveri suunal tehakse pärineb unikaalsest masinast ehk "saidist".
+    "Sites" muutuja näitab, kui paljudelt unikaalsetelt IP aadressidelt on serverile määratud ajavahemiku jooksul päringuid tehtud. See EI TÄHENDA unikaalsete külastajate arvu, mida on võimatu logifailide ja HTTP protokolli vahendusel kindlaks teha. 
+
+    ## Visits (Külastusi)
+
+    Kui serverile tehakse päring unikaalsest masinast, siis arvestatakse välja aeg, mis on kulunud eelmise päringu sooritamisest samast masinast. Juhul, kui see ajavahemik ületab varem kindlaks määratud külastuse aegumisaja, loetakse seda päringut uueks külastuseks ehk "visit" –iks. 
+
+    ## KBytes
+
+    KBytes (kilobaiti) muutuja näitab kui palju andmeid on server väljastanud määratud ajavahemiku jooksul. Seda väärtust nimetame andmeedastusmahuks ning see arvestatakse välja otse logifailidest. 
+    Märkus: 1 Kilobait = 1024 baiti
+
+    Domeen/alamdomeen ```[kristjanjansen.ee ▾]```
+
+- title: Avalik statistika
+  id: publicstats
+  body: |
+
+    Käesoleval lehel saate ära määrata selle, kas Teie virtuaalserveri statistika on kõigile veebikülastajatele avalik või mitte.
+    Teie virtuaalserveri statistika kuvamisel on kolm olekut:
+    1) avalik;
+    2) avalik läbi autoriseerimise;
+    3) piiratud ehk vaid läbi administreerimispaneeli Teile nähtav.
+
+    Domeen/alamdomeen ```[kristjanjansen.ee ▾]```
+
+    ## HTTP
+
+    Avalik: **EI**  
+
+    > Siit saate määrata, kas domeeni statistika on avalik või mitte.
+
+    URL: [http://kristjanjansen.ee/stats]()
+    
+    > Siit võite seadistada aadressi, millelt domeeni statistika on nähtav.
+
+    Salasõnaga kaitstud: **EI**
+
+    > Siin on võimalik seadistada, kas statistika salasõnaga kaitsmine on aktiivne või mitte.
+
+    **[muuda]()** ~~Suunatakse Seaded → Muuda → Statistika~~
+
+- title: Webalizer
+  id: webalizer
+  body: |
+
+    Webalizer on tõhus statistikaprogramm, mis registreerib Teie virtuaalserveri külastusi ning genereerib neist erinevate statistiliste näitajate kogumi. Siin lehel saate seadistada oma virtuaalserveri Webalizeri iseärasusi, näiteks määrata erinevate statistiliste näitajate pingeridade pikkust, statistika esitlemise keele ning statistikasse genereeritavate failide tüüpe. 
+
+    Üksikasjalikumat infot Webalizeri kohta leiate siit: [ftp://ftp.mrunix.net/pub/webalizer/README]()
+
+    Domeen/alamdomeen ```[kristjanjansen.ee ▾]```
+
+    Keel: **Inglise keel**
+
+    > Keel, milles näidatakse Webalizeri statistikat.
+
+    PageType: **php cgi htm**
+    
+    > PageType-ga saab määrata, milliseid lehti loetakse "Lehtedeks". Kõik tüübid tuleb eraldada tühikutega.
+    Näiteks: php* cgi htm*
+
+    VisitTimeout: **3000** 
+
+    > VisitTimeout-ga saab panna aja, mille jooksul loetakse "Külastust" (mõnikord kutsutakse sessiooniks). Väärtus tuleb määrata sekundites.
+    Näiteks: 3000
+
+    HideURL:  __*.gif *.GIF *.jpg *.JPG *.png *.PNG *.ra__
+
+    > HideURL-ga saab määdata, milliseid faile ei näidata statistikas. Kõik failid tuleb eraldada tühikuga ja võib kasutada tärni.
+    Näiteks: *.gif *.GIF *.jpg *.JPG *.png *.PNG *.ra
+
+    HideUser: **-**
+
+    > HideUser-ga saab määrata milliseid kasutajaid ei näidata statistikas. Eraldada tuleb tühikuga.
+    Näiteks: admin root
+
+    **[muuda]()** ~~Suunatakse Seaded → Muuda → Webalizer~~
+
+- title: Kasutatud andmesidemaht
+  id: bandwidth
+  body: |
+
+    Käesoleval lehel võite näha, palju käesolev domeen ja selle alamdomeenid teatud perioodil oma andmesidemahtu on kasutanud.
+
+    Ajavahemik: ```[August/2016 ▾]```
+
+    > Vali listist aasta ja kuu, mille kohta andmesidemahtu kuvatakse.
+    
+    |Virtuaalhost| Keskm. päevas|Kokku|
+    |---|---|---|
+    |kristjanjansen.ee (http)|61.15 KiB|1.67 MiB|
+    |Kokku:|**61.15 KiB**|**1.67 MiB**|
+
+    Kuna perioodi näol tegemist on jooksva kuuga, siis **kogu kasutatud andmemaht kuus** on hetkel poolik. Seda saab aga prognoosida päeva keskmise järgi. Selleks tuleb päevade arv jooksvas kuus korrutada keskmise andmemahuga päevas ning selle arvu järgi võib umbes prognoosida kogu kuu andmemahtu (juhul kui päeva keskmine kardinaalselt muutuma ei kipu). Allpool ongi hetke päeva keskmisega tehe ning tulemus kirjas.
+
+    **31 päeva x 61.15 KiB = 1.85 MiB**
 
 - title: Pilveserverid
   id: cloud

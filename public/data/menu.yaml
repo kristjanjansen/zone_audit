@@ -75,24 +75,38 @@
       items:
         - title: E-posti aadressid
           id: emailaccounts
+        - title: E-posti aadressid → Muuda
+          PUUDU: emailaccounts_edit
         - title: E-posti aliased
           id: emailaliases
+        - title: E-posti aliased → Muuda
+          PUUDU: emailaliases_edit
         - title: Postiloendid
           id: emaillists
+        - title: Postiloendid → Muuda
+          PUUDU: emaillists_edit
         - title: Väärposti suunamine
           id: emailredirect
         - title: Viirusetõrje
           id: emailvirus
         - title: Rämpspostifilter
           id: emailspam
+        - title: Rämpspostifilter → Muuda
+          id: emailspam_edit
+        - title: Rämpspostifilter → Muuda → Lisa
+          PUUDU: emailspam_edit_add
         - title: DKIM / SPF / DMARC 
           id: emaildkim
     - title: Statistika ja andmemaht
       items:
         - title: Statistika
+          id: stats
         - title: Avalik statistika
+          id: publicstats
         - title: Webalizer
+          id: webalizer
         - title: Andmesidemaht
+          id: bandwidth
     - title: Andmebaasid
       items:
         - title: MYSQL

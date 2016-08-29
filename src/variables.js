@@ -56,7 +56,7 @@ var commentFonts = {
 }
 
 var lineHeights = _
-    .chain({ xs: 1, sm: 1.2, md: 1.4, lg: 1.6 })
+    .chain({ xs: 1, sm: 1.25, md: 1.5, lg: 1.75 })
     .mapKeys((value, key) => 'line-height-' + key)
     .mapValues((value, key) => (value * 100) + '%')
     .value()

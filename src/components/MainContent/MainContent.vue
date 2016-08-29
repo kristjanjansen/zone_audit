@@ -84,9 +84,9 @@
     }
     .MainContent__body blockquote {
         margin: 0;
-        padding-left: $padding-md;
-        border-left: 4px solid $gray;
+        font: $font-text-sm;
         opacity: $opacity-md;
+        line-height: $line-height-md;
     }
     .MainContent__body table {
         width: 100%;
