@@ -1387,6 +1387,140 @@
 
     **[lisa]()** **[sulge aken]()**
 
+- title: ...
+  id: mx
+  body: |
+    
+    # Domeeni kristjanjansen.ee nimeserveri MX kirjed
+    
+    ```(●)``` **Kasuta Zone Media e-posti serverit**
+
+    Vaikimisi kasutavad kõik meie kliendid Zone Media e-posti serveri teenust. Sel juhul peaks allpool olevas MX serverite listingus olema lisatud ka mõlemad Zone MX serverid:
+    - mx1.zone.eu (primary MX, preference 10)
+    - mx2.zone.eu (secondary MX, preference 20)
+
+    ```( )``` **Ma soovin kasutada ainult enda e-posti serverit**
+
+    Juhul, kui teil on endal e-posti server, tuleb selle aadress teil allpool MX kirjete listingusse sisestada. Kõik Zone Media MX serveritega seotud kirjed kustutage listingust ära, kuna nemad sel juhul e-posti enam vastu ei võta ning reageerivad saabunud kirjadele veateatega.
+    **NB!**Kui te kasutate oma e-posti serverit, siis Zone viirusetõrje ja rämpsposti filter teie e-posti kontodele enam ei rakendu !
+
+    ```( )``` **Ma soovin kasutada enda e-posti serverit ja Zone Media backup MX servereid**
+    
+    Juhul, kui teil on endal e-posti server, tuleb selle aadress teil allpool MX kirjete listingusse sisestada. Nüüd et Zone MX serverid saaksid backup MX teenust osutada, tuleb teil lisaks enda MX serverile ka Zone MX-id listingusse sisestada. Soovitavalt peaksid Zone MX-id olema suurema eelistusega kui teie enda server.
+    **NB!** Kui te kasutate oma e-posti serverit, siis Zone viirusetõrje ja rämpsposti filter teie e-posti kontodele enam ei rakendu !
+
+    **[muuda]()**
+
+    # ◌ Lisa uus MX kirje
+
+    MX hosti nimi: ```[__________]```
+
+    > Teie poolt lisatava MX serveri nimi.
+
+    Eelistus: ```[__________]```
+
+    > MX serveri eelistus.
+    MX serveri eelistuste puhul kehtib reegel - **mida väiksem on eelistust tähistav arv, seda prioriteetsem on server e-posti kohale toimetamisel.**
+    **Näide: Kui e-kirja toimetatakse kohale, siis proovitakse esimesena saata kiri serverisse, mille eelistus on 10 , kui see ei õnnestu, proovitakse serverit, mille eelistus on 10'st suurem (näiteks 20) , kui ka see ei õnnestu, proovitakse serverit, mille eelistus on 20'st suurem (näiteks 30) jne.**
+
+    ## MX kirjete nimekiri
+
+    |MX hosti nimi|Eelistus||
+    |---|---|---|
+    |mx1.zone.eu|10|**[muuda]()** **[x]()**|
+
+- title: MX kirjete muutmine
+  id: mx_edit
+  body: |
+  
+    **MX hosti nimi** Zone media MX: ```[mx.zone.eu ▾]```
+
+    > Zone MX serverid.
+
+    **või**
+
+    ** Teie MX ```[__________]```
+
+    (juhul, kui soovite kasutada Zone Media mailiserverit, ärge siia lahtrisse midagi sisestage, vaid valige Zone mailiserver ülemisest nimekirjast)
+
+    > Teie poolt lisatava MX serveri nimi.
+
+    Eelistus ```[10________]```
+
+    > MX serveri eelistus.
+    MX serveri eelistuste puhul kehtib reegel - mida väiksem on eelistust tähistav arv, seda prioriteetsem on server e-posti kohale toimetamisel.
+    **Näide: Kui e-kirja toimetatakse kohale, siis proovitakse esimesena saata kiri serverisse, mille eelistus on 10 , kui see ei õnnestu, proovitakse serverit, mille eelistus on 10'st suurem (näiteks 20) , kui ka see ei õnnestu, proovitakse serverit, mille eelistus on 20'st suurem (näiteks 30) jne.**
+
+- title: ...
+  id: txt
+  body: |
+
+    Siin saate muuta nimeserveri TXT kirjeid
+    
+    # ◌ Lisa uus TXT kirje
+    
+    Host: ```[__________]```.kristjanjansen.ee
+
+    > ?
+
+    Sisu: ```[__________]```
+
+    > ?
+
+    **[lisa uus kirje]()**
+
+- title: Muuda TXT kirjet
+  id: txt_edit
+  body: |
+    
+    Host: ```[__________]```.kristjanjansen.ee
+
+    > ?
+
+    Sisu: ```[__________]```
+
+    > ?
+
+    **[muuda]()** **[sulge aken]()**
+
+- title: ...
+  id: srv
+  body: |
+
+    Siin saate muuta nimeserveri SRV kirjeid
+    
+    # ◌ Lisa uus SRV kirje
+    
+    Alias: ```[__________]```.kristjanjansen.ee
+
+    Port: ```[__________]```
+
+    Target: ```[__________]```
+
+    **[lisa uus kirje]()**
+
+    ## SRV kirjete nimekiri
+    
+    |Host|||
+    |---|---|---|   
+    |_autodiscover._tcp.kristjanjansen.ee|0 0 443 webmail.zone.ee|**[muuda]()** **[x]()**| 
+
+- title: Muuda SRV kirjet
+  id: srv_edit
+  body: |
+    
+    Host: **_autodiscover._tcp.kristjanjansen.ee**
+
+    Priority: ```[0_________]```
+
+    Weight: ```[0_________]```
+
+    Port: ```[443_______]```
+
+    Target: ```[webmail.zone.ee]```
+
+    **[muuda]()** **[sulge aken]()**
+
 - title: Pilveserverid
   id: cloud
   body: |

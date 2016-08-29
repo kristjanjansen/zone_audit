@@ -130,8 +130,17 @@
         - title: CNAME / Canonical name → Muuda
           id: cname_edit
         - title: MX / Mail eXchanger
+          id: mx
+        - title: MX / Mail eXchanger → Muuda
+          id: mx_edit
         - title: TXT
+          id: txt
+        - title: TXT → Muuda
+          id: txt_edit
         - title: SRV
+          id: srv
+        - title: SRV → Muuda
+          id: srv_edit
     - title: Logid
       items:
         - title: Apache access_log
