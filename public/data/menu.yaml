@@ -112,7 +112,9 @@
         - title: MYSQL
           id: mysql
         - title: phpMyAdmin
+          id: phpmyadmin
         - title: Redis
+          id: redis
     - title: Nimeserver
       items:
         - title: Tsoonifail

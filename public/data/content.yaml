@@ -1173,7 +1173,40 @@
     Trigger - Trigger_priv
     Event - Event_priv
     References - References_priv
+
+- title: PhpMyAdmin
+  id: phpmyadmin
+  body: |
+
+    PhpMyAdmin on programm, millega Te saate administreerida oma MySQL baasi. phpMyAdmini saab kasutada nii eesti, vene kui ka inglise keeles.
+
+    **[vajuta siia et avada phpMyAdmin link uues aknas ◌]()**
+
+- title: Redise andmebaas
+  id: redis
+  body: |
+  
+    Redis on mälus asuv andmestruktuur, mida on võimalik kasutada puhvri, andmebaasi või sõnumite vahendajana. Meie praegune Redise implementatsioon soosib selle kasutamist puhvrina, sest Redises töödeldavaid andmeid ei salvestata kettale.
+
+    # Staatus
+
+    **[käivitatud]()** **[taaskäivita ◌]()** 
+
+    # Ligipääsuandmed
+
+    IP aadress:
+    127.1.13.226
+    Port:
+    6379
     
+    ~~Numbrid kujundamata/kopeerimiseks ettevalmistamata~~
+
+    Salasõna:
+    ```[*****************]```
+    **[näita salasõna]()** **[genereeri uus]()**
+
+    ~~Puudub õhuvahe vormivälja ja nuppud vahel~~
+
 - title: Pilveserverid
   id: cloud
   body: |
