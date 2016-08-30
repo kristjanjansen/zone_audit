@@ -82,7 +82,7 @@
         - title: E-posti aadressid
           id: emailaccounts
         - title: E-posti aadressid → Muuda
-          PUUDU: emailaccounts_edit
+          id: emailaccounts_edit
         - title: E-posti aliased
           id: emailaliases
         - title: E-posti aliased → Muuda

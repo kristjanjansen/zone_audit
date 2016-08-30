@@ -879,9 +879,51 @@
 
     ## Kasutusel olevad E-posti aadressid
 
-- title: E-posti konto lisamine PUUDU
-  id: emailaccounts_add
+- title: E-posti konto lisamine
+  id: emailaccounts_edit
   body: |
+    
+    E-posti aadress: ```[______test3]@kristjanjansen.ee```   
+
+    > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
+    Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
+    Lokaalne osa võib sisaldada märke **a..z, 0..9**, punkti '**.**', sidekriipsu '**-**' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+
+    Kommentaar/nimi: ```[__________]```
+
+    > Kommentaar on e-posti aadressi juurde kuuluv informatiivne tekst või isiku nimi, kelle aadress see on.
+
+    Piirsuurus: ```[______1024] MiB(max. 12288 MiB)```
+
+    > Maksimaalne postkasti suurus.
+
+    Mail-To-HTTP URL: ```[__________]```
+
+    > ?    Mail-To-HTTP URL
+    Kui soovid, et kõik sellele aadressile tulnud kirjad edastataks domeeni kodulehele, siis sisesta siis täpne kodulehe skripti aadress (URL).
+    Kirja saabumisel tehakse sellele URL-ile POST päring ning pannakse kaasa massiiv **$mail_to_http[..]** järgmiste atribuutidega:
+    from (string) - Kirja saatja (SMTP protokolli MAIL FROM:<aadress>)
+    rcpt (string) - Kirja adressaat (SMTP protokolli RCPT TO:<aadress>)
+    body (string) - Kogu RFC822 kiri töötlemata kujul
+    real_length (int) - Töötlemata kirja täispikkus. Hetkel antakse body atribuudiga üle esimesed 500Kb saadetud kirjast. real_length ja body pikkuse võrdlusel saab teada, kas tegemist on pikema kirjaga või mitte.
+
+    Kasutajanimi: **test3@kristjanjansen.ee** 
+
+    > (sama, mis e-posti aadress)
+
+    > Kasutajanimi e-posti kontosse sisse logimisel.
+
+    Sisesta salasõna: ```[__________]```  
+    
+    > Salasõna peab sisaldama väikseid ja suuri tähti ning numbreid
+    
+    » uuesti: ```[__________]```   
+    
+    ```[ ]``` Parooli muutmine veebimailist keelatud
+    
+    ```[ ]``` Suunamiste muutmine veebimailist keelatud
+
+    **[lisa]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee e-posti aliased
   id: emailaliases
