@@ -2115,7 +2115,120 @@
     |---|---|---|---|---|
     |gn256.zone.eu|◌ Muuda ressursse|gn256.zone.eu|Pilverserver VPS|◌ Halda|
 
+- title: Pilveserver PRO SSD tellimus
+  id: cloud_prossd_add
+  body: |
 
+    Zone CloudServer Pro SSD on kõrge käideldavustasemega IaaS pilveteenus, mis töötab vastvalt pilvearvutuse põhimõtetele. Klient maksab vaid selle eest, mida reaalselt kasutab.
+
+    ## ◌ Baashinna kalkulaator
+
+    1 tund | 1 päev | **30 päeva**
+
+    ### Baashind
+
+    RAM 3.6864 €
+    CPU 7.2 €
+    SSD 0.216 €
+    OS litsents 0 €
+    Lisa IPv4 aadressid 2.16 €
+
+    ### Baashind kokku 13.26 €
+
+    > Baashind näitab Pilveserverile tellitud peamiste ressursside maksumust. Baashind ei sisalda varukoopiate maksumust ja täiendavat andmeedastusamahtu. Hind ei sisalda käibemaksu.
+
+    ## 1. Operatsioonisüsteem (OS)
+
+    ```[Vali OS ▾]```
+
+    ## 2. Ressursid
+
+    **CPU**     
+    ----[ ]--------------------
+    0 vCore / 6 vCore
+
+    **RAM**
+    --[ ]----------------------
+    0.25 GiB / 12 GiB
+
+    **SSD #1**
+    --[ ]----------------------
+    0 GiB / 200 GiB
+
+    **IPv4 aadresside arv**
+    --[ ]----------------------
+    0 tk / 10
+
+    ## 3. Nüüd jääb üle sisse logida, nõustuda meie kasutustingimustega ja oledki valmis.
+
+    ~~Kuidagi eriti muretuks läks stiil?~~ ~~Oot, ma olen juba sisse loginud...~~
+
+    **Kontaktisik:**  Kristjan jansen
+    Ettevõtte nimi: ...
+    Kontaktisiku telefon: ...
+    Kontaktisiku e-posti aadress: ...
+
+    Kui soovid tellimusele lisada infot, mille peame teadmiseks võtma, sisesta see siia.
+    ```
+
+
+    ```
+
+    [Serveriteenuste üldtingimused]()
+    [Virtuaalse privaatserveriteenuse lepingu eritingimused]()
+
+    ```[ ]``` **Kinnitan, et olen läbi lugenud, aru saanud ning nõustun täielikult nimetatud lepingutega**
+
+    **[Kinnitan tellimuse]()**
+
+- title: Telli Pilveserver VPS
+  id: cloud_vps_add
+  body: |
+
+    # Vali teenuspakett
+
+    ## ```(●)``` Pilveserver VPS I
+    > (1 Core / 256 MiB RAM / 30 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS II
+    > (1 Core / 1 GiB RAM / 50 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS III
+    > (2 Core / 2 GiB RAM / 100 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS IV
+    > (2 Core / 3 GiB RAM / 150 GiB HDD)
+
+    # Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )```6 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )```12 kuu kaupa arveldamine, 1 kuu kulu: 9.12 € + KM
+    
+    **Arve summa 9.95 € +km. Arveldusperiood 1 kuu(d).**
+
+    # Käideldavustsoon
+
+    ```(●)``` Automaatne valik
+    ```( )``` Estonia > Tallinn > Sõle 25 (Linx Telecom)
+    ```( )``` Estonia > Tallinn > Ädala 4F (Elisa)
+    ```( )``` Netherlands > Amsterdam > Gyroscoopweg 2E & 2F (TeleCity)
+
+    # Operatsioonisüsteem
+
+    ```(●)``` centos (V6/64bit)
+    ```( )``` centos (V7/64bit)
+    ```( )``` debian (V8.0/64bit)
+    ```( )``` fedora (V18/64bit)
+    ```( )``` ubuntu (V14.04/64bit)
+
+    # Lisateenused
+
+    **Lisa IP aadresside arv (2.61 € + KM per IP / kuu):* ```[0____]``` ~~Segane sõnastus ja segane arvutus~~
+
+    **[Tagasi]()** **[Alusta]()** ~~"Alusta"? Ehk siiski "Telli" või "Kinnita" vms?~~
+    
 - title: Privaatserverid
   id: private
   body: |
@@ -2125,6 +2238,71 @@
     |---|---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
 
+- title: Privaatserveri tellimusvorm
+  id: private_regular_add
+  body: |
+
+    ~~Miks seda "vormi" pealkirjas rõhutada?~~
+
+    ## Arve summa
+    # **199.5 €**
+    ## Arveldusperiood 1 kuu(d)
+
+    # Riistvara konfiguratsioon
+
+    ```[Põhikonfiguratsioon "I" ▾]```
+
+    ~~Mida need konfiguratsioonid on? Kas mul on oluline seda teada?~~
+    ~~Miks keeruline custom dropdown kui tegu on kahese valikuga?~~
+
+    # Operatsioonisüsteem
+
+    ```[CentOS (V5/64bit) ▾]```
+
+    # Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` 6 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` **12 kuu kaupa arveldamine, 1 kuu kulu: 182.90 € + KM**
+
+    # Majutus ja andmeside
+
+    > Lisaks andmeside- ja majutusteenuse standardkonfiguratsioonile soovin tellida järgmised lisateenused: 
+
+    **IP alamvõrgu suurus:** ```[/30 - 1 IP (0 €) ▾]```
+    ```[✓]``` Lisa 1 TiB (1000 GiB) andmeedastusmahtu kuus  47.62€ KM
+    ```[ ]``` Kaughaldusliides iRMC (kasutab ära ühe võrgu-IP)
+
+    **[Tagasi]()** **[Alusta]()** ~~?~~
+
+- title: Nutikas Privaatserver
+  id: private_smart_add
+  body: |
+
+    # Riistvara konfiguratsioon
+
+    ```(●)``` Põhikonfiguratsioon "I" ```( )``` Põhikonfiguratsioon "II" 
+
+    ~~Mis need konfiguratsioonid on?~~
+
+    Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` 6 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` **12 kuu kaupa arveldamine, 1 kuu kulu: 214.96 € + KM**
+    
+    **Arve summa 234.5 € +km. Arveldusperiood 1 kuu(d).**
+
+    # Majutus ja andmeside
+    
+    > Lisaks andmeside- ja majutusteenuse standardkonfiguratsioonile soovin tellida järgmised lisateenused: 
+
+    ```[ ]``` Lisa 1 TiB (1000 GiB) andmeedastusmahtu kuus  47.62€ KM
+    ```[ ]``` Lisa 100 GiB igapäevaselt varundatavate andmete mahtu 31.96€ KM
+
+    **[Tagasi]()** **[Alusta]()** ~~?~~
 
 - title: Minu sertifikaadid
   id: ssl

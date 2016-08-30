@@ -180,8 +180,18 @@
           id: ftplog
 - title: Pilveserverid
   id: cloud
+  items:
+    - title: Telli Pilveserver PRO SSD
+      id: cloud_prossd_add
+    - title: Telli Pilveserver VPS
+      id: cloud_vps_add
 - title: Privaatserverid
   id: private
+  items:
+    - title: Telli Privaatserver
+      id: private_regular_add
+    - title: Telli Nutikas Privaatserver
+      id: private_smart_add
 - title: SSL Sertifikaadid
   id: ssl
   items:
