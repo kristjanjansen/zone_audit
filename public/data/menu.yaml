@@ -4,6 +4,15 @@
   items:
     - title: Minu domeenid
       id: domains
+    - title: Nimeserverid
+      id: domains_nameservers
+      items:
+      - title: Nimeserverid → DNS
+        id: domains_nameservers_dns
+      - title: Kontaktid
+        id: domains_contacts
+      - title: Kontaktid → Muuda
+        id: domains_contacts_edit
     - title: Tellimused
       id: domains_orders
     - title: Pikenda

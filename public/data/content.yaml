@@ -124,6 +124,81 @@
     |---|---|---|---|
     |kristjanjansen.ee|Aktiivne|07.08.2017| [nimeserverid]() / [kontaktid]() / [halda serverit]()|
 
+- title: Domeeni nimeserverite muutmine
+  id: domains_nameservers
+  body: |
+
+    Siin lehel saad muuta domeeni kristjanjansen.ee nimeservereid. NB! .Fi domeeni nimeserverite muutmiseks siseta eelnevalt kehtiv autoriseerimiskood.
+
+    ```(●)``` **Kasutan Zone nimeservereid**
+
+    > Selle valiku puhul saad muuta siin keskkonnas vahetult ka **MX, A,TXT ja CNAME** kirjeid
+    
+    ```( )``` Määran ja haldan ise domeeni nimeservereid 
+    
+    > Oma nimeserverite sisestamisel ei saa siin keskkonnas muuta domeeni **MX, A,TXT** ega **CNAME** kirjeid. Neid saab muuta vaid selle serveri administraator, kelle NS kirjed sa domeenile määrad
+
+    ## Kirjed
+
+    **Nimeserver #1**:  ns.zone.eu
+    **Nimeserver #2**:  ns2.zone.ee
+    **Nimeserver #3**:  ns3.zonedata.net
+
+    [Muuda DNS kirjeid]() | [Vaata tsoonifaili]()
+    
+    **[Muuda]()**
+
+- title: DNS kirjete muutmine
+  id: domains_nameservers_dns
+  body: |
+  
+    Käesoleval lehel saad muuta kristjanjansen.ee DNS kirjeid.
+
+    ## A/AAAA kirjed
+
+    #1 Host ```[_____]```.kristjanjansen.ee    IP: 
+    217.146.69.30
+      kustuta
+    +
+    MX kirjed
+
+    #1 Host 
+    .kristjanjansen.ee    Priority: 
+    10
+      MX: 
+    mx1.zone.eu
+      kustuta
+    #2 Host 
+    .kristjanjansen.ee    Priority: 
+    20
+      MX: 
+    mx2.zone.eu
+      kustuta
+    +
+    CNAME kirjed
+
+    #1 Host 
+    *
+    .kristjanjansen.ee    CNAME:  
+    kristjanjansen.ee
+      kustuta
+    +
+    TXT kirjed
+
+    #1 Host 
+    .kristjanjansen.ee    Sisu: 
+     kustuta
+    +
+    « Tagasi  Muuda
+
+- title: Minu domeenid → Kontaktid
+  id: domains_contacts
+  body: |
+
+- title: Minu domeenid → Kontaktid → Muuda
+  id: domains_contacts_edit
+  body: |
+
 - title: Tellimused
   id: domains_orders
   body: |
@@ -150,7 +225,7 @@
   body: |
 
     ~~Kas selle lehe pealkiri ei peaks rääkima omanikuvahetuset?~~
-    
+
     TRADE on operatsioon, kus vahetub domeeninime omanik.
     TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
 
