@@ -1,15 +1,15 @@
 <template>
     
-    <div class="MainMenu">
+    <div class="mainmenu">
         
         <div v-for="item1 in items">
     
             <div
                 @click="selectFirstMenu(item1.id)"
-                class="MainMenu__first"
+                class="mainmenu__first"
             >
 
-                <div class="MainMenu__firstTitle">
+                <div class="mainmenuu__firsttitle">
 
                     {{ item1.title }}
 
@@ -22,8 +22,8 @@
                 <div
                     @click="selectSecondThirdMenu(item2.id)"
                     v-if="item1.show"
-                    class="MainMenu__second"
-                    :class="{MainMenu__disabled: !item2.id}"
+                    class="mainmenu__second"
+                    :class="{'mainmenu--disabled': !item2.id}"
                 >
                     
                     {{ item2.title }}
@@ -35,8 +35,8 @@
                     <div
                         @click="selectSecondThirdMenu(item3.id)"
                         v-if="item1.show"
-                        class="MainMenu__third"
-                        :class="{MainMenu__disabled: !item3.id}"
+                        class="mainmenu__third"
+                        :class="{'mainmenu__disabled': !item3.id}"
                     >
 
                     {{ item3.title }}
@@ -88,7 +88,7 @@
 </script>
 
 <style>
-    .MainMenu__first {
+    .mainmenu__first {
         align-items: center;
         color: $blue;
         cursor: pointer;
@@ -97,11 +97,7 @@
         margin-bottom: $margin-md;
         white-space: nowrap;
     }
-    .MainMenu__disabled {
-        opacity: 0.15 !important;
-        cursor: auto !important;
-    }
-    .MainMenu__second {
+    .mainmenu__second {
         color: $blue;
         cursor: pointer;
         font: $font-heading-sm;
@@ -110,7 +106,7 @@
         opacity: $opacity-lg;
         white-space: nowrap;
     }
-    .MainMenu__third {
+    .mainmenu__third {
         color: $blue;
         cursor: pointer;
         font: $font-heading-xs;
@@ -118,5 +114,9 @@
         margin-left: $margin-xl;
         opacity: $opacity-md;
         white-space: nowrap;
+    }
+    .mainmenu--disabled {
+        opacity: 0.15 !important;
+        cursor: auto !important;
     }
 </style>

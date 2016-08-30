@@ -1,14 +1,14 @@
 <template>
     
-    <div class="MainContent">
+    <div class="maincontent">
     
-        <div class="MainContent__title">
+        <div class="maincontent__title">
 
             {{ activeContent.title }}
 
         </div>
 
-        <div class="MainContent__body" v-html="activeContent.body"></div>
+        <div class="maincontent__body" v-html="activeContent.body"></div>
 
     </div>
 
@@ -47,69 +47,69 @@
 </script>
 
 <style>
-    .MainContent__title {
+    .maincontent__title {
         color: $blue;
         font: $font-heading-xl;
         margin-bottom: $margin-md;
     }
-    .MainContent__body {
+    .maincontent__body {
         color: $cool;
         font: $font-text-md;
         line-height: $line-height-lg;
         font-weight: 400;
     }
-    .MainContent__body p {
+    .maincontent__body p {
         margin-bottom: $margin-md;
     }
-    .MainContent__body strong {
+    .maincontent__body strong {
         font-weight: 500;
     }
-    .MainContent__body h1 {
+    .maincontent__body h1 {
         font: $font-heading-lg;
         font-weight: normal;
     }
-    .MainContent__body h2,
-    .MainContent__body h3,
-    .MainContent__body h4 {
+    .maincontent__body h2,
+    .maincontent__body h3,
+    .maincontent__body h4 {
         font: $font-heading-md;
         font-weight: normal;
         line-height: $line-height-lg;
     }
-    .MainContent__body hr {
+    .maincontent__body hr {
         border: 0;
         border-top: 1px solid $cool;
         height: 0;
     }
-    .MainContent__body a {
+    .maincontent__body a {
         color: $cool;
     }
-    .MainContent__body blockquote {
+    .maincontent__body blockquote {
         margin: 0;
         font: $font-text-sm;
         opacity: $opacity-md;
         line-height: $line-height-md;
     }
-    .MainContent__body table {
+    .maincontent__body table {
         width: 100%;
         border: 1px solid $cool;
         border-collapse: collapse;
         margin: $margin-md 0;
     }
-    .MainContent__body th,
-    .MainContent__body tr {
+    .maincontent__body th,
+    .maincontent__body tr {
         border-bottom: 1px solid $cool;
         text-align: left;
         vertical-align: top;
     }
-    .MainContent__body th {
+    .maincontent__body th {
         font: $font-text-md;
     }
-    .MainContent__body th,
-    .MainContent__body td {
+    .maincontent__body th,
+    .maincontent__body td {
         padding: $padding-xs;
         border-right: 1px solid $cool;
     }
-    .MainContent__body pre {
+    .maincontent__body pre {
         font: $font-code-md;
         line-height: $line-height-lg;
         background: #fafafa;
@@ -117,7 +117,7 @@
         padding: $padding-md;
         border-radius: 2px;
     }
-    .MainContent__body code {
+    .maincontent__body code {
         font: $font-code-md;
         line-height: $line-height-lg;
         background: #fafafa;
@@ -125,13 +125,13 @@
         border-radius: 2px;
         padding: 0 3px;
     }
-    .MainContent__body pre code {
+    .maincontent__body pre code {
         background: none;
         border: 0;
         border-radius: 0;
         margin: 0;
     }
-    .MainContent__body strong a {
+    .maincontent__body strong a {
         display: inline-block;
         padding: $padding-xs $padding-sm;
         background: $cool;
@@ -140,7 +140,7 @@
         border-radius: 3px;
         text-decoration: none;
     }
-    .MainContent__body del {
+    .maincontent__body del {
         background: yellow;
         text-decoration: none;
         font: $font-comment-md;

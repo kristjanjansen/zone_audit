@@ -26,15 +26,15 @@
 
 <script>
 
+    import Logo from './Logo.vue'
     import MainMenu from './MainMenu.vue'
     import MainContent from './MainContent.vue'
-    import Logo from './Logo.vue'
 
     export default {
         components: {
+            Logo,
             MainMenu,
-            MainContent,
-            Logo
+            MainContent
         }
     }
 
