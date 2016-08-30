@@ -1,5 +1,7 @@
 _ = require('lodash')
 
+// Colors
+
 var colors = {
     white: 'rgb(255, 255, 255)',
     black: 'rgb(0, 0, 0)',
@@ -8,6 +10,8 @@ var colors = {
     cool: 'rgb(141, 153, 174)',
     gray: 'rgb(237, 242, 244)'
 }
+
+// Spacing
 
 var spacer = 12;
 
@@ -25,6 +29,8 @@ var paddings = _
     .mapValues((value) => (spacer * value) + 'px')
     .value()
 
+// Fonts
+
 var fontFamilies = {
     text: 'Rubik',
     heading: 'Rubik',
@@ -33,7 +39,7 @@ var fontFamilies = {
 }
 
 var textSizes = { sm: 14, md: 16, lg: 20 }
-var textFonts = _
+var fonts = _
     .chain(textSizes)
     .mapKeys((value, key) => 'font-text-' + key)
     .mapValues((value, key) => `normal ${value}px / 100% ${fontFamilies.text}, sans-serif`)
@@ -41,41 +47,42 @@ var textFonts = _
 
 var headingSizes = { xs: 14, sm: 16, md: 20, lg: 24, xl: 36}
 
-var headingFonts = _
+_.assign(fonts, _
     .chain(headingSizes)
     .mapKeys((value, key) => 'font-heading-' + key)
     .mapValues((value, key) => `normal ${value}px / 100% "${fontFamilies.heading}", sans-serif`)
     .value()
+)
 
-var codeFonts = {
-    'font-code-md': `normal ${textSizes.md}px / 100% "${fontFamilies.code}", monospace`
-}
+fonts['font-code-md'] = `normal ${textSizes.md}px / 100% "${fontFamilies.code}", monospace`
+fonts['font-comment-md'] = `normal ${textSizes.lg}px / 100% "${fontFamilies.comment}", sans-serif`
+fonts['font-logo-title'] = `bold ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
+fonts['font-logo-subtitle'] = `normal ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
 
-var commentFonts = {
-    'font-comment-md': `normal ${textSizes.lg}px / 100% "${fontFamilies.comment}", sans-serif`
-}
+// Line heights
 
 var lineHeights = _
-    .chain({ xs: 1, sm: 1.25, md: 1.5, lg: 1.75 })
+    .chain({ xs: 1, sm: 1.15, md: 1.3, lg: 1.6 })
     .mapKeys((value, key) => 'line-height-' + key)
     .mapValues((value, key) => (value * 100) + '%')
     .value()
+
+// Opacitites
 
 var opacities = _
     .chain({sm: 0.2, md: 0.5, lg: 0.8 })
     .mapKeys((value, key) => 'opacity-' + key)
     .value()
 
-module.exports = Object.assign(
+// Export
+
+module.exports = _.assign(
     colors,
     {spacer},
     ratios,
     margins,
     paddings,
-    textFonts,
-    headingFonts,
-    codeFonts,
-    commentFonts,
+    fonts,
     lineHeights,
     opacities
 )

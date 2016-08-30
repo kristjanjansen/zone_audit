@@ -73,6 +73,7 @@
     .MainContent__body h4 {
         font: $font-heading-md;
         font-weight: normal;
+        line-height: $line-height-lg;
     }
     .MainContent__body hr {
         border: 0;

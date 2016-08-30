@@ -13,11 +13,17 @@
   id: shared
   items:
     - title: Serveri ülevaade
+      id: shared
     - title: Kasutajakonto
       items:
-        - Delegeerimised
-        - Tagasiside
-        - Automaatsed teavitused
+        - title: Delegeerimised
+          id: delegations
+        - title: Tagasiside
+          id: feedback
+        - title: Automaatsed teavitused
+          id: notifications
+        - title: Automaatsed teavitused → Muuda
+          id: notifications_edit
     - title: Veebiserver
       items:
         - title: Monitooring

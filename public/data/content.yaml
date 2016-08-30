@@ -38,6 +38,78 @@
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
+- title: Teenuste ülevaade
+  id: delegations
+  body: |
+
+    Käesoleval lehel on sul võimalik enda nimel olevate virtuaalserveri teenuste tehnilist haldust delegeerida teistele ZoneID kontot omavatele kasutajatele.
+    Tehnilise halduse delegeerimine võimaldab määratud kasutajatel sooritada tehnilisi toiminguid (seadistada veebiserverit, luua/hallata MySQL kontosid jne.) nii, et teil säilib siiski täielik kontroll virtuaalserveriteenuse üle.
+    Delegeeritud õiguseid saate igal ajahetkel tagasi võtta (kustutada).
+
+    ## Delegeeri
+
+    Virtuaalserver: [kristjanjansen.ee ▾]
+
+    Olemasoleva ZoneID kasutajatunnus: ```[◌|__________]```
+
+    **[Lisa uus delegeering]()**
+
+- title: Tagasiside
+  id: feedback
+  body: |
+    
+    Kategooria: ```[Soovitus ▾]```
+
+    E-post: ```[◌|__________]```
+    
+    (kuhu me vastuse saadame)
+
+    ```
+    
+
+
+
+
+
+    ```
+
+    **[Saada]()** 
+
+- title: Domeeni kristjanjansen.ee automaatne teavitus
+  id: notifications
+  body: |
+
+    Automaatsete teavituste kasutamisel on võimalik saada teateid mitmesuguste teenuspaketis ette nähtud mahtude täituvuse kohta.
+    Võib määrata, et postkasti peatse täitumise ohu korral saadab meie süsteem automaatselt postkasti omanikule sellekohase teate. Siis jõuab too oma kirjakasti puhastada enne, kui uute kirjade kohaletoimetamine häiritud saab. 
+    Tähele tuleks panna asjaolu, et juhul kui e-posti konto päris ootamatult täis saab, siis teavitus postkasti peatse täitumise kohta ei pruugi adressaadini jõuda. Seepärast on soovitav teavituste seadistamisel lisaks postkasti omanikule määrata mõni lisaadressaat, kellele teavitus saata.
+    Andmesidemahu puhul saadetav teavitus toimib veidi erinevalt. Seadistuse juures saab nimelt määrata piiri, milleni jõudmise korral saadetakse adressaadile üks teade andmesidemahu jõudmisest määratud piirini. 
+    Kui andmesidemaht lõpuks ületab paketis määratud andmesidemahu piirangu, saadetakse veel teinegi kiri piirangu ületamise kohta. **NB!! Teenuspaketis määratud andmesidemahu ületamisel ligipääsu domeenile ei piirata!**
+    Kõvakettamahu täitumise teavitus toimib sarnaselt postkasti täitumise teavitusele. Kui kasutatud maht saavutab teavituses seatud piiri, saadetakse sellekohane teade. Tasub meeles pidada, et kõvakettamahu sisse kuulub ka MySQL andmebaaside maht.
+
+    ||Teavituse sagedus:|%|Teavitus aktiveeritud:||
+    |---|---|---|---|
+    |E-posti kontode täituvuse teavitus|1 kord päevas|70%|**JAH**|**[muuda]()**|
+    |Andmesidemahu kontroll|1 kord kuus||**EI**|**[muuda]()**|
+    |Kõvakettamahu täituvuse kontroll|1 kord päevas||**EI**|**[muuda]()**|  
+    |Inodede täituvuse kontroll|1 kord päevas||**EI**|**[muuda]()**|
+
+- title: E-posti kontode täituvuse teavitus
+  id: notifications_edit
+  body: |
+
+    Teavituse sagedus: **1** kord päevas
+
+    Teavitus aktiveeritud:  ```(●)``` JAH ```( )``` EI
+    
+    Teavita, kui postkast saavutab: **[70% ▾]()** temale lubatud piirmahust
+    
+    Saada teavitus:
+    ```[ ]``` mailikonto omanikule 
+    ```[ ]``` järgmis(t)ele aadressi(de)le: 
+    ```[__________]```
+
+    **[Muuda]()** **[Sulge aken]()**
+
 - title: Minu domeenid
   id: domains
   body: |
@@ -424,7 +496,7 @@
   body: |
 
     ~~Abilingid viivad otse http://php.net/manual/en/ref.bc.php jne lehtedele~~
-    
+
     ```[✓]``` BCMath:  (BCMath Arbitrary Precision Mathematics Functions) 
     ```[✓]``` Calendar:  (Calendar Functions) 
     ```...``` dBase:  N/A 
