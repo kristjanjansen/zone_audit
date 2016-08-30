@@ -185,6 +185,8 @@
       id: cloud_prossd_add
     - title: Telli Pilveserver VPS
       id: cloud_vps_add
+    - title: Pilveserver VPS → Muuda
+      id: cloud_vps_edit  
 - title: Privaatserverid
   id: private
   items:
@@ -196,10 +198,17 @@
   id: ssl
   items:
     - title: Minu Sertifikaadid
+      id: ssl
+    - title: Minu Sertifikaadid → Telli
+      id: ssl_order
     - title: Tellimused
+      id: ssl_orders
     - title: Pikendamine
+      id: ssl_extending
     - title: CSR genereerimine
+      id: ssl_csr
     - title: Lisa serverile
+      id: ssl_add
     - title: Abi
 - title: Zone+
   id: zoneplus

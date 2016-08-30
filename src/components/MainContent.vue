@@ -114,7 +114,7 @@
         line-height: $line-height-lg;
         background: #fafafa;
         border: 1px solid #f4f4f4;
-        padding: $padding-md;
+        padding: $padding-sm;
         border-radius: 2px;
     }
     .maincontent__body code {
