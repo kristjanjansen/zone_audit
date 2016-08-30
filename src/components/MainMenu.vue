@@ -23,7 +23,7 @@
                     @click="selectSecondThirdMenu(item2.id)"
                     v-if="item1.show"
                     class="mainmenu__second"
-                    :class="{'mainmenu--disabled': !item2.id}"
+                    :class="{mainmenu__disabled: !item2.id}"
                 >
                     
                     {{ item2.title }}
@@ -36,7 +36,7 @@
                         @click="selectSecondThirdMenu(item3.id)"
                         v-if="item1.show"
                         class="mainmenu__third"
-                        :class="{'mainmenu__disabled': !item3.id}"
+                        :class="{mainmenu__disabled: !item3.id}"
                     >
 
                     {{ item3.title }}
@@ -97,6 +97,10 @@
         margin-bottom: $margin-md;
         white-space: nowrap;
     }
+    .mainmenu__disabled {
+        opacity: 0.15 !important;
+        cursor: auto !important;
+    }
     .mainmenu__second {
         color: $blue;
         cursor: pointer;
@@ -114,9 +118,5 @@
         margin-left: $margin-xl;
         opacity: $opacity-md;
         white-space: nowrap;
-    }
-    .mainmenu--disabled {
-        opacity: 0.15 !important;
-        cursor: auto !important;
     }
 </style>
