@@ -1,14 +1,19 @@
 - title: Teenuste ülevaade
   id: dashboard
 - title: Domeenid
-  id: domains
   items:
     - title: Minu domeenid
+      id: domains
     - title: Tellimused
+      id: domains_orders
     - title: Pikenda
+      id: domains_extend
     - title: Too domeen üle
+      id: domains_transfer
     - title: Vaheta omanikku
+      id: domains_trade
     - title: Registreeri
+      id: domains_register
 - title: Virtuaalserverid
   id: shared
   items:

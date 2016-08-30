@@ -124,6 +124,52 @@
     |---|---|---|---|
     |kristjanjansen.ee|Aktiivne|07.08.2017| [nimeserverid]() / [kontaktid]() / [halda serverit]()|
 
+- title: Tellimused
+  id: domains_orders
+  body: |
+
+- title: Pikenda
+  id: domains_extend
+  body: |
+
+- title: Alusta domeeni ületõstmist
+  id: domains_transfer
+  body: |
+
+    TRADE on operatsioon, kus vahetub domeeninime omanik.
+    TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
+
+    Sisesta soovitud domeen ja vajuta **otsi**
+
+    # Otsi domeeni
+    
+    # ```[__________]```**[q]()**
+
+- title: Alusta domeeni ületõstmist
+  id: domains_trade
+  body: |
+
+    ~~Kas selle lehe pealkiri ei peaks rääkima omanikuvahetuset?~~
+    
+    TRADE on operatsioon, kus vahetub domeeninime omanik.
+    TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
+
+    Sisesta soovitud domeen ja vajuta **otsi**
+
+    # Otsi domeeni
+    
+    # ```[__________]```**[q]()**
+
+- title: Registreeri uus domeen
+  id: domains_register
+  body: |
+  
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellenimelist nuppu ei ole~~
+
+    # Otsi domeeni
+
+    # ```[__________]```**[q]()**
+
 - title: kristjanjansen.ee
   id: shared
   body: |
