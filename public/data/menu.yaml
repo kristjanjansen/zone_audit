@@ -5,8 +5,9 @@
     - title: Minu domeenid
       id: domains
     - title: Nimeserverid
-      id: domains_nameservers
       items:
+      - title: Nimeserverid
+        id: domains_nameservers
       - title: Nimeserverid → DNS
         id: domains_nameservers_dns
       - title: Kontaktid

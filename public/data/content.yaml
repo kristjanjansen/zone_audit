@@ -156,48 +156,105 @@
 
     ## A/AAAA kirjed
 
-    #1 Host ```[_____]```.kristjanjansen.ee    IP: 
-    217.146.69.30
-      kustuta
-    +
-    MX kirjed
+    #1 Host ```[_____]```.kristjanjansen.ee IP: ```[217.146.69.30]``` ```[ ]``` kustuta
+    **[+]()**
 
-    #1 Host 
-    .kristjanjansen.ee    Priority: 
-    10
-      MX: 
-    mx1.zone.eu
-      kustuta
-    #2 Host 
-    .kristjanjansen.ee    Priority: 
-    20
-      MX: 
-    mx2.zone.eu
-      kustuta
-    +
-    CNAME kirjed
+    ## MX kirjed
 
-    #1 Host 
-    *
-    .kristjanjansen.ee    CNAME:  
-    kristjanjansen.ee
-      kustuta
-    +
-    TXT kirjed
+    #1 Host ```[_____]```.kristjanjansen.ee Priority: IP:```[10]``` ```[mx1.zone.eu]``` ```[ ]``` kustuta
+    #2 Host ```[_____]```.kristjanjansen.ee Priority: IP:```[20]``` ```[mx2.zone.eu]``` ```[ ]``` kustuta
+    **[+]()**
 
-    #1 Host 
-    .kristjanjansen.ee    Sisu: 
-     kustuta
-    +
-    « Tagasi  Muuda
+    ## CNAME kirjed
 
-- title: Minu domeenid → Kontaktid
+    #1 Host ```[____*]```.kristjanjansen.ee CNAME: ```[kristjanjansen.ee]``` ```[ ]``` kustuta
+    **[+]()**
+
+    ## CNAME kirjed
+
+    #1 Host ```[_____]```.kristjanjansen.ee Sisu: ```[__________]``` ```[ ]``` kustuta
+    **[+]()**
+
+    **[« Tagasi]()** **[Muuda]()**
+
+- title: Domeeni kontaktid
   id: domains_contacts
   body: |
+  
+    Siin lehel saad muuta domeeni kristjanjansen.ee kontakte. **NB!** .Fi domeeni omaniku andmete muutmiseks siseta eelnevalt kehtiv autoriseerimiskood.
 
-- title: Minu domeenid → Kontaktid → Muuda
+    ## Registreerija andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+    ## Halduskontakti andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+    ## Tehniliste kontaktide andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+- title: Muuda kontaktisikut
   id: domains_contacts_edit
   body: |
+
+    > Muuda kontaktisikut ~~Topelttekst, ebavajalik~~
+
+    Nimi: **OÜ Kustukas**
+    
+    Identifikaator: Äriregistri kood: **12312779**
+    
+    Identifikaatori riik: ```[EE - Eesti ▾]``` *
+    
+    Telefon: ```[+372 - Eesti ▾]``` ```[50.....]```*
+     
+    E-posti aadress: ```[kristjan.jansen@gmail.com__]``` *
+     
+    Riik: ```[EE - Eesti ▾]``` *
+    
+    Maakond: ```[__________]``` *
+
+    Linn: ```[__________]``` *
+
+    Tänav/maja/korter: ```[__________]``` * 
+
+    Postiindeks: ```[__________]``` * 
+
+    **[« Tagasi]()** **[Muuda]()**
 
 - title: Tellimused
   id: domains_orders
@@ -214,7 +271,7 @@
     TRADE on operatsioon, kus vahetub domeeninime omanik.
     TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
 
-    Sisesta soovitud domeen ja vajuta **otsi**
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellise nimega nuppu siin ei ole~~
 
     # Otsi domeeni
     
@@ -224,12 +281,12 @@
   id: domains_trade
   body: |
 
-    ~~Kas selle lehe pealkiri ei peaks rääkima omanikuvahetuset?~~
+    ~~Kas selle lehe pealkiri ei peaks rääkima omanikuvahetusest? Kas siin on TRADE lehega copy-paste tehtud?~~
 
     TRADE on operatsioon, kus vahetub domeeninime omanik.
     TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
 
-    Sisesta soovitud domeen ja vajuta **otsi**
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellise nimega nuppu siin ei ole~~
 
     # Otsi domeeni
     
