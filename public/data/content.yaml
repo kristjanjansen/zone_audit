@@ -949,9 +949,116 @@
     |**[‹]()** **[›]()**|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
     |&nbsp;|&nbsp;|Lehekülgi (1)|
 
-- title: E-posti konto lisamine PUUDU
+- title: E-posti aliase muutmine
   id: emailaliases_edit
   body: |
+
+    E-posti aadress: ```[______test]@kristjanjansen.ee```
+
+    > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
+    Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
+    Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+
+    Kommentaar/nimi: ```[__________]```
+
+    > Kommentaar on e-posti aadressi juurde kuuluv informatiivne tekst või isiku nimi, kelle aadress see on.
+
+    Suunamise olek: **Pole suunatud** **[suuna]()**
+
+    **[muuda]()** **[sulge aken]()**
+
+    ## Tüübi muutmine
+
+    Aadress **test@kristjanjansen.ee** on hetkel e-posti alias.
+
+    Kui soovite seda selliseks kontoks muuta, mis võtab füüsilist kettaruumi, ning mida saab POP3 kontona kasutada, vajutage nuppu "Muuda kontoks".
+    Kontole luuakse süsteemi poolt automaatne piirsuurus. Salasõna ning piirsuurust saab hiljem peale tüübi muutmist kohendada.
+
+    **[Muuda kontoks]()**
+
+- title: E-posti aliase muutmine
+  id: emailaliases_schedule
+  body: |
+
+    Olek: **PASSIIVNE** ~~Mitte sees-väljas / aktiivne-mitteaktiivne vaid PASSIIVNE?~~ 
+
+    > Automaatvastuse olek, määrab, kas automaatvastus on aktiivne või passiivne.
+
+    Perioodi algus: ```[__________]```-```[__________]```-```[__________]```**[...]()**
+
+    > Automaatvastuse perioodi algus. Alates määratud kuupäevast vastatakse kõigile vastuvõetud kirjadele automaatvastusega.
+
+    Perioodi lõpp: ```[__________]```-```[__________]```-```[__________]```**[...]()** 
+
+    > Automaatvastuse perioodi lõpp.
+
+    Saatja nimi: ```[__________]``` 
+
+    > Automaatse vastuse saatja nimi (*valikuline*) ~~Mis tähendab valikuline?~~
+
+    Kirja pealkiri: ```[__________]```
+
+    > Automaatse vastuse pealkiri
+
+    Kirja sisu:
+
+    ```
+
+
+
+
+    
+    ```
+    > Automaatvastuse sisu. Näiteks lühike teade, et olete perioodil kontorist eemal.
+
+    Aadress aegub: ```[Ei aegu ▾]```
+
+    > Väljaga **aadress aegub** saab ära määrata, kui tihti ühele ja samale aadressile uuesti vastus saadetakse.
+    Vaikimisi on valitud **ei aegu** ning see tähendab seda, et automaatne vastus saadetakse igale saatjale ainult ühe korra kogu aktiveerimisperioodi jooksul (hoolimata sellest, kui palju saatja teile kirju saadab vastatakse ainult esimesele). Kui valite nimekirjast mingi muu aja, siis vastatakse ainult nendele kirjadele, mis on saadetud vähemalt iga selle perioodi tagant.
+    Kuna vahest võib kiri tulla aadressilt, millel on samuti automaatvastaja aktiveeritud, siis peab süsteem vastuste arvu "pidurdama" ning igale kirjale automaatselt vastata ei saa. Vastasel juhul võib tekkida kahe aadressi vahel lõpmatu tsükkel.
+    Näiteks oletame, et aegumiseks on valitud 2 tundi. Ühelt ja samalt aadressilt saadeti esimene kiri kell 10:30, sellele vastatakse automaatselt. Siis saadetakse samalt aadressilt veel kell 10:31, 11:05, 11:15, 12:41 ja 12:45. Kuna aegumisperioodiks on valitud 2 tundi, siis järgmine automaatne vastus samale aadressile läheb ainult eelviimase kirjaga kell 12:41
+
+    **[muuda]()** **[aktiveeri]()** **[sulge aken]()**
+
+- title: E-posti aliase muutmine
+  id: emailaliases_redirect
+  body: |
+
+    Suunamisi kõigil e-posti kontodel
+    # **0**
+
+    Suunamisi test@kristjanjansen.ee kontol
+    # **0**
+
+    ## E-posti konto test@kristjanjansen.ee suunamiste muutmine
+
+    Suunamise/koopia aadressid:
+
+    ```
+
+
+    ```
+
+    > Siin on näha kõik aadressid, kuhu e-posti aadress on suunatud või kuhu läheb kirja koopia.
+
+    Lisa aadress(id): ```[__________]```**[lisa]()**
+
+    > (mitu aadressi korraga sisestades eralda need komadega)
+
+    > E-posti aadressid, kuhu soovite kirjad suunata või saata koopiad sisestage siia lahtrisse. Võimalus on ka sisestada mitu aadressi korraga, selleks tuleb aadressid eraldada komaga.
+
+    või
+
+    Lisa failist: ```[Choose File_____]```**[lisa]()**
+
+    > Siit saate aadressid listi lisada ka faili abil. Ehk et, kui teil on postiloend oma arvutisse tekstifaili salvestatud, tuleb see failiaadress lihtsalt siia lahtrisse sisestada (kasutades nuppu **browse**) ning seejärel vajutada lahtri kõrvalt nuppu **lisa**.
+    Aadressid peavad olema failis eraldatud kas koma, tühiku, tabulaatori või reavahetusega. Fail ise peab olema tavaline tekstifail (Wordi või Exceli failidega see ei tööta)
+
+    Suunamise olek: ```(●)``` Pole suunatud ```( )``` Suunatud 
+
+    > Näitab kas e-posti aadress on kuhugi suunatud või mitte ning kas koopia kirjadest saadetakse teisele e-posti aadressile.
+
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee postiloendid
   id: emaillists
@@ -979,9 +1086,104 @@
     * **uudiskiri-confirm@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Kui loendi seadistustes on aktiveeritud seadistus E-posti kinnitus, siis tuleb loendiga liituda või lahkuja soovijal pärast liitumis- või lahkumissoovi avaldamist ka oma soov kinnitada vastates loendi programmi poolt saadetud kirjale. Kinnitussoovid võetaksegi sellel aadressil vastu.
     * **uudiskiri-bounces@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Sellele aadressile põrkavad tagasi loendi poolt mittetoimivatele aadressidele saadetud kirjad. Põrkamine võib esineda näiteks juhul, kui inimene lisab oma aadressi postiloendi liikmete nimekirja, kuid mõne aja pärast see aadress mingil põhjusel enam ei tööta (näiteks aadress on kustutatud). Loendi programm oskab ise automaatselt vastava aadressi liikmete nimekirjast kustutada. Programm ei eemalda aadressi nimekirjast kohe, vaid alles siis, kui vastavalt aadressilt on hakanud regulaarselt kirju tagasi põrkama.
 
-- title: Domeeni kristjanjansen.ee postiloendid PUUDU
+- title: Postiloendi lisamine
   id: emaillists_edit
   body: |
+  
+    Postiloendi aadress:  ```[__________]```@kristjanjansen.ee
+
+    Loendi nimi:  ```[__________]```
+    
+    Loendi omaniku aadress: ```[__________]```
+    
+    Kui kiri saadetakse loendi omanikule: ```[Postitus TOIMETATAKSE KOHALE ▾]```  
+    
+    E-posti kinnitus:  ```(●)``` JAH ```( )``` EI   
+    
+    Keel: ```[English ▾]```  
+    
+    Postiloendi salasõna: ```[__________]``` 
+    
+    ## Postiloendiga liitumise sätted
+    
+    Loendiga liitumine lubatud: ```(●)``` JAH ```( )``` EI
+    
+    Omanik peab liituja ise kinnitama: ```( )``` JAH ```(●)``` EI
+    
+    Teata omanikule uuest liitujast: ```( )``` JAH ```(●)``` EI
+    
+    ## Postiloendist lahkumise sätted
+    
+    Teata omanikule lahkujast:```( )``` JAH ```(●)``` EI
+    
+    ## Kirjade põrkamine
+
+    Põrketöötlus: ```(●)``` JAH ```( )``` EI 
+    
+    Max. põrkesumma: ```[5_________]``` 
+    
+    Põrkesumma aegub: ```[127_______]``` 
+
+    Edasta põrkunud kirjad aadressile: ```[__________]```
+    
+    ## Postiloendisse saatmise õigused:
+    
+    Loendi omanik: ```[Postitus SAADETAKSE MEILINGLISTI ▾]```
+    
+    Loendi liige: ```[postitus PANNAKSE OOTELE ▾]```   
+    
+    Loendiväline postitaja: ```[Postitus SAADETAKSE MEILINGLISTI ▾]```    
+    
+    Võõras postitaja: ```[Postitus LÜKATAKSE TAGASI ▾]```     
+    
+    Kui aadressil on keelatud loendisse postitada: ```[Postitus LÜKATAKSE TAGASI ▾]```     
+    
+    ## Postitamise sätted
+
+    Keelatud aadress(id): 
+    
+    ```
+
+
+    ```
+
+    Loendivälised postitajad: 
+    
+    ```
+
+
+    ```
+
+    Postituste jalus: 
+    
+    ```
+
+
+    ```
+
+    Pealkirja prefiks: ```[__________]```
+
+    Vastused loendi kirjadele suunatakse: ```[vastaja enda soovi järgi ainult loendisse, aut.▾]```  
+    
+    Reply-To aadress: ```[__________]```
+    
+    Reply-To nimi: ```[__________]```
+    
+    Asenda To/CC ridades loendi aadress: ```[ ]```
+
+    Postituse sisu maksimaalne suurus: ```[512 KiB___]```
+    
+    kui sisu on suurem: ```[postitus PANNAKSE OOTELE ▾]```
+    
+    Teata omanikule, kui postitus pannakse OOTELE: ```(●)``` JAH ```( )``` EI 
+    
+    Teata omanikule, kui postitust IGNOREERITAKSE: ```( )``` JAH ```(●)``` EI   
+    
+    Teata omanikule, kui postitus lükatakse TAGASI: ```( )``` JAH ```(●)``` EI 
+    
+    Kui postituse tegija pole kinnitatud: ```[postitus PANNAKSE OOTELE ▾]```  
+    
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee väärposti suunamine
   id: emailredirect

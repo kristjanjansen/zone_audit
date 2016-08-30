@@ -86,11 +86,15 @@
         - title: E-posti aliased
           id: emailaliases
         - title: E-posti aliased → Muuda
-          PUUDU: emailaliases_edit
+          id: emailaliases_edit
+        - title: E-posti aliased → Suuna
+          id: emailaliases_redirect
+        - title: E-posti aliased → Automaatvastaja
+          id: emailaliases_schedule
         - title: Postiloendid
           id: emaillists
         - title: Postiloendid → Muuda
-          PUUDU: emaillists_edit
+          id: emaillists_edit
         - title: Väärposti suunamine
           id: emailredirect
         - title: Viirusetõrje
