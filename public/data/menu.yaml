@@ -1,17 +1,23 @@
 - title: Teenuste ülevaade
   id: dashboard
+  comments: true
 - title: Kasutajakonto
   items:
     - title: Teated
       id: notifications
+      comments: true
     - title: Teated → Vaata 
       id: notifications_view
+      comments: true
     - title: Kasutajakonto
       id: account
+      comments: true
     - title: Kontaktandmed
       id: account_contact
+      comments: true
     - title: Seotud indentiteedid
       id: account_identities
+      comments: true
 - title: Domeenid
   items:
     - title: Minu domeenid

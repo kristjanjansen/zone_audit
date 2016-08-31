@@ -60,6 +60,7 @@ _.assign(fonts, _
 )
 
 fonts['font-code-md'] = `normal ${textSizes.md}px / 100% "${fontFamilies.code}", monospace`
+fonts['font-comment-sm'] = `normal ${textSizes.sm}px / 100% "${fontFamilies.comment}", sans-serif`
 fonts['font-comment-md'] = `normal ${textSizes.lg}px / 100% "${fontFamilies.comment}", sans-serif`
 fonts['font-logo-title'] = `bold ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
 fonts['font-logo-subtitle'] = `normal ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
