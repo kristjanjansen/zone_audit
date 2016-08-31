@@ -2614,17 +2614,78 @@
   id: ssl_orders
   body: |
     
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Kuupäev|Kirjeldus|Tellimus|Kokku|Staatus|
+    |---|---|---|---|---|
+    |Sa veel ei kasuta seda teenust|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+    > Näitan ridu 0 kuni 0 Eelmine Järgmine
+
+
 - title: Pikendamine
   id: ssl_extending
   body: |
+
+    Vali sertifikaadid, mida soovid pikendada, ning vajuta nuppu "Alusta pikendamist".
+    ~~Maagilised nähtamatud nupud...~~
+
+    |\#|Serveri nimi (CN)|Sertifikaadi väljastaja|Aegub|
+    |---|---|---|---|
+    |Hetkel pole ühtegi sertifikaati aegumas.|&nbsp;|&nbsp;|&nbsp;|
 
 - title: CSR genereerimine
   id: ssl_csr
   body: |
 
+    ◌ Siin saate genereerida privaatvõtme (Private key) ja sertifikaaditaotluse (Certificate Request). Veel ...
+    
+    ~~Unikaalne pattern: collapsible help!~~
+
+    > Kui olete lahtrid ära täitnud, vajutage nuppu genereeri ning teile luuakse privaatvõtme ja sertifikaaditaotluse failid.
+      NB! Privaatvõtme turvalisus on väga tähtis ja see ei tohi mitte mingil juhul sattuda kolmandate isikute valdusesse. Kui see peaks juhtuma, on SSL ühenduse turvalisus nende isikute poolt haavatav.
+      Võtmefaili genereerimise käsurida:
+      openssl genrsa -rand /var/log/mail:/var/log/messages -out PRIVATE_KEY.PEM 2048
+      Sertifikaaditaotluse genereerimise käsurida:
+      openssl req -sha256 -new -key PRIVATE_KEY.PEM -out CERTIFICATE_REQUEST.PEM
+
+    ~~<font size="1" abil loodud üliväike copy-pastemiseks loodud kiri. Selle asemel oodanuks selget koodi-snippetit:~~
+
+    ```sh
+    openssl req -sha256 -new -key PRIVATE_KEY.PEM -out CERTIFICATE_REQUEST.PEM
+    ```
+
+    **Võtme pikkus** 
+    `[2046]` ~~Kahene valik, 2048 või 4096, ei vaja dropdowni~~
+
+    Serveri nimi (CN) 
+    `[www.naidis.ee]`
+  
+    Riik 
+    `[Eesti (EE)▾]`
+
+    Maakond või osariik 
+    `[__________]`
+
+    Asukoht 
+    `[__________]`
+
+    Organisatsioon 
+    `[__________]`
+
+    Allüksus 
+    `[__________]`
+    
+    E-post 
+    `[__________]`
+
+    **[Genereeri]()**
+
 - title: Lisa serverile
-  id: ssl_add
+  id: ssl_server
   body: |
+
+    ~~Siit suunatakse edasi Virtuaalserverid › Veebiserver › SSL sertifikaadid~~
 
 - title: Zone+
   id: zoneplus

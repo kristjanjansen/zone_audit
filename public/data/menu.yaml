@@ -220,7 +220,7 @@
     - title: CSR genereerimine
       id: ssl_csr
     - title: Lisa serverile
-      id: ssl_add
+      id: ssl_server
     - title: Abi
 - title: Zone+
   id: zoneplus
