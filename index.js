@@ -1,8 +1,12 @@
 var express = require('express');
+var fallback = require('express-history-api-fallback')
+
 var app = express();
 var server = require('http').Server(app);
 
-var port = 5000
+var root = __dirname + '/public'
+app.use(express.static(root))
+app.use(fallback('index.html', { root: root }))
 
-app.use(express.static('public'));
-server.listen(port);
+server.listen(5000);
+

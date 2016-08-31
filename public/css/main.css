@@ -481,3 +481,129 @@ body {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding: 2em;
+    margin: 0;
+}
+.main {
+    padding-top: 2em;
+}
+@font-face {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 300;
+    src: local("Rubik Light Italic"),local(Rubik-LightItalic),url(//fonts.gstatic.com/s/rubik/v1/jSFETpKxzveU_p3gZhzIHFQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/jSFETpKxzveU_p3gZhzIHPk_vArhqVIZ0nv9q090hN8.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/jSFETpKxzveU_p3gZhzIHBsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Rubik Italic"),local(Rubik-Italic),url(//fonts.gstatic.com/s/rubik/v1/aFXROJ6oH458ZIAMTgYySQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/lgXEloT2N61mSYqQZpy1fQ.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/OPYJOGLS2lfdqoDEaGxyDA.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 500;
+    src: local("Rubik Medium Italic"),local(Rubik-MediumItalic),url(//fonts.gstatic.com/s/rubik/v1/tPyoCFMoMFY1gioFWtoyXlQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/tPyoCFMoMFY1gioFWtoyXvk_vArhqVIZ0nv9q090hN8.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/tPyoCFMoMFY1gioFWtoyXhsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Rubik Bold Italic"),local(Rubik-BoldItalic),url(//fonts.gstatic.com/s/rubik/v1/wD94vlSNmKRl1po-RMwWclQlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/wD94vlSNmKRl1po-RMwWcvk_vArhqVIZ0nv9q090hN8.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/wD94vlSNmKRl1po-RMwWchsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 900;
+    src: local("Rubik Black Italic"),local(Rubik-BlackItalic),url(//fonts.gstatic.com/s/rubik/v1/UAhftYFr35UpkSlTfXNWL1QlYEbsez9cZjKsNMjLOwM.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/UAhftYFr35UpkSlTfXNWL_k_vArhqVIZ0nv9q090hN8.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/UAhftYFr35UpkSlTfXNWLxsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Rubik Light"),local(Rubik-Light),url(//fonts.gstatic.com/s/rubik/v1/WJYfot4nvWguliZiQ0KHUvesZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/tRvJQnSw4lmceQIbdzOKGPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/lr6Pb3GuskYO6A0ddSEJcvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    src: local(Rubik),local(Rubik-Regular),url(//fonts.gstatic.com/s/rubik/v1/0f976ZfzmmYp7Tv7T3DB3A.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/_mlO9_1N7oXYhEnEzC2l-g.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/KOAvUwfoM3DiLr6_Ac8qkg.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Rubik Medium"),local(Rubik-Medium),url(//fonts.gstatic.com/s/rubik/v1/yFvcRay1ZOu26HH6CacUgPesZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/IUSlgBbgyuDQpy87mBOAc_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/dr9AO_oRJOJvBo3VnoPe1_esZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Rubik Bold"),local(Rubik-Bold),url(//fonts.gstatic.com/s/rubik/v1/AGAINRfrc_sL5zxVdgH1O_esZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/0hS39AKxpJlEXQF3mVPgrvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/dwBNC4Sd5CDAYmaqw1hU7PesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    src: local("Rubik Black"),local(Rubik-Black),url(//fonts.gstatic.com/s/rubik/v1/uoYmAnIa8NjRiXX5h5bcEfesZW2xOQ-xsNqO47m55DA.eot?#) format("eot"),url(//fonts.gstatic.com/s/rubik/v1/q1zR17dXuC8hEk69Lb7Bo_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/rubik/v1/sTiPQxXk0M6XQ-AVBh7ef_esZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+.pod {
+    width: 100%;
+    border: 1px solid rgb(237, 242, 244);
+}
+.pod__title {
+    font: normal 24px / 100% "Rubik", sans-serif;
+}
+.pod__subtitle {
+    font: normal 24px / 100% "Rubik", sans-serif;
+    color: rgb(237, 242, 244);
+    margin-left: 6px;
+}
+.pod__progress {
+    background: rgb(237, 242, 244);
+    height: 0.5em;
+}
+.pod__content {
+    height: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}

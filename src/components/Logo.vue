@@ -4,38 +4,40 @@
         
         <div class="logo__title">Zone.ee</div>
 
-        <div class="logo__subtitle">sisuaudit</div> 
+        <div class="logo__subtitle">{{ subtitle }}</div> 
+            
+            <div
+                @click="toggleComments"
+                class="logo__comment"
+                v-if="displayComments && toggles"
+            >
+            Peida kommentaarid ja
+            </div>
 
-        <div
-            @click="toggleComments"
-            class="logo__comment"
-            v-if="displayComments"
-        >
-        Peida kommentaarid ja
-        </div>
+            <div
+                @click="toggleComments"
+                class="logo__pattern"
+                v-if="displayComments && toggles"
+            >
+            patternid
+            </div>
 
-        <div
-            @click="toggleComments"
-            class="logo__pattern"
-            v-if="displayComments"
-        >
-        patternid
-        </div>
+            <div
+                @click="toggleComments"
+                class="logo__comment"
+                v-if="!displayComments && toggles"
+            >
+            Näita kommentaare ja
+            </div>
 
-        <div
-            @click="toggleComments"
-            class="logo__comment"
-            v-if="!displayComments"
-        >
-        Näita kommentaare ja
-        </div>
+            <div
+                @click="toggleComments"
+                class="logo__pattern"
+                v-if="!displayComments && toggles"
+            >
+            patterneid
+            </div>
 
-        <div
-            @click="toggleComments"
-            class="logo__pattern"
-            v-if="!displayComments"
-        >
-        patterneid
         </div>
 
     </div>
@@ -47,6 +49,10 @@
     export default {
         data() {
             return { displayComments: true }
+        },
+        props: {
+            toggles: {default: false},
+            subtitle: {default: ''}
         },
         methods: {
             toggleComments() {

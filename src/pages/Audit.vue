@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Logo"></component>
+        <component is="Logo" subtitle="Sisuaudit" toggles="true"></component>
         
         <div class="main">
 
@@ -26,9 +26,9 @@
 
 <script>
 
-    import Logo from './Logo.vue'
-    import MainMenu from './MainMenu.vue'
-    import MainContent from './MainContent.vue'
+    import Logo from '../components/Logo.vue'
+    import MainMenu from '../components/MainMenu.vue'
+    import MainContent from '../components/MainContent.vue'
 
     export default {
         components: {
