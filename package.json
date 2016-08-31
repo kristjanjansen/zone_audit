@@ -3,6 +3,7 @@
   "private": "true",
   "dependencies": {
     "animejs": "^1.1.0",
+    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "gulp": "^3.9.1",
     "js-yaml": "^3.6.1",
@@ -15,12 +16,14 @@
     "postcss-font-magician": "^1.4.0",
     "postcss-partial-import": "^2.0.0",
     "postcss-simple-vars": "^3.0.0",
+    "socket.io": "^1.4.8",
     "vue": "^2.0.0-rc.3",
     "vue-events": "^1.0.0",
     "vue-resource": "^0.9.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": ""
+    "start": "node index",
+    "build": "gulp"
   }
 }
