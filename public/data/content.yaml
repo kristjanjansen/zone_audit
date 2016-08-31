@@ -2,43 +2,49 @@
   id: dashboard
   body: |
     
-    ## ◌ Kontoseis ◌ Teated ◌ Seaded
-
-    _Pattern: ActionBar_
+    ## ◌ Kontoseis ◌ Teated ◌ Seaded _DashboardItem_
 
     # Virtuaalserverid
     
-    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver _Pattern: ActionBar_
+    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver _ActionBar_
 
-    _Pattern: Table_
+    _BigTable_~~või~~_Grid_~~Kui 10+ serverit siis~~_Table_
 
-    Näita ```[10 ▾]``` rida ~~Ajast ja arust, selleks on pager vms~~ | Otsing ```[__________]```
+    Näita ```[10 ▾]``` rida ~~M-km, selleks on pager vms~~ | Otsing ```[__________]``` ~~Mõistlik 10+ serveri puhul~~
 
     |Nimi|Pakett|Kiirviited||
     |---|---|---|---|
-    |kristjanjansen.ee|II|**[Kiirviited ▾]()**| **[◌ Halda]()**|
+    |kristjanjansen.ee|II ~~Raskelt loetav, mõjub veeruvahena~~|**[Kiirviited ▾]()**| **[◌ Halda]()**|
 
-    > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
+    > Näitan ridu 1 kuni 1. Ridu kokku 1. ~~Ebavajalik, see ei ole phpMySql~~| Eelmine ```1``` Järgmine ~~Näita ainult siis, kui on mitu lehekülge~~
+
+    ---
 
     # Domeenid
     
-    ## ◌ Halda domeene ◌ Registreeri uus domeen
+    ## ◌ Halda domeene ◌ Registreeri uus domeen _ActionBar_
+
+    _BigTable_~~või~~_Grid_
 
     Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
-    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC|
+    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC ~~Arusaamatu~~|
     |---|---|---|---|---|
-    |kristjanjansen.ee|Registreeritud|**[Kiirviited ▾]()**|07.08.2017|◌|
+    |kristjanjansen.ee|Registreeritud ~~Siia sobiks staatusele vastav värvikood, ● vms~~|**[Kiirviited ▾]()**|07.08.2017|◌ ~~Kas kuskilt mujalt ka siia lingini jõuab?~~|
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
-    ## Arved | **Aktiivsed tellimused**
+    ---
 
+    ## Arved | **Aktiivsed tellimused** _Tabs_ ~~Miks on default tab paremal pool?~~
+
+    _EmptyState_ ~~Juhul kui "otsing ei anna tulemusi", siis on tühja tabeli asemel vajalik täiesti erinev lähenemine: korralik suur visuaalne element ja/või sisu preview ning suur ja selge call to action~~ 
+    
     Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
     |Kuupäev|Teenus|Kirjeldus|Staatus||
     |---|---|---|---|---|
-    |Otsing ei andnud tulemusi|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+    |Otsing ei andnud tulemusi ~~Ma ei ole midagi otsinud?~~|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
@@ -46,20 +52,28 @@
   id: notifications
   body: |
 
-    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+    _Table_
+
+    Näita ```[10 ▾]``` rida ~~Ebavajalik~~ | Otsing ```[__________]``` ~~Üks väheseid tabeleid / listinguid kus otsing / filter on selgelt vajalik~~~
 
     ||Kuupäev|Pealkiri|
     |---|---|---|
-    |◌|24.08.2016|[Pilveserver gn235.zone.eu on kasutamiseks valmis]()|
+    |◌ |24.08.2016|[Pilveserver gn235.zone.eu on kasutamiseks valmis]()|
     |◌|23.08.2016|[Virtuaalserver domeenile kristjanjansen.ee on avatud]()|
     |◌|23.08.2016|[Virtuaalserveri tellimus domeenile kristjanjansen.ee on vastuvõetud]()|
     |◌|10.08.2016|[Esitasite tellimuse domeeni(de) registreerimiseks]()|
 
-    Näitan ridu 1 kuni 10. Ridu kokku 39. `Eelmine` `1` `2` `3` `4` `Järgmine`
+    ~~◌ Rea alguse ikoonid on head, kuid neid võiks paremini kasutada: nende taust olgu ruudu- või ringikujuline~~
+
+    Näitan ridu 1 kuni 10. Ridu kokku 39. ~~Ebavajalik~~  `Eelmine` `1` `2` `3` `4` `Järgmine`
 
 - title: Teated › Pilveserver gn235.zone.eu on kasutamiseks valmis 24.08.2016
   id: notifications_view
   body: |
+
+    _Notification_
+
+    ~~Miks ma pean lugema imeväikses kirjas plaintext e-maili veebis?~~
 
     > Hea klient!
 
@@ -102,18 +116,36 @@
 
     ## **Kasutajakonto** | Kontaktandmed | Seotud identiteedid
 
-    eesnimi
+    _TextField_
+
+    eesnimi  ~~See väli on 115 tähemärki pikk, ilmselt eesti veebiajaloo nimeväljade rekord~~
+    `[_____________________________________________]`
+    
+    perekonnanimi ~~Samuti 115 tähemärki~~
     `[_____________________________________________]`
 
-    perekonnanimi
-    `[_____________________________________________]`
+    ~~NB: vormiväljade label'itel pole mingit süsteemi, kohatud variandid on~~
+    
+    ~~eesnimi
+    Eesnimi
+    eesnimi:
+    Eesnimi:
+    eesnimi :
+    Eesnimi :~~
 
-    # OÜ Mingi Nimi
+    ~~+ boldis variandid~~
+    
+    # OÜ Mingi Nimi 
     # 12345678
-    # kasutajanimi: kasutajanimi
+    # kasutajanimi: kasutajanimi 
+    ~~Selle bloki võiks vormi algusesse tõsta~~ 
 
-    `[suhtluskeel: eesti (ET)______________________]`
+    _ButtonGroup_ ~~Kolme keele vahel valikuks ei ole vaja 115 märgi laiust dropdowni~~
 
+    `[suhtluskeel: eesti (ET)_____________________▾]`
+
+    _PasswordField_
+    
     **uus salasõna**
     `[_______________________]`
 
@@ -122,25 +154,31 @@
 
     `[✓]` Salasõna muutmisel kuva tärne
 
+    ~~Tavaliselt käib see vastupidi, password-välja juures on nupp "Näita passwordi". Siin teeb asja keeruliseks ka peidetud "Genereeri" funktsionaalsus~~
+
      **[Salvesta]()**
 
 - title: Sinu ZoneID kasutaja andmed
   id: account_contact
   body: |
 
-   ## Kasutajakonto | **Kontaktandmed** | Seotud identiteedid
+   ## Kasutajakonto | **Kontaktandmed** | Seotud identiteedid _Tabs_
 
-   `[riik: eesti (EE)________▾]`
+   ~~Labelite placeholderitega asendamisega ei tasu liiale minna, puhtam välimus ei kaalu alati üles selgemat funktsionaalsust~~
+
+   `[riik: eesti (EE)________▾]` ~~Pseudo-placeholder dropdowni puhul on veider~~
    `[linn, vald, küla_________]`
-   `[postiindeks______________]`
+   `[postiindeks______________]` ~~Kas me 2017 aastal ei suuda endiselt tuletada aadressist indeksit?~~
    `[maakond__________________]`
-   `[tänav, maja, korter /talu]`
-   `[Telefon__________________]`
+   `[tänav, maja, korter /talu]` ~~"/" ees on tühik puudu~~
+   `[Telefon__________________]` ~~Suur ja väiketähed on placeholderitel segamini~~
+
+   
 
    **E-posti aadress**
-   `[_________________________]`
+   `[_________________________]` ~~Ehk <input type="email"... ?~~
 
-    **Arve e-post**
+    **Arve e-post** ~~Vt eelmimse välja sõnastus~~
    `[_________________________]`
 
     **[Salvesta]()**
@@ -151,6 +189,8 @@
 
    ## Kasutajakonto | Kontaktandmed | **Seotud identiteedid**
 
+   _EmptyState_ ~~Kui seotud intentiteete pole, siis on kogu see tabel mittevajalik:~~
+   
    Otsing `[__________]`
 
    |Nimi|▲|
@@ -159,8 +199,9 @@
 
    Eelmine Järgmine
 
-   `[Seo kontoga uus väline identiteet ▾]`
+    ~~Too see kõige esimeseks:~~
 
+   `[Seo kontoga uus väline identiteet ▾]`  _ImageButtonGroup_ ~~Dropdown pole vajalik~~
 
 - title: Teenuste ülevaade
   id: delegations

@@ -11,8 +11,8 @@
         <div
             class="maincontent__body"
             :class="{
-                maincontent__show: displayComments,
-                maincontent__hide: !displayComments
+                maincontent__show: showComments,
+                maincontent__hide: !showComments
             }"
             v-html="activeContent.body"
         ></div>
@@ -35,7 +35,7 @@
             return {
                 content: [],
                 activeContent: {},
-                displayComments: true
+                showComments: true
             };
         },
         created: function () {
@@ -50,7 +50,7 @@
                 this.activeContent = this.content.find(item => item.id == id)
             })
             this.$events.$on('toggleComments', state => {
-                this.displayComments = state
+                this.showComments = state
             })
         }
     }
@@ -95,10 +95,10 @@
         color: $cool;
     }
     .maincontent__body blockquote {
-        margin: 0;
+        color: $gray-light;
         font: $font-text-sm;
-        opacity: $opacity-md;
         line-height: $line-height-md;
+        margin: 0;
     }
     .maincontent__body table {
         width: 100%;
@@ -150,6 +150,7 @@
         font: $font-text-md;
         border-radius: 3px;
         text-decoration: none;
+        white-space: nowrap;
     }
     .maincontent__body del {
         background: $yellow;

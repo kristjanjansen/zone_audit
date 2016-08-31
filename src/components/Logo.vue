@@ -7,19 +7,35 @@
         <div class="logo__subtitle">sisuaudit</div> 
 
         <div
+            @click="toggleComments"
             class="logo__comment"
             v-if="displayComments"
-            @click="toggleComments"
         >
-        Peida kommentaarid
+        Peida kommentaarid ja
         </div>
 
         <div
-            class="logo__comment"
-            v-else="displayComments"
             @click="toggleComments"
+            class="logo__pattern"
+            v-if="displayComments"
         >
-        Näita kommentaare
+        patternid
+        </div>
+
+        <div
+            @click="toggleComments"
+            class="logo__comment"
+            v-if="!displayComments"
+        >
+        Näita kommentaare ja
+        </div>
+
+        <div
+            @click="toggleComments"
+            class="logo__pattern"
+            v-if="!displayComments"
+        >
+        patterneid
         </div>
 
     </div>
@@ -62,6 +78,14 @@
     .logo__comment  {
         background: $yellow;
         color: $yellow-dark;
+        font: $font-comment-md;
+        padding-right: $padding-xs;
+        padding-left: $padding-xs;
+        cursor: pointer;
+    }
+    .logo__pattern  {
+        background: $green-light;
+        color: $green;
         font: $font-comment-md;
         padding-right: $padding-xs;
         padding-left: $padding-xs;

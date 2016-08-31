@@ -9,6 +9,7 @@ var colors = {
     blue: 'rgb(43, 45, 66)',
     cool: 'rgb(141, 153, 174)',
     gray: 'rgb(237, 242, 244)',
+    'gray-light': 'rgba(141, 153, 174, 0.6)',
     green: 'rgb(11, 168, 105)',
     'green-light': 'rgba(10, 135, 84, 0.1)',
     yellow: 'rgb(255, 232, 117)',
