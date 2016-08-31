@@ -276,9 +276,15 @@
 
     1 - 5 (kokku: 5) Eelmine leht : Järgmine leht  
 
-- title: Pikenda
+- title: Domeenide pikendamine
   id: domains_extend
   body: |
+
+    Vali vasakpoolsest kastist domeenid, mida soovid pikendada ning vajuta nuppu »» ~~Nähtamatu nupp?~~
+    
+    **Hetkel ei aegu veel ükski domeen lähima 60 päeva sees!** 
+
+    Juhul kui mõni domeen hakkab aeguma, saadetakse domeeni registreerija aadressile selle kohta kiri, misjärel on võimalik seda domeeni pikendada.
 
 - title: Alusta domeeni ületõstmist
   id: domains_transfer
@@ -351,6 +357,46 @@
     # **0** 
 
     FTP lisakontod
+
+- title: Virtuaalserveri tellimine
+  id: shared_add
+  body: |
+
+    Zone virtuaalserver sisaldab e-posti, veebi- ja andmebaasimajutust, DNS teenust ja muud vajalikku, et saaksid interneti lihtsalt ja kiirelt enda kasuks tööle panna.
+
+    ## Sisesta domeen, millele vajad serverit
+
+    ````
+    ====(1)====----------------------
+    ```
+
+    `[__________][ee____▾]`
+
+    Domeen, millele soovid serverit on veel registreerimata. Domeeni registreerimiseks vajuta [SIIA](). Pangalingiga makstes registreeritakse domeen 5 minuti jooksul peale makse laekumist ja siis on võimalik jätkata virtuaalserveri tellimusvormi täitmist.
+ 
+    ## Vali teenuspakett ja arveldusperiood
+
+    ```
+    ===============(2)====----------
+    ```
+
+    ## Sisesta tellija andmed, nõustu kasutustingimustega ja oledki valmis.
+
+    ```
+    ==========================(3)====
+    ```
+    > Tellimuse info
+
+    ## **saaremaailm.ee**
+    
+    ## Kuu kulu
+
+    # 0 €
+    
+    ## + KM
+    ## Summa arvel
+    ## 0 € + KM
+
 
 - title: Serveri ülevaade
   id: monitor

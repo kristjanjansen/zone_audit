@@ -29,6 +29,8 @@
   items:
     - title: Serveri ülevaade
       id: shared
+    - title: Lisa virtuaalserver
+      id: shared_add
     - title: Kasutajakonto
       items:
         - title: Delegeerimised
