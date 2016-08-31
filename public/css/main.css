@@ -581,19 +581,15 @@ body {
 }
 .pod {
     width: 100%;
-    border: 1px solid rgb(237, 242, 244);
+    border: 1px solid #f7f7f7;
 }
 .pod__title {
     font: normal 24px / 100% "Rubik", sans-serif;
 }
 .pod__subtitle {
     font: normal 24px / 100% "Rubik", sans-serif;
-    color: rgb(237, 242, 244);
+    color: rgb(11, 168, 105);
     margin-left: 6px;
-}
-.pod__progress {
-    background: rgb(237, 242, 244);
-    height: 0.5em;
 }
 .pod__content {
     height: 5em;
