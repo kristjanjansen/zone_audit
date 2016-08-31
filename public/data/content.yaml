@@ -38,6 +38,126 @@
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
+- title: Teated
+  id: notifications
+  body: |
+
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    ||Kuupäev|Pealkiri|
+    |---|---|---|
+    |◌|24.08.2016|[Pilveserver gn235.zone.eu on kasutamiseks valmis]()|
+    |◌|23.08.2016|[Virtuaalserver domeenile kristjanjansen.ee on avatud]()|
+    |◌|23.08.2016|[Virtuaalserveri tellimus domeenile kristjanjansen.ee on vastuvõetud]()|
+    |◌|10.08.2016|[Esitasite tellimuse domeeni(de) registreerimiseks]()|
+
+    Näitan ridu 1 kuni 10. Ridu kokku 39. `Eelmine` `1` `2` `3` `4` `Järgmine`
+
+- title: Teated › Pilveserver gn235.zone.eu on kasutamiseks valmis 24.08.2016
+  id: notifications_view
+  body: |
+
+    > Hea klient!
+
+    > Pilveserver (VPS) gn235.zone.eu on edukalt aktiveeritud ja valmis kasutamiseks.
+    
+    > Käesolevast kirjast leiate juhised ja andmed, mis võimaldavad
+    valitud teenust koheselt kasutama hakata.
+    
+    > 1.PILVESERVERI HALDAMINE
+    
+    > #########################
+
+    > Teie pilveserveri nimi on gn235.zone.eu
+    
+    > Pilveserveri haldamiseks on Teie käsutuses juhtpaneel, mille veebiliides 
+    võimaldab hallata tellitud teenust. Juhtpaneel võimaldab muuhulgas 
+    juurdepääsu pilveserveri konsoolile, serverit alglaadida, välja lülitada 
+    jne.
+
+    >/.../
+
+    > 4\. TÄNAME
+    > ##########
+
+    > Täname, et valisite meid oma kodulehe, veebirakenduste ja e-posti 
+    majutajaks. Loodame, et vastame Teie ootustele heast koostööpartnerist ja 
+    soovime meeldivat koostööd tulevateks aastateks. Tere tulemast kasutama 
+    Zone teenuseid!
+
+    > Lugupidamisega
+    > Zone Media klienditugi
+    > Tel: +372 688 6886
+    > Faks: +372 688 6887
+    > E-post: info@zone.ee
+    > http://www.zone.ee  
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account
+  body: |
+
+    ## **Kasutajakonto** | Kontaktandmed | Seotud identiteedid
+
+    eesnimi
+    `[_____________________________________________]`
+
+    perekonnanimi
+    `[_____________________________________________]`
+
+    # OÜ Mingi Nimi
+    # 12345678
+    # kasutajanimi: kasutajanimi
+
+    `[suhtluskeel: eesti (ET)______________________]`
+
+    **uus salasõna**
+    `[_______________________]`
+
+    **korda uut salasõna**
+    `[_______________________]`
+
+    `[✓]` Salasõna muutmisel kuva tärne
+
+     **[Salvesta]()**
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account_contact
+  body: |
+
+   ## Kasutajakonto | **Kontaktandmed** | Seotud identiteedid
+
+   `[riik: eesti (EE)________▾]`
+   `[linn, vald, küla_________]`
+   `[postiindeks______________]`
+   `[maakond__________________]`
+   `[tänav, maja, korter /talu]`
+   `[Telefon__________________]`
+
+   **E-posti aadress**
+   `[_________________________]`
+
+    **Arve e-post**
+   `[_________________________]`
+
+    **[Salvesta]()**
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account_identities
+  body: |
+
+   ## Kasutajakonto | Kontaktandmed | **Seotud identiteedid**
+
+   Otsing `[__________]`
+
+   |Nimi|▲|
+   |---|---|
+   |Teie ZoneID kontoga pole seotud ühtegi kolmanda osapoole autentimisvahendit|&nbsp;|
+
+   Eelmine Järgmine
+
+   `[Seo kontoga uus väline identiteet ▾]`
+
+
 - title: Teenuste ülevaade
   id: delegations
   body: |
@@ -264,15 +384,15 @@
     
     |Tellimus|Arve|Tellimuse summa|Makse|Allkiri|Volitus|
     |---|---|---|---|---|---|
-    |◌ #298556 (kristjanjansen.ee)|#7649977 ◌ ◌|**... EUR**|◌|◌|◌| 
-    |◌ #243173 (kristjanjansen.ee)|#7649597 ◌ ◌|**... EUR**|◌|◌|◌| 
-    |◌ #243170 (kristjanjansen.ee)|#7453005 ◌ ◌|**... EUR**|◌|◌|◌| 
+    |◌ #298556 (kristjanjansen.ee)|#7649977 ◌ ◌|**123 EUR**|◌|◌|◌| 
+    |◌ #243173 (kristjanjansen.ee)|#7649597 ◌ ◌|**123 EUR**|◌|◌|◌| 
+    |◌ #243170 (kristjanjansen.ee)|#7453005 ◌ ◌|**123 EUR**|◌|◌|◌| 
     
     2016.08.10 11:20
-    ## **Domeeni kristjanjansen.ee reaktiveerimine: 1 aasta(t) OK** 11,04 EUR  
-    > Summa ilma käibemaksuta:  9,20 EUR  
-    > Käibemaks (20%):  1,84 EUR  
-    **Summa koos käibemaksuga:  11,04 EUR**  
+    ## **Domeeni kristjanjansen.ee reaktiveerimine: 1 aasta(t) OK** 123,4 EUR  
+    > Summa ilma käibemaksuta:  1,23 EUR  
+    > Käibemaks (20%):  1,23 EUR  
+    **Summa koos käibemaksuga:  1,23 EUR**  
 
     1 - 5 (kokku: 5) Eelmine leht : Järgmine leht  
 
@@ -2711,7 +2831,60 @@
 
     |SSH kasutajanimi|Serverid|Lubatud IP aadressid||
     |---|---|---|---|
-    |virt59090|kristjanjansen.ee|**Lisa uus+**|[Halda avalikke võtmeid]()|
+    |**virt59090**|kristjanjansen.ee|**[Lisa uus ◌]()**|◌ [Halda avalikke võtmeid]()|
+
+- title: ◌ Lisa IP aadress tulemüüri lubatud aadresside nimekirja
+  id: ssh_add
+  body: |
+  
+    Lisa IP aadress tulemüüri lubatud aadresside nimekirja
+   
+    IP aadress 
+    `[2001:7d0:8b58:370:d5c0:821c:b913:69de]`
+   
+    Kommentaar:
+    `[__________]`
+
+    **[◌ Jätka ]()** Sulge
+
+    ~~Jätka viib unkaalse patternini: dark overlay confim~~
+
+- title: SSH avalike võtmete haldamine
+  id: ssh_manage
+  body: |
+  
+    # ◌ Lisa avalik võti
+
+    Siin saab hallata SSH kasutaja virt59090 avalikke võtmeid. Lisada on võimalik RSA võtmeid pikkusega 2048 ja 4096 bitti.
+
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Kuupäev|Kirjeldus|Tellimus|Kokku|Staatus|
+    |---|---|---|---|---|
+    |Sa veel ei kasuta seda teenust|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+    > Näitan ridu 0 kuni 0 Eelmine Järgmine
+
+- title: ...
+  id: ssh_manage_add
+  body: |
+
+    Algoritm:
+    `[RSA_______]` ~~Ainut üks valik ongi, dropdown mittevajalik~~ 
+
+    Kommentaar : 
+    `[__________]`
+
+    Avalik võti :
+    ```
+
+
+
+
+    ```
+
+    **[◌ Jätka ]()** Sulge
+
 
 - title: ZoneCloud
   id: zonecloud
@@ -2726,3 +2899,22 @@
     |ZoneCloud konto|Andmete maht|Premium|
     |---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|
+
+    > Andmemahu statistikat uuendatakse kord tunnis.
+
+    # LOGO
+
+    ## Reklaamivaba töölaud Zone pilves. Säilita ja jaga faile. Sünkrooni andmeid seadmete vahel.
+
+    > Pilve paigutatud andmed on sinu käeulatuses 24/7 nii veebilehitsejas, nutiseadmes kui ka lauaarvutis. Olgu su platvormiks Windows, Mac, Linux, iOS või Android.
+
+    > Sinu ja ZoneCloud töölaua vahel liikuvaid andmeid kaitseb TLS tehnoloogia 2048 bitise krüptovõtmega. Andmeid varundatakse regulaarselt off-site andmekeskusesse.
+
+    > ZoneCloud töölaud on ühilduv avatud standarditega nagu WebDAV, CalDAV ja CardDAV.
+
+    **[ZoneCloud veebileht ◌]()**
+
+    ## Lae alla rakendus oma seadmele
+
+    **[◌ Desktop app]()** **[◌ Google Play]()** **[◌ App Store]()**
+

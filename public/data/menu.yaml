@@ -1,5 +1,17 @@
 - title: Teenuste ülevaade
   id: dashboard
+- title: Kasutajakonto
+  items:
+    - title: Teated
+      id: notifications
+    - title: Teated → Vaata 
+      id: notifications_view
+    - title: Kasutajakonto
+      id: account
+    - title: Kontaktandmed
+      id: account_contact
+    - title: Seotud indentiteedid
+      id: account_identities
 - title: Domeenid
   items:
     - title: Minu domeenid
@@ -226,6 +238,16 @@
   id: zoneplus
 - title: SSH
   id: ssh
+  items:
+    - title: SSH haldamine
+      id: ssh
+    - title: SSH haldamine → Lisa
+      id: ssh_add
+    - title: SSH haldamine → Halda
+      id: ssh_manage
+    - title: SSH haldamine → Halda → Lisa
+      id: ssh_manage_add
 - title: ZoneCloud
   id: zonecloud
+
 
