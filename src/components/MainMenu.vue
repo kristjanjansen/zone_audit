@@ -9,7 +9,7 @@
                 class="mainmenu__first"
             >
 
-                <div class="mainmenuu__firsttitle">
+                <div class="mainmenu__firsttitle">
 
                     {{ item1.title }}
 
@@ -26,7 +26,9 @@
                     :class="{mainmenu__disabled: !item2.id}"
                 >
                     
-                    {{ item2.title }}
+                    {{ item2.title }} 
+
+                    <span v-if="showComments && item2.comments" class="mainmenu__comments">●</span>
                 
                 </div>
     
@@ -41,6 +43,8 @@
 
                     {{ item3.title }}
                     
+                    <span v-if="showComments && item3.comments" class="mainmenu__comments">●</span>
+
                     </div>
                 
                 </div>
@@ -59,7 +63,10 @@
 
     export default {
         data() {
-            return { items: {} };
+            return {
+                items: {},
+                showComments: true
+            };
         },
         methods: {
             selectFirstMenu: function(id) {
@@ -81,6 +88,9 @@
                     item.show = false;
                     return item;
                 })
+            })
+            this.$events.$on('toggleComments', state => {
+                this.showComments = state
             })
         }
     }
@@ -118,5 +128,8 @@
         margin-left: $margin-xl;
         opacity: $opacity-md;
         white-space: nowrap;
+    }
+    .mainmenu__comments {
+        color: $yellow;
     }
 </style>
