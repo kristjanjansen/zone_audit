@@ -256,9 +256,25 @@
 
     **[« Tagasi]()** **[Muuda]()**
 
-- title: Tellimused
+- title: Tellimused ja arved
   id: domains_orders
   body: |
+    
+    **1 - 5 (kokku: 5)** Eelmine leht : Järgmine leht  
+    
+    |Tellimus|Arve|Tellimuse summa|Makse|Allkiri|Volitus|
+    |---|---|---|---|---|---|
+    |◌ #298556 (kristjanjansen.ee)|#7649977 ◌ ◌|**... EUR**|◌|◌|◌| 
+    |◌ #243173 (kristjanjansen.ee)|#7649597 ◌ ◌|**... EUR**|◌|◌|◌| 
+    |◌ #243170 (kristjanjansen.ee)|#7453005 ◌ ◌|**... EUR**|◌|◌|◌| 
+    
+    2016.08.10 11:20
+    ## **Domeeni kristjanjansen.ee reaktiveerimine: 1 aasta(t) OK** 11,04 EUR  
+    > Summa ilma käibemaksuta:  9,20 EUR  
+    > Käibemaks (20%):  1,84 EUR  
+    **Summa koos käibemaksuga:  11,04 EUR**  
+
+    1 - 5 (kokku: 5) Eelmine leht : Järgmine leht  
 
 - title: Pikenda
   id: domains_extend
@@ -2361,7 +2377,7 @@
 - title: Tellimused
   id: ssl_orders
   body: |
-
+    
 - title: Pikendamine
   id: ssl_extending
   body: |
