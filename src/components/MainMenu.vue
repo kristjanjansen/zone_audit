@@ -1,15 +1,15 @@
 <template>
     
-    <div class="MainMenu">
+    <div class="mainmenu">
         
         <div v-for="item1 in items">
     
             <div
                 @click="selectFirstMenu(item1.id)"
-                class="MainMenu__first"
+                class="mainmenu__first"
             >
 
-                <div class="MainMenu__firstTitle">
+                <div class="mainmenu__firsttitle">
 
                     {{ item1.title }}
 
@@ -22,11 +22,13 @@
                 <div
                     @click="selectSecondThirdMenu(item2.id)"
                     v-if="item1.show"
-                    class="MainMenu__second"
-                    :class="{MainMenu__disabled: !item2.id}"
+                    class="mainmenu__second"
+                    :class="{mainmenu__disabled: !item2.id}"
                 >
                     
-                    {{ item2.title }}
+                    {{ item2.title }} 
+
+                    <span v-if="showComments && item2.comments" class="mainmenu__comments">●</span>
                 
                 </div>
     
@@ -35,12 +37,14 @@
                     <div
                         @click="selectSecondThirdMenu(item3.id)"
                         v-if="item1.show"
-                        class="MainMenu__third"
-                        :class="{MainMenu__disabled: !item3.id}"
+                        class="mainmenu__third"
+                        :class="{mainmenu__disabled: !item3.id}"
                     >
 
                     {{ item3.title }}
                     
+                    <span v-if="showComments && item3.comments" class="mainmenu__comments">●</span>
+
                     </div>
                 
                 </div>
@@ -59,7 +63,10 @@
 
     export default {
         data() {
-            return { items: {} };
+            return {
+                items: {},
+                showComments: true
+            };
         },
         methods: {
             selectFirstMenu: function(id) {
@@ -82,13 +89,16 @@
                     return item;
                 })
             })
+            this.$events.$on('toggleComments', state => {
+                this.showComments = state
+            })
         }
     }
 
 </script>
 
 <style>
-    .MainMenu__first {
+    .mainmenu__first {
         align-items: center;
         color: $blue;
         cursor: pointer;
@@ -97,11 +107,11 @@
         margin-bottom: $margin-md;
         white-space: nowrap;
     }
-    .MainMenu__disabled {
+    .mainmenu__disabled {
         opacity: 0.15 !important;
         cursor: auto !important;
     }
-    .MainMenu__second {
+    .mainmenu__second {
         color: $blue;
         cursor: pointer;
         font: $font-heading-sm;
@@ -110,7 +120,7 @@
         opacity: $opacity-lg;
         white-space: nowrap;
     }
-    .MainMenu__third {
+    .mainmenu__third {
         color: $blue;
         cursor: pointer;
         font: $font-heading-xs;
@@ -118,5 +128,8 @@
         margin-left: $margin-xl;
         opacity: $opacity-md;
         white-space: nowrap;
+    }
+    .mainmenu__comments {
+        color: $yellow;
     }
 </style>

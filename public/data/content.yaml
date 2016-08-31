@@ -2,41 +2,208 @@
   id: dashboard
   body: |
     
-    ## ◌ Kontoseis ◌ Teated ◌ Seaded
+    ## ◌ Kontoseis ◌ Teated ◌ Seaded _DashboardItem_
+
+    ---
 
     # Virtuaalserverid
     
-    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver
+    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver _ActionBar_
 
-    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+    _BigTable_~~või~~_Grid_~~Kui 10+ serverit siis~~_Table_
+
+    Näita ```[10 ▾]``` rida ~~M-km, selleks on pager vms~~ | Otsing ```[__________]``` ~~Mõistlik 10+ serveri puhul~~
 
     |Nimi|Pakett|Kiirviited||
     |---|---|---|---|
-    |kristjanjansen.ee|II|**[Kiirviited ▾]()**| **[◌ Halda]()**|
+    |kristjanjansen.ee|II ~~Raskelt loetav, mõjub veeruvahena~~|**[Kiirviited ▾]()**| **[◌ Halda]()**|
 
-    > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
+    > Näitan ridu 1 kuni 1. Ridu kokku 1. ~~Ebavajalik, see ei ole phpMySql~~| Eelmine ```1``` Järgmine ~~Näita ainult siis, kui on mitu lehekülge~~
+
+    ---
 
     # Domeenid
     
-    ## ◌ Halda domeene ◌ Registreeri uus domeen
+    ## ◌ Halda domeene ◌ Registreeri uus domeen _ActionBar_
+
+    _BigTable_~~või~~_Grid_
 
     Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
-    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC|
+    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC ~~Arusaamatu~~|
     |---|---|---|---|---|
-    |kristjanjansen.ee|Registreeritud|**[Kiirviited ▾]()**|07.08.2017|◌|
+    |kristjanjansen.ee|Registreeritud ~~Siia sobiks staatusele vastav värvikood, ● vms~~|**[Kiirviited ▾]()**|07.08.2017|◌ ~~Kas kuskilt mujalt ka siia lingini jõuab?~~|
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
 
-    ## Arved | **Aktiivsed tellimused**
+    ---
 
+    ## Arved | **Aktiivsed tellimused** _Tabs_ ~~Miks on default tab paremal pool?~~
+
+    _EmptyState_ ~~Juhul kui "otsing ei anna tulemusi", siis on tühja tabeli asemel vajalik täiesti erinev lähenemine: korralik suur visuaalne element ja/või sisu preview ning suur ja selge call to action~~ 
+    
     Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
     |Kuupäev|Teenus|Kirjeldus|Staatus||
     |---|---|---|---|---|
-    |Otsing ei andnud tulemusi|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+    |Otsing ei andnud tulemusi ~~Ma ei ole midagi otsinud?~~|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 
     > Näitan ridu 1 kuni 1. Ridu kokku 1. | Eelmine ```1``` Järgmine
+
+- title: Teated
+  id: notifications
+  body: |
+
+    _Table_
+
+    Näita ```[10 ▾]``` rida ~~Ebavajalik~~ | Otsing ```[__________]``` ~~Üks väheseid tabeleid / listinguid kus otsing / filter on selgelt vajalik~~~
+
+    ||Kuupäev|Pealkiri|
+    |---|---|---|
+    |◌ |24.08.2016|[Pilveserver gn235.zone.eu on kasutamiseks valmis]()|
+    |◌|23.08.2016|[Virtuaalserver domeenile kristjanjansen.ee on avatud]()|
+    |◌|23.08.2016|[Virtuaalserveri tellimus domeenile kristjanjansen.ee on vastuvõetud]()|
+    |◌|10.08.2016|[Esitasite tellimuse domeeni(de) registreerimiseks]()|
+
+    ~~◌ Rea alguse ikoonid on head, kuid neid võiks paremini kasutada: nende taust olgu ruudu- või ringikujuline~~
+
+    Näitan ridu 1 kuni 10. Ridu kokku 39. ~~Ebavajalik~~  `Eelmine` `1` `2` `3` `4` `Järgmine`
+
+- title: Teated › Pilveserver gn235.zone.eu on kasutamiseks valmis 24.08.2016
+  id: notifications_view
+  body: |
+
+    _Notification_
+
+    ~~Miks ma pean veebis lugema imeväikses kirjas plaintext e-maili?~~
+
+    > Hea klient!
+
+    > Pilveserver (VPS) gn235.zone.eu on edukalt aktiveeritud ja valmis kasutamiseks.
+    
+    > Käesolevast kirjast leiate juhised ja andmed, mis võimaldavad
+    valitud teenust koheselt kasutama hakata.
+    
+    > 1.PILVESERVERI HALDAMINE
+    
+    > #########################
+
+    > Teie pilveserveri nimi on gn235.zone.eu
+    
+    > Pilveserveri haldamiseks on Teie käsutuses juhtpaneel, mille veebiliides 
+    võimaldab hallata tellitud teenust. Juhtpaneel võimaldab muuhulgas 
+    juurdepääsu pilveserveri konsoolile, serverit alglaadida, välja lülitada 
+    jne.
+
+    >/.../
+
+    > 4\. TÄNAME
+    > ##########
+
+    > Täname, et valisite meid oma kodulehe, veebirakenduste ja e-posti 
+    majutajaks. Loodame, et vastame Teie ootustele heast koostööpartnerist ja 
+    soovime meeldivat koostööd tulevateks aastateks. Tere tulemast kasutama 
+    Zone teenuseid!
+
+    > Lugupidamisega
+    > Zone Media klienditugi
+    > Tel: +372 688 6886
+    > Faks: +372 688 6887
+    > E-post: info@zone.ee
+    > http://www.zone.ee  
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account
+  body: |
+
+    ## **Kasutajakonto** | Kontaktandmed | Seotud identiteedid
+
+    _TextField_
+
+    eesnimi  ~~See väli on 115 tähemärki pikk, ilmselt eesti veebiajaloo nimeväljade rekord~~
+    `[_____________________________________________]`
+    
+    perekonnanimi ~~Samuti 115 tähemärki~~
+    `[_____________________________________________]`
+
+    ~~NB: vormiväljade label'itel pole mingit süsteemi, kohatud variandid on~~
+    
+    ~~eesnimi
+    Eesnimi
+    eesnimi:
+    Eesnimi:
+    eesnimi :
+    Eesnimi :~~
+
+    ~~+ boldis variandid~~
+    
+    # OÜ Mingi Nimi 
+    # 12345678
+    # kasutajanimi: kasutajanimi 
+    ~~Selle bloki võiks vormi algusesse tõsta~~ 
+
+    _ButtonGroup_ ~~Kolme keele vahel valikuks ei ole vaja 115 märgi laiust dropdowni~~
+
+    `[suhtluskeel: eesti (ET)_____________________▾]`
+
+    _PasswordField_
+    
+    **uus salasõna**
+    `[_______________________]`
+
+    **korda uut salasõna**
+    `[_______________________]`
+
+    `[✓]` Salasõna muutmisel kuva tärne
+
+    ~~Tavaliselt käib see vastupidi, password-välja juures on nupp "Näita passwordi". Siin teeb asja keeruliseks ka peidetud "Genereeri" funktsionaalsus~~
+
+     **[Salvesta]()**
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account_contact
+  body: |
+
+   ## Kasutajakonto | **Kontaktandmed** | Seotud identiteedid _Tabs_
+
+   ~~Labelite placeholderitega asendamisega ei tasu liiale minna, puhtam välimus ei kaalu alati üles selgemat funktsionaalsust~~
+
+   `[riik: eesti (EE)________▾]` ~~Pseudo-placeholder dropdowni puhul on veider~~
+   `[linn, vald, küla_________]`
+   `[postiindeks______________]` ~~Kas me 2017 aastal ei suuda endiselt tuletada aadressist indeksit?~~
+   `[maakond__________________]`
+   `[tänav, maja, korter /talu]` ~~"/" ees on tühik puudu~~
+   `[Telefon__________________]` ~~Suur ja väiketähed on placeholderitel segamini~~
+
+   
+
+   **E-posti aadress**
+   `[_________________________]` ~~Ehk <input type="email"... ?~~
+
+    **Arve e-post** ~~Vt eelmimse välja sõnastus~~
+   `[_________________________]`
+
+    **[Salvesta]()**
+
+- title: Sinu ZoneID kasutaja andmed
+  id: account_identities
+  body: |
+
+   ## Kasutajakonto | Kontaktandmed | **Seotud identiteedid**
+
+   _EmptyState_ ~~Kui seotud intentiteete pole, siis on kogu see tabel mittevajalik:~~
+   
+   Otsing `[__________]`
+
+   |Nimi|▲|
+   |---|---|
+   |Teie ZoneID kontoga pole seotud ühtegi kolmanda osapoole autentimisvahendit|&nbsp;|
+
+   Eelmine Järgmine
+
+    ~~Too see kõige esimeseks:~~
+
+   `[Seo kontoga uus väline identiteet ▾]`  _ImageButtonGroup_ ~~Dropdown pole vajalik~~
 
 - title: Teenuste ülevaade
   id: delegations
@@ -114,15 +281,276 @@
   id: domains
   body: |
 
-    ```[__________]``` **[Otsi domeeni]()**
+    _BigTable_~~või~~_Grid_~~Kui 10+ serverit siis~~_Table_
 
-    ## Lisa delegeering kasutajale
+    ```[__________]``` **[Otsi domeeni]()** ~~Vajalik alles 10+ domeeni puhul~~
 
-    ```[__________]``` **[Lisa]()**
+    |Domeen|Staatus|Aegub|Vaata/Muuda||
+    |---|---|---|---|---|
+    |kristjanjansen.ee|Aktiivne|07.08.2017| [nimeserverid]() / [kontaktid]() / [halda serverit]()|~~Kuhu kadus DNSSEC?~~|
 
-    |Domeen|Staatus|Aegub|Vaata/Muuda|
-    |---|---|---|---|
-    |kristjanjansen.ee|Aktiivne|07.08.2017| [nimeserverid]() / [kontaktid]() / [halda serverit]()|
+    ~~Teenuste ülevaatelehel oli "Domeen | Staatus | Kiirviited | Aegub | DNSSEC". Miks mitte sama järjekord ja kiirviited?~~
+
+- title: Domeeni nimeserverite muutmine
+  id: domains_nameservers
+  body: |
+
+    Siin lehel saad muuta domeeni kristjanjansen.ee nimeservereid. NB! .Fi ~~või .fi ?~~ domeeni nimeserverite muutmiseks siseta eelnevalt kehtiv autoriseerimiskood. ~~‹ Kas see .fi tekst on vajalik juhul kui mul ei ole .fi domeene?~~ 
+
+    _LargeSelectField_
+
+    ```(●)``` **Kasutan Zone nimeservereid**
+
+    > Selle valiku puhul saad muuta siin keskkonnas vahetult ka **MX, A,TXT ja CNAME** kirjeid
+    
+    ```( )``` Määran ja haldan ise domeeni nimeservereid 
+    
+    > Oma nimeserverite sisestamisel ei saa siin keskkonnas muuta domeeni **MX, A,TXT** ega **CNAME** kirjeid. Neid saab muuta vaid selle serveri administraator, kelle NS kirjed sa domeenile määrad ~~Viimane lause jäi küll segaseks~~
+
+    ## Kirjed
+
+    **Nimeserver #1**:  ns.zone.eu
+    **Nimeserver #2**:  ns2.zone.ee
+    **Nimeserver #3**:  ns3.zonedata.net
+
+    [Muuda DNS kirjeid]() ~~Oluline funktsionaalsus on väga sügavale peidetud~~ | [Vaata tsoonifaili]()
+    
+    **[Muuda]()**
+
+- title: DNS kirjete muutmine
+  id: domains_nameservers_dns
+  body: |
+  
+    Käesoleval lehel saad muuta kristjanjansen.ee DNS kirjeid.
+
+    ~~Nii olulisel ja keerulisel lehel ei ole mitte mingisugust abiinfot?~~
+
+    ## A/AAAA kirjed
+
+    #1 Host ```[_____]```.kristjanjansen.ee IP: ```[217.146.69.30]``` ```[ ]``` kustuta ~~Miks see on checkbox, mitte nupp?~~
+    **[+]()**
+
+    ## MX kirjed
+
+    #1 Host ```[_____]```.kristjanjansen.ee Priority: IP:```[10]``` ```[mx1.zone.eu]``` ```[ ]``` kustuta
+    #2 Host ```[_____]```.kristjanjansen.ee Priority: IP:```[20]``` ```[mx2.zone.eu]``` ```[ ]``` kustuta
+    **[+]()**
+
+    ## CNAME kirjed
+
+    #1 Host ```[____*]```.kristjanjansen.ee CNAME: ```[kristjanjansen.ee]``` ```[ ]``` kustuta
+    **[+]()**
+
+    ## TXT kirjed
+
+    #1 Host ```[_____]```.kristjanjansen.ee Sisu: ```[__________]``` ```[ ]``` kustuta
+    **[+]()**
+
+    **[« Tagasi]()** **[Muuda]()**
+
+- title: ...
+  id: domains_nameservers_zonefile
+  body: |
+
+    ~~Andmedump popupis, ei midagi muud~~
+
+    ```
+    ; ===================================================================================== ;
+    ; Generated by DataZone 2016/08/29 15:19:42
+    ; ===================================================================================== ;
+    ; Records were last modified 2016/08/29 15:15:21
+
+    ; SOA record
+    $TTL 3600
+    kristjanjansen.ee.  IN  SOA ns.zone.eu. hostmaster.zone.eu. (
+          2016082917  ; serial
+          10800 ; refresh, seconds
+          3600  ; retry, seconds
+          604800  ; expire, seconds
+          3600) ; minimum TTL, seconds
+
+    ; 3 NS record(s)
+    kristjanjansen.ee.    IN  NS  ns.zone.eu.
+    kristjanjansen.ee.    IN  NS  ns2.zone.ee.
+    kristjanjansen.ee.    IN  NS  ns3.zonedata.net.
+
+    ; 2 MX record(s)
+    kristjanjansen.ee.    IN  MX  10 mx1.zone.eu.
+    kristjanjansen.ee.    IN  MX  20 mx2.zone.eu.
+
+    ; 1 A/AAAA record(s)
+    kristjanjansen.ee.    IN  A 217.146.69.30
+
+    ; 1 Automatic AAAA record(s)
+    kristjanjansen.ee.    IN  AAAA  2a02:29e8:770:0:3::40
+
+    ; 1 CNAME record(s)
+    *.kristjanjansen.ee.    IN  CNAME kristjanjansen.ee.
+
+    ; 1 SRV record(s)
+    _autodiscover._tcp.kristjanjansen.ee.   IN  SRV 0 0 443 webmail.zone.ee.
+
+    ; 0 TXT record(s)
+    ```
+
+- title: Domeeni kontaktid
+  id: domains_contacts
+  body: |
+  
+    Siin lehel saad muuta ~~Ei saa muuta, selleks on kolm alamlehte~~ domeeni kristjanjansen.ee kontakte. **NB!** .Fi domeeni omaniku andmete muutmiseks siseta eelnevalt kehtiv autoriseerimiskood.
+
+    ~~Kas neid kontakti 1 x VAATAMISE ja 3 x MUUTMISE lehti ei saa koondada üheks leheks, kus saab kõike välju muuta? Vaikimisi ühekordsete andmetena ja vajadusel eristudes?~~
+
+    ## Registreerija andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+    ## Halduskontakti andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+    ## Tehniliste kontaktide andmed
+
+    **Nimi: OÜ Kustukas**
+    **Telefon:**  +372 ...
+    **Faks:** -
+    **E-posti aadress:**
+    kristjan.jansen@gmail.com  
+    **Riik:** EE - Eesti
+    **Maakond:** ...
+    **Linn:** ...
+    **Tänav/maja/korter:** ...
+    **Postiindeks:** ...
+
+    **[Muuda]()** **[Lisa]()**
+
+- title: Muuda kontaktisikut
+  id: domains_contacts_edit
+  body: |
+
+    > Muuda kontaktisikut ~~Sama mis pealkiri, ebavajalik~~
+
+    Nimi: **OÜ Mingi Nimi**
+    
+    Identifikaator: Äriregistri kood: **12312779**
+    
+    Identifikaatori riik: ```[EE - Eesti ▾]``` * ~~Kas on mõtet kohustusliku välja tärni näidata kui kogu vormi väljad on kohustuslikud?~~
+    
+    Telefon: ```[+372 - Eesti ▾]``` ```[50.....]```*
+     
+    E-posti aadress: ```[kristjan.jansen@gmail.com]``` *
+    
+    _CountrySelectField_
+
+    Riik: ```[EE - Eesti ▾]``` * 
+    
+    _AddressFields_
+
+    Maakond: ```[__________]``` *
+
+    Linn: ```[__________]``` *
+
+    Tänav/maja/korter: ```[__________]``` * 
+
+    Postiindeks: ```[__________]``` * 
+
+    **[« Tagasi]()** **[Muuda]()**
+
+- title: Tellimused ja arved
+  id: domains_orders
+  body: |
+    
+    **1 - 3 (kokku: 3)** Eelmine leht : Järgmine leht  ~~Ebavajalik~~
+    
+    |Tellimus|Arve|Tellimuse summa|Makse|Allkiri|Volitus|
+    |---|---|---|---|---|---|
+    |▸~~‹ Pole klikitav~~ #298556 (kristjanjansen.ee)|#7649977 ◌ ◌ ~~PDF ja ...?~~|**123 EUR**|(✓)|(✓)|(✓)~~Mida see poolläbipaistev checkmark tähendab?~~| 
+    |▸ #243173 (kristjanjansen.ee)|#7649597 ◌ ◌|**123 EUR**|(✓)|(✓)|(✓)|
+    |▾ #243170 (kristjanjansen.ee)|#7453005 ◌ ◌|**123 EUR**|(✓)|(✓)|(✓)|
+    
+    ~~Arve on segaselt kujundatud, infohierarhia paigast ära~~
+
+    2016.08.10 11:20
+
+    ## **Domeeni kristjanjansen.ee reaktiveerimine: 1 aasta(t) OK** 123,4 EUR  
+    
+    > Summa ilma käibemaksuta:  1,23 EUR  
+    > Käibemaks (20%):  1,23 EUR  
+    **Summa koos käibemaksuga:  1,23 EUR**  
+
+    ---
+
+    1 - 5 (kokku: 5) ~~Ebavajalik~~ Eelmine leht : Järgmine leht ~~Näidata ainult siis kui on mitu lehekülge~~
+
+- title: Domeenide pikendamine
+  id: domains_extend
+  body: |
+
+    Vali vasakpoolsest kastist domeenid, mida soovid pikendada ning vajuta nuppu »» ~~Nähtamatu nupp?~~
+    
+    **Hetkel ei aegu veel ükski domeen lähima 60 päeva sees!** 
+
+    Juhul kui mõni domeen hakkab aeguma, saadetakse domeeni registreerija aadressile selle kohta kiri, misjärel on võimalik seda domeeni pikendada.
+
+- title: Alusta domeeni ületõstmist
+  id: domains_transfer
+  body: |
+
+    TRADE on operatsioon, kus vahetub domeeninime omanik.
+    TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
+
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellise nimega nuppu siin ei ole~~
+
+    # Otsi domeeni
+    
+    # ```[__________]```**[q]()**
+
+- title: Alusta domeeni ületõstmist
+  id: domains_trade
+  body: |
+
+    ~~Kas selle lehe pealkiri ei peaks rääkima omanikuvahetusest? Kas siin on TRADE lehega copy-paste tehtud?~~
+
+    TRADE on operatsioon, kus vahetub domeeninime omanik.
+    TRANSFER on operatsioon, kus vahetub domeeninime haldur ehk registripidaja. 
+
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellise nimega nuppu siin ei ole~~
+
+    # Otsi domeeni
+    
+    # ```[__________]```**[q]()**
+
+- title: Registreeri uus domeen
+  id: domains_register
+  body: |
+  
+    Sisesta soovitud domeen ja vajuta **otsi** ~~Sellenimelist nuppu ei ole~~
+
+    # Otsi domeeni
+
+    # ```[__________]```**[q]()**
 
 - title: kristjanjansen.ee
   id: shared
@@ -157,6 +585,46 @@
     # **0** 
 
     FTP lisakontod
+
+- title: Virtuaalserveri tellimine
+  id: shared_add
+  body: |
+
+    Zone virtuaalserver sisaldab e-posti, veebi- ja andmebaasimajutust, DNS teenust ja muud vajalikku, et saaksid interneti lihtsalt ja kiirelt enda kasuks tööle panna.
+
+    ## Sisesta domeen, millele vajad serverit
+
+    ````
+    ====(1)====----------------------
+    ```
+
+    `[__________][ee____▾]`
+
+    Domeen, millele soovid serverit on veel registreerimata. Domeeni registreerimiseks vajuta [SIIA](). Pangalingiga makstes registreeritakse domeen 5 minuti jooksul peale makse laekumist ja siis on võimalik jätkata virtuaalserveri tellimusvormi täitmist.
+ 
+    ## Vali teenuspakett ja arveldusperiood
+
+    ```
+    ===============(2)====----------
+    ```
+
+    ## Sisesta tellija andmed, nõustu kasutustingimustega ja oledki valmis.
+
+    ```
+    ==========================(3)====
+    ```
+    > Tellimuse info
+
+    ## **saaremaailm.ee**
+    
+    ## Kuu kulu
+
+    # 0 €
+    
+    ## + KM
+    ## Summa arvel
+    ## 0 € + KM
+
 
 - title: Serveri ülevaade
   id: monitor
@@ -879,9 +1347,51 @@
 
     ## Kasutusel olevad E-posti aadressid
 
-- title: E-posti konto lisamine PUUDU
-  id: emailaccounts_add
+- title: E-posti konto lisamine
+  id: emailaccounts_edit
   body: |
+    
+    E-posti aadress: ```[______test3]@kristjanjansen.ee```   
+
+    > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
+    Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
+    Lokaalne osa võib sisaldada märke **a..z, 0..9**, punkti '**.**', sidekriipsu '**-**' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+
+    Kommentaar/nimi: ```[__________]```
+
+    > Kommentaar on e-posti aadressi juurde kuuluv informatiivne tekst või isiku nimi, kelle aadress see on.
+
+    Piirsuurus: ```[______1024] MiB(max. 12288 MiB)```
+
+    > Maksimaalne postkasti suurus.
+
+    Mail-To-HTTP URL: ```[__________]```
+
+    > ?    Mail-To-HTTP URL
+    Kui soovid, et kõik sellele aadressile tulnud kirjad edastataks domeeni kodulehele, siis sisesta siis täpne kodulehe skripti aadress (URL).
+    Kirja saabumisel tehakse sellele URL-ile POST päring ning pannakse kaasa massiiv **$mail_to_http[..]** järgmiste atribuutidega:
+    from (string) - Kirja saatja (SMTP protokolli MAIL FROM:<aadress>)
+    rcpt (string) - Kirja adressaat (SMTP protokolli RCPT TO:<aadress>)
+    body (string) - Kogu RFC822 kiri töötlemata kujul
+    real_length (int) - Töötlemata kirja täispikkus. Hetkel antakse body atribuudiga üle esimesed 500Kb saadetud kirjast. real_length ja body pikkuse võrdlusel saab teada, kas tegemist on pikema kirjaga või mitte.
+
+    Kasutajanimi: **test3@kristjanjansen.ee** 
+
+    > (sama, mis e-posti aadress)
+
+    > Kasutajanimi e-posti kontosse sisse logimisel.
+
+    Sisesta salasõna: ```[__________]```  
+    
+    > Salasõna peab sisaldama väikseid ja suuri tähti ning numbreid
+    
+    » uuesti: ```[__________]```   
+    
+    ```[ ]``` Parooli muutmine veebimailist keelatud
+    
+    ```[ ]``` Suunamiste muutmine veebimailist keelatud
+
+    **[lisa]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee e-posti aliased
   id: emailaliases
@@ -907,9 +1417,116 @@
     |**[‹]()** **[›]()**|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
     |&nbsp;|&nbsp;|Lehekülgi (1)|
 
-- title: E-posti konto lisamine PUUDU
+- title: E-posti aliase muutmine
   id: emailaliases_edit
   body: |
+
+    E-posti aadress: ```[______test]@kristjanjansen.ee```
+
+    > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
+    Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
+    Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+
+    Kommentaar/nimi: ```[__________]```
+
+    > Kommentaar on e-posti aadressi juurde kuuluv informatiivne tekst või isiku nimi, kelle aadress see on.
+
+    Suunamise olek: **Pole suunatud** **[suuna]()**
+
+    **[muuda]()** **[sulge aken]()**
+
+    ## Tüübi muutmine
+
+    Aadress **test@kristjanjansen.ee** on hetkel e-posti alias.
+
+    Kui soovite seda selliseks kontoks muuta, mis võtab füüsilist kettaruumi, ning mida saab POP3 kontona kasutada, vajutage nuppu "Muuda kontoks".
+    Kontole luuakse süsteemi poolt automaatne piirsuurus. Salasõna ning piirsuurust saab hiljem peale tüübi muutmist kohendada.
+
+    **[Muuda kontoks]()**
+
+- title: E-posti aliase muutmine
+  id: emailaliases_schedule
+  body: |
+
+    Olek: **PASSIIVNE** ~~Mitte sees-väljas / aktiivne-mitteaktiivne vaid PASSIIVNE?~~ 
+
+    > Automaatvastuse olek, määrab, kas automaatvastus on aktiivne või passiivne.
+
+    Perioodi algus: ```[__________]```-```[__________]```-```[__________]```**[...]()**
+
+    > Automaatvastuse perioodi algus. Alates määratud kuupäevast vastatakse kõigile vastuvõetud kirjadele automaatvastusega.
+
+    Perioodi lõpp: ```[__________]```-```[__________]```-```[__________]```**[...]()** 
+
+    > Automaatvastuse perioodi lõpp.
+
+    Saatja nimi: ```[__________]``` 
+
+    > Automaatse vastuse saatja nimi (valikuline) ~~Mis tähendab valikuline?~~
+
+    Kirja pealkiri: ```[__________]```
+
+    > Automaatse vastuse pealkiri
+
+    Kirja sisu:
+
+    ```
+
+
+
+
+    
+    ```
+    > Automaatvastuse sisu. Näiteks lühike teade, et olete perioodil kontorist eemal.
+
+    Aadress aegub: ```[Ei aegu ▾]```
+
+    > Väljaga **aadress aegub** saab ära määrata, kui tihti ühele ja samale aadressile uuesti vastus saadetakse.
+    Vaikimisi on valitud **ei aegu** ning see tähendab seda, et automaatne vastus saadetakse igale saatjale ainult ühe korra kogu aktiveerimisperioodi jooksul (hoolimata sellest, kui palju saatja teile kirju saadab vastatakse ainult esimesele). Kui valite nimekirjast mingi muu aja, siis vastatakse ainult nendele kirjadele, mis on saadetud vähemalt iga selle perioodi tagant.
+    Kuna vahest võib kiri tulla aadressilt, millel on samuti automaatvastaja aktiveeritud, siis peab süsteem vastuste arvu "pidurdama" ning igale kirjale automaatselt vastata ei saa. Vastasel juhul võib tekkida kahe aadressi vahel lõpmatu tsükkel.
+    Näiteks oletame, et aegumiseks on valitud 2 tundi. Ühelt ja samalt aadressilt saadeti esimene kiri kell 10:30, sellele vastatakse automaatselt. Siis saadetakse samalt aadressilt veel kell 10:31, 11:05, 11:15, 12:41 ja 12:45. Kuna aegumisperioodiks on valitud 2 tundi, siis järgmine automaatne vastus samale aadressile läheb ainult eelviimase kirjaga kell 12:41
+
+    **[muuda]()** **[aktiveeri]()** **[sulge aken]()**
+
+- title: E-posti aliase muutmine
+  id: emailaliases_redirect
+  body: |
+
+    Suunamisi kõigil e-posti kontodel
+    # **0**
+
+    Suunamisi test@kristjanjansen.ee kontol
+    # **0**
+
+    ## E-posti konto test@kristjanjansen.ee suunamiste muutmine
+
+    Suunamise/koopia aadressid:
+
+    ```
+
+
+    ```
+
+    > Siin on näha kõik aadressid, kuhu e-posti aadress on suunatud või kuhu läheb kirja koopia.
+
+    Lisa aadress(id): ```[__________]```**[lisa]()**
+
+    > (mitu aadressi korraga sisestades eralda need komadega)
+
+    > E-posti aadressid, kuhu soovite kirjad suunata või saata koopiad sisestage siia lahtrisse. Võimalus on ka sisestada mitu aadressi korraga, selleks tuleb aadressid eraldada komaga.
+
+    või
+
+    Lisa failist: ```[Choose File_____]```**[lisa]()**
+
+    > Siit saate aadressid listi lisada ka faili abil. Ehk et, kui teil on postiloend oma arvutisse tekstifaili salvestatud, tuleb see failiaadress lihtsalt siia lahtrisse sisestada (kasutades nuppu **browse**) ning seejärel vajutada lahtri kõrvalt nuppu **lisa**.
+    Aadressid peavad olema failis eraldatud kas koma, tühiku, tabulaatori või reavahetusega. Fail ise peab olema tavaline tekstifail (Wordi või Exceli failidega see ei tööta)
+
+    Suunamise olek: ```(●)``` Pole suunatud ```( )``` Suunatud 
+
+    > Näitab kas e-posti aadress on kuhugi suunatud või mitte ning kas koopia kirjadest saadetakse teisele e-posti aadressile.
+
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee postiloendid
   id: emaillists
@@ -937,9 +1554,104 @@
     * **uudiskiri-confirm@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Kui loendi seadistustes on aktiveeritud seadistus E-posti kinnitus, siis tuleb loendiga liituda või lahkuja soovijal pärast liitumis- või lahkumissoovi avaldamist ka oma soov kinnitada vastates loendi programmi poolt saadetud kirjale. Kinnitussoovid võetaksegi sellel aadressil vastu.
     * **uudiskiri-bounces@kristjanjansen.ee** - See aadress on postiloendi programmi jaoks reserveeritud. Sellele aadressile põrkavad tagasi loendi poolt mittetoimivatele aadressidele saadetud kirjad. Põrkamine võib esineda näiteks juhul, kui inimene lisab oma aadressi postiloendi liikmete nimekirja, kuid mõne aja pärast see aadress mingil põhjusel enam ei tööta (näiteks aadress on kustutatud). Loendi programm oskab ise automaatselt vastava aadressi liikmete nimekirjast kustutada. Programm ei eemalda aadressi nimekirjast kohe, vaid alles siis, kui vastavalt aadressilt on hakanud regulaarselt kirju tagasi põrkama.
 
-- title: Domeeni kristjanjansen.ee postiloendid PUUDU
+- title: Postiloendi lisamine
   id: emaillists_edit
   body: |
+  
+    Postiloendi aadress:  ```[__________]```@kristjanjansen.ee
+
+    Loendi nimi:  ```[__________]```
+    
+    Loendi omaniku aadress: ```[__________]```
+    
+    Kui kiri saadetakse loendi omanikule: ```[Postitus TOIMETATAKSE KOHALE ▾]```  
+    
+    E-posti kinnitus:  ```(●)``` JAH ```( )``` EI   
+    
+    Keel: ```[English ▾]```  
+    
+    Postiloendi salasõna: ```[__________]``` 
+    
+    ## Postiloendiga liitumise sätted
+    
+    Loendiga liitumine lubatud: ```(●)``` JAH ```( )``` EI
+    
+    Omanik peab liituja ise kinnitama: ```( )``` JAH ```(●)``` EI
+    
+    Teata omanikule uuest liitujast: ```( )``` JAH ```(●)``` EI
+    
+    ## Postiloendist lahkumise sätted
+    
+    Teata omanikule lahkujast:```( )``` JAH ```(●)``` EI
+    
+    ## Kirjade põrkamine
+
+    Põrketöötlus: ```(●)``` JAH ```( )``` EI 
+    
+    Max. põrkesumma: ```[5_________]``` 
+    
+    Põrkesumma aegub: ```[127_______]``` 
+
+    Edasta põrkunud kirjad aadressile: ```[__________]```
+    
+    ## Postiloendisse saatmise õigused:
+    
+    Loendi omanik: ```[Postitus SAADETAKSE MEILINGLISTI ▾]```
+    
+    Loendi liige: ```[postitus PANNAKSE OOTELE ▾]```   
+    
+    Loendiväline postitaja: ```[Postitus SAADETAKSE MEILINGLISTI ▾]```    
+    
+    Võõras postitaja: ```[Postitus LÜKATAKSE TAGASI ▾]```     
+    
+    Kui aadressil on keelatud loendisse postitada: ```[Postitus LÜKATAKSE TAGASI ▾]```     
+    
+    ## Postitamise sätted
+
+    Keelatud aadress(id): 
+    
+    ```
+
+
+    ```
+
+    Loendivälised postitajad: 
+    
+    ```
+
+
+    ```
+
+    Postituste jalus: 
+    
+    ```
+
+
+    ```
+
+    Pealkirja prefiks: ```[__________]```
+
+    Vastused loendi kirjadele suunatakse: ```[vastaja enda soovi järgi ainult loendisse, aut.▾]```  
+    
+    Reply-To aadress: ```[__________]```
+    
+    Reply-To nimi: ```[__________]```
+    
+    Asenda To/CC ridades loendi aadress: ```[ ]```
+
+    Postituse sisu maksimaalne suurus: ```[512 KiB___]```
+    
+    kui sisu on suurem: ```[postitus PANNAKSE OOTELE ▾]```
+    
+    Teata omanikule, kui postitus pannakse OOTELE: ```(●)``` JAH ```( )``` EI 
+    
+    Teata omanikule, kui postitust IGNOREERITAKSE: ```( )``` JAH ```(●)``` EI   
+    
+    Teata omanikule, kui postitus lükatakse TAGASI: ```( )``` JAH ```(●)``` EI 
+    
+    Kui postituse tegija pole kinnitatud: ```[postitus PANNAKSE OOTELE ▾]```  
+    
+    **[muuda]()** **[sulge aken]()**
 
 - title: Domeeni kristjanjansen.ee väärposti suunamine
   id: emailredirect
@@ -1342,7 +2054,7 @@
     ```[*****************]```
     **[näita salasõna]()** **[genereeri uus]()**
 
-    ~~Puudub õhuvahe vormivälja ja nuppud vahel~~
+    ~~Puudub õhuvahe vormivälja ja nuppude vahel~~
 
 - title: Domeeni kristjanjansen.ee nimeserveri tsooni fail
   id: zonefile
@@ -1693,6 +2405,161 @@
     |---|---|---|---|---|
     |gn256.zone.eu|◌ Muuda ressursse|gn256.zone.eu|Pilverserver VPS|◌ Halda|
 
+- title: Pilveserver PRO SSD tellimus
+  id: cloud_prossd_add
+  body: |
+
+    Zone CloudServer Pro SSD on kõrge käideldavustasemega IaaS pilveteenus, mis töötab vastvalt pilvearvutuse põhimõtetele. Klient maksab vaid selle eest, mida reaalselt kasutab.
+
+    ## ◌ Baashinna kalkulaator
+
+    1 tund | 1 päev | **30 päeva**
+
+    ### Baashind
+
+    RAM 3.6864 €
+    CPU 7.2 €
+    SSD 0.216 €
+    OS litsents 0 €
+    Lisa IPv4 aadressid 2.16 €
+
+    ### Baashind kokku 13.26 €
+
+    > Baashind näitab Pilveserverile tellitud peamiste ressursside maksumust. Baashind ei sisalda varukoopiate maksumust ja täiendavat andmeedastusamahtu. Hind ei sisalda käibemaksu.
+
+    ## 1. Operatsioonisüsteem (OS)
+
+    ```[Vali OS ▾]```
+
+    ## 2. Ressursid
+
+    **CPU**     
+    0 vCore / 6 vCore
+    ```
+    ▥[]▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥
+    ```
+
+    **RAM**
+    0.25 GiB / 12 GiB
+    ```
+    ▥[]▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥
+    ```
+
+    **SSD #1**
+    0 GiB / 200 GiB
+    ```
+    ▥[]▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥
+    ```    
+
+    **IPv4 aadresside arv**
+    0 tk / 10
+    ```
+    ▥[]▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥▥
+    ```    
+
+    ## 3. Nüüd jääb üle sisse logida ~~Aga ma olen juba sisse loginud...~~, nõustuda meie kasutustingimustega ja oledki valmis. ~~Kuidagi eriti muretuks läks stiil?~~
+
+   
+
+
+
+    **Kontaktisik:**  Kristjan jansen
+    Ettevõtte nimi: ...
+    Kontaktisiku telefon: ...
+    Kontaktisiku e-posti aadress: ...
+
+    Kui soovid tellimusele lisada infot, mille peame teadmiseks võtma, sisesta see siia.
+    ```
+
+
+    ```
+
+    [Serveriteenuste üldtingimused]()
+    [Virtuaalse privaatserveriteenuse lepingu eritingimused]()
+
+    ```[ ]``` **Kinnitan, et olen läbi lugenud, aru saanud ning nõustun täielikult nimetatud lepingutega**
+
+    **[Kinnitan tellimuse]()**
+
+- title: Telli Pilveserver VPS
+  id: cloud_vps_add
+  body: |
+
+    # Vali teenuspakett
+
+    ## ```(●)``` Pilveserver VPS I
+    > (1 Core / 256 MiB RAM / 30 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS II
+    > (1 Core / 1 GiB RAM / 50 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS III
+    > (2 Core / 2 GiB RAM / 100 GiB HDD)
+
+    ## ```( )``` Pilveserver VPS IV
+    > (2 Core / 3 GiB RAM / 150 GiB HDD)
+
+    # Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )```6 kuu kaupa arveldamine, 1 kuu kulu: 9.95 € + KM
+    ```( )```12 kuu kaupa arveldamine, 1 kuu kulu: 9.12 € + KM
+    
+    **Arve summa 9.95 € +km. Arveldusperiood 1 kuu(d).**
+
+    # Käideldavustsoon
+
+    ```(●)``` Automaatne valik
+    ```( )``` Estonia > Tallinn > Sõle 25 (Linx Telecom)
+    ```( )``` Estonia > Tallinn > Ädala 4F (Elisa)
+    ```( )``` Netherlands > Amsterdam > Gyroscoopweg 2E & 2F (TeleCity)
+
+    # Operatsioonisüsteem
+
+    ```(●)``` centos (V6/64bit)
+    ```( )``` centos (V7/64bit)
+    ```( )``` debian (V8.0/64bit)
+    ```( )``` fedora (V18/64bit)
+    ```( )``` ubuntu (V14.04/64bit)
+
+    # Lisateenused
+
+    **Lisa IP aadresside arv (2.61 € + KM per IP / kuu):** ```[0____]``` ~~Segane sõnastus ja segane arvutus~~
+
+    **[Tagasi]()** **[Alusta]()** ~~"Alusta"? Ehk siiski "Telli" või "Kinnita" vms?~~
+
+- title: Telli Pilveserver VPS
+  id: cloud_vps_edit
+  body: |
+
+    # gn235.zone.eu
+
+    **Protsessor** 1 vCore
+    ```
+    1                      6
+    []▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴
+    ```
+
+    **Mälu** 0.25 GiB
+    ```
+    0.226                 12
+    ▴▴▴▴[]▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴
+    ```
+
+    **Kettamaht** 30 GiB
+    ```
+    1                    200
+    ▴▴▴▴[]▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴▴
+    ```
+
+    **[Salvesta]()**
+
+    Hind:
+
+    # **0.0138 €** / tunnis
+    
+    Kuvatud hind on käibemaksuta (20%). Hind on indikatiivne.
 
 - title: Privaatserverid
   id: private
@@ -1703,6 +2570,71 @@
     |---|---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
 
+- title: Privaatserveri tellimusvorm
+  id: private_regular_add
+  body: |
+
+    ~~Miks seda "vormi" pealkirjas rõhutada?~~
+
+    ## Arve summa
+    # **199.5 €**
+    ## Arveldusperiood 1 kuu(d)
+
+    # Riistvara konfiguratsioon
+
+    ```[Põhikonfiguratsioon "I" ▾]```
+
+    ~~Mida need konfiguratsioonid on? Kas mul on oluline seda teada?~~
+    ~~Miks keeruline custom dropdown kui tegu on kahese valikuga?~~
+
+    # Operatsioonisüsteem
+
+    ```[CentOS (V5/64bit) ▾]```
+
+    # Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` 6 kuu kaupa arveldamine, 1 kuu kulu: 199.50 € + KM
+    ```( )``` **12 kuu kaupa arveldamine, 1 kuu kulu: 182.90 € + KM**
+
+    # Majutus ja andmeside
+
+    > Lisaks andmeside- ja majutusteenuse standardkonfiguratsioonile soovin tellida järgmised lisateenused: 
+
+    **IP alamvõrgu suurus:** ```[/30 - 1 IP (0 €) ▾]```
+    ```[✓]``` Lisa 1 TiB (1000 GiB) andmeedastusmahtu kuus  47.62€ KM
+    ```[ ]``` Kaughaldusliides iRMC (kasutab ära ühe võrgu-IP)
+
+    **[Tagasi]()** **[Alusta]()** ~~?~~
+
+- title: Nutikas Privaatserver
+  id: private_smart_add
+  body: |
+
+    # Riistvara konfiguratsioon
+
+    ```(●)``` Põhikonfiguratsioon "I" ```( )``` Põhikonfiguratsioon "II" 
+
+    ~~Mis need konfiguratsioonid on?~~
+
+    Vali arveldusperiood
+
+    ```(●)``` 1 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` 3 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` 6 kuu kaupa arveldamine, 1 kuu kulu: 234.50 € + KM
+    ```( )``` **12 kuu kaupa arveldamine, 1 kuu kulu: 214.96 € + KM**
+    
+    **Arve summa 234.5 € +km. Arveldusperiood 1 kuu(d).**
+
+    # Majutus ja andmeside
+    
+    > Lisaks andmeside- ja majutusteenuse standardkonfiguratsioonile soovin tellida järgmised lisateenused: 
+
+    ```[ ]``` Lisa 1 TiB (1000 GiB) andmeedastusmahtu kuus  47.62€ KM
+    ```[ ]``` Lisa 100 GiB igapäevaselt varundatavate andmete mahtu 31.96€ KM
+
+    **[Tagasi]()** **[Alusta]()** ~~?~~
 
 - title: Minu sertifikaadid
   id: ssl
@@ -1713,6 +2645,277 @@
     |Serveri nimi (CN)|Staatus|Aegub|Sertifikaadi väljastaja|
     |---|---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
+
+- title: Sertifikaadi valimine
+  id: ssl_order_1
+  body: |
+  
+    ## Sellel lehel saate alustada endale sobiva SSL sertifikaadi tellimist. Valige soovitud sertifikaadi tüüp.
+
+    ---
+
+    # ◌
+
+    ## SSL sertifikaat
+    
+    **Hinnad alates 15 € + km aastas**
+
+    SSL sertifikaat võimaldab turvata kasutajate andmeid, e-kaubandust ja ühenduskanaleid.
+    * Valik erinevate väljastajate sertifikaate aitab leida sobiva hinna ja usaldusväärsuse suhte.
+    
+    **[Vali »]()**
+
+    ---
+
+    # ◌
+
+    ## "Wildcard" SSL sertifikaat
+    
+    **Hinnad alates 99 € + km aastas**
+
+    Erinevalt tavapärasest SSL sertifikaadist on "wildcard" sertifikaadi abil võimalik kaitsta mitmeid samasse domeeni kuuluvaid servereid.
+    * Suure hulga turvatavate serverite korral on selline (*.domeen.tld) sertifikaat eraldi ostetavatest sertifikaatidest soodsam.
+
+    **[Vali »]()**
+
+    ---
+
+    ## Põhjalikult valideeritud (EV) SSL sertifikaat
+    
+    **Hinnad alates 249 € + km aastas**
+
+    Põhjalikult valideeritud sertifikaadi saamiseks tuleb sooritada märkimisväärne investeering ja läbida põhjalikum audit. Klientide täiendav usaldus võib selle loomulikult üles kaaluda.
+    * Põhjalikult valideeritud sertifikaat on ainus, mis kuvab kasutajale turvalise e-kaubanduse sümboliks muutunud rohelist aadressiriba.
+
+    **[Vali »]()**
+
+- title: Sertifikaadi väljastaja ja tüübi valimine
+  id: ssl_order_2
+  body: |
+
+    ## Sertifikaadi hind sõltub selle töökindlusest ja väljastaja brändi usaldusväärsusest.
+    
+    ```(●)``` **RapidSSL - RapidSSL 15 € + km**
+    
+    > Hea usaldustase. Domeenipõhine valideerimine. Väljastamisaeg tavaliselt tundides. IDN tugi puudub. 99% tugi veebilehitsejates. Sisestades serveri nime kujul www.domeen.tld, kehtib sertifikaat ka serveri nimele domeen.tld.
+    
+    ```( )``` **Comodo - Essential 16.99 € + km**
+    
+    > Hea usaldustase. Domeenipõhine valideerimine. Väljastamisaeg tavaliselt tundides. IDN tugi olemas. 99% tugi veebilehitsejates.
+    
+    ```( )``` **VeriSign - Secure Site 319 € + km**
+    
+    > Kõrge usaldustase. Organisatsioonipõhine valideerimine. Väljastamisaeg tavaliselt päevades. IDN tugi. 99% tugi veebilehitsejates.
+
+    Serveri tüüp:
+
+    [Apache + MOD SSL ▾]
+
+    > Zone Virtuaalserveri või Nutika Privaatserveri kasutamisel valige Apache + MOD SSL. TÄHELEPANU! Virtuaalserveri I teenuspakett SSL teenuse kasutamist ei võimalda. Virtuaalserveri teenuspaketi vahetamiseks saatke kiri info@zone.ee.
+
+    ~~Siin leiab mahuka veebiserverite ajaloo:
+    Apache + Raven
+    Apache + SSLeay
+    C2Net Stronghold
+    IBM HTTP
+    iPlanet Server 4.1
+    Lotus Domino Go 4.6.2.51
+    Lotus Domino Go 4.6.2.6+
+    Lotus Domino 4.6+
+    Microsoft IIS 4.0
+    Microsoft IIS 5.0
+    Netscape Enterprise/FastTrack
+    Zeus v3+
+    Other
+    Apache + OpenSSL
+    Apache 2
+    Apache + ApacheSSL
+    Cobalt Series
+    Cpanel
+    Ensim
+    Hsphere
+    Ipswitch
+    Plesk
+    Jakart-Tomcat
+    WebLogic
+    O’Reilly WebSite Professional
+    WebStar
+    Microsoft IIS 6.0~~
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Serveri nime (CN) sisestamine
+  id: ssl_order_3
+  body: |
+
+    ## Valitud sertifikaadi klass kinnitab vaid ühe nime usaldusväärsust. Seetõttu on ülimalt oluline sisestada see korrektselt.
+
+    ```[Serveri nimi (CN)__________]```
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Sertifikaaditaotluse (CSR) koostamine
+  id: ssl_order_4
+  body: |
+
+    ## Lisaks serveri nimele peab sertifikaadis olema info selle kasutaja kohta ning see võetakse sertifikaadi allkirjastamise taotlusest. Siin lehel on võimalik valida sertifikaadi allkirjastamise taotluse koostamise moodus. TÄHELEPANU! Kui kasutate eelnevalt koostatud sertifikaaditaotluse (CRS) faili, siis palume taotluse koostamisel täpitähti mitte kasutada.
+
+    **[1. Andmete käsitsi sisestamine]()**
+
+    **[2. Eelnevalt koostatud sertifikaaditaotluse faili üleslaadimine]()**
+
+    **[« Tagasi]()**
+
+- title: Sertifikaadi kasutaja andmed
+  id: ssl_order_5
+  body: |
+
+    ## Sertifikaadi kasutaja andmed on eeltäidetud ZoneID andmetega (kui need on olemas). Neid andmeid saab soovi korral muuta.
+
+    Riik:
+    `[EE -Eesti ▾]`
+
+    Maakond:
+    `[__________]`
+
+    Aadress:
+    `[__________]`
+
+    Organisatsioon:
+    `[__________]`
+
+    Allüksus:
+    `[__________]`
+
+    E-post:
+    `[__________]`
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Tellimuse eelvaade 
+  id: ssl_order_6
+  body: |
+
+    # Turvasertifikaadi tellimuse andmed
+    
+    ## Kasutajanimi: **kika**
+    
+    ## CN (domeen): **kristjanjansen.ee**
+    
+    **[Muuda]()**
+
+    ---
+
+    ## Riik: **EE**
+    
+    ## Maakond: **...**
+    
+    ## Aadress: **...**
+    
+    ## Organisatsioon: **...**
+    
+    ## Allüksus: **...**
+    
+    ## E-post: **...**
+
+    **[Muuda]()**
+
+    ---
+
+    ## Sertifikaat: **RapidSSL - RapidSSL**
+
+    ## Serveri tüüp: **Apache + MOD SSL**
+
+    **Sertifikaadi tulevase kasutaja valideerimiseks võtab väljastaja kasutajaga eelnevalt fikseeritud aadressil ühendust. Veenduge, et teie valitud postkast kindlasti eksisteeriks. Kui vaja, tekitage see oma serveri haldusliideses ENNE sertifikaadi taotluse esitamist.**
+
+    Periood `[1 aasta - 15 € + km ▾]`
+    
+    Tellimuse kinnitaja e-post `[admin@kristjanjansen.ee ▾]`
+
+    ~~Valikud on admin@, administrator@, hostmaster@, webmaster@, postmaster@ - kas ise vabalt aadressi valida ei saa?~~
+
+    `[ ]` Kinnitan, et olen läbi lugenud, aru saanud ning nõustun täielikult nimetatud lepingutega 
+
+    Olen tutvunud ja nõustun [sertifikaaditeenuste üldtingimustega]().
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Tellimused
+  id: ssl_orders
+  body: |
+    
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Kuupäev|Kirjeldus|Tellimus|Kokku|Staatus|
+    |---|---|---|---|---|
+    |Sa veel ei kasuta seda teenust|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+    > Näitan ridu 0 kuni 0 Eelmine Järgmine
+
+
+- title: Pikendamine
+  id: ssl_extending
+  body: |
+
+    Vali sertifikaadid, mida soovid pikendada, ning vajuta nuppu "Alusta pikendamist".
+    ~~Hmm, maagilised nähtamatud nupud...~~
+
+    |\#|Serveri nimi (CN)|Sertifikaadi väljastaja|Aegub|
+    |---|---|---|---|
+    |Hetkel pole ühtegi sertifikaati aegumas.|&nbsp;|&nbsp;|&nbsp;|
+
+- title: CSR genereerimine
+  id: ssl_csr
+  body: |
+
+    ◌ Siin saate genereerida privaatvõtme (Private key) ja sertifikaaditaotluse (Certificate Request). Veel ...
+    
+    _CollapsibleHelp_
+
+    > Kui olete lahtrid ära täitnud, vajutage nuppu genereeri ning teile luuakse privaatvõtme ja sertifikaaditaotluse failid.
+      NB! Privaatvõtme turvalisus on väga tähtis ja see ei tohi mitte mingil juhul sattuda kolmandate isikute valdusesse. Kui see peaks juhtuma, on SSL ühenduse turvalisus nende isikute poolt haavatav.
+      Võtmefaili genereerimise käsurida:
+      openssl genrsa -rand /var/log/mail:/var/log/messages -out PRIVATE_KEY.PEM 2048
+      Sertifikaaditaotluse genereerimise käsurida:
+      openssl req -sha256 -new -key PRIVATE_KEY.PEM -out CERTIFICATE_REQUEST.PEM
+
+    ~~<font size="1" abil loodud üliväike copy-pastemiseks loodud kiri. Selle asemel oodanuks selget koodi-snippetit:~~
+
+    ```sh
+    openssl req -sha256 -new -key PRIVATE_KEY.PEM -out CERTIFICATE_REQUEST.PEM
+    ```
+
+    **Võtme pikkus** 
+    `[2046]` ~~Kahene valik, 2048 või 4096, ei vaja dropdowni~~
+
+    Serveri nimi (CN) 
+    `[www.naidis.ee]`
+  
+    Riik 
+    `[Eesti (EE)▾]`
+
+    Maakond või osariik 
+    `[__________]`
+
+    Asukoht 
+    `[__________]`
+
+    Organisatsioon 
+    `[__________]`
+
+    Allüksus 
+    `[__________]`
+    
+    E-post 
+    `[__________]`
+
+    **[Genereeri]()**
+
+- title: Lisa serverile
+  id: ssl_server
+  body: |
+
+    ~~Siit suunatakse edasi Virtuaalserverid › Veebiserver › SSL sertifikaadid~~
 
 - title: Zone+
   id: zoneplus
@@ -1738,7 +2941,60 @@
 
     |SSH kasutajanimi|Serverid|Lubatud IP aadressid||
     |---|---|---|---|
-    |virt59090|kristjanjansen.ee|**Lisa uus+**|[Halda avalikke võtmeid]()|
+    |**virt59090**|kristjanjansen.ee|**[Lisa uus ◌]()**|◌ [Halda avalikke võtmeid]()|
+
+- title: ◌ Lisa IP aadress tulemüüri lubatud aadresside nimekirja
+  id: ssh_add
+  body: |
+  
+    Lisa IP aadress tulemüüri lubatud aadresside nimekirja
+   
+    IP aadress 
+    `[2001:7d0:8b58:370:d5c0:821c:b913:69de]`
+   
+    Kommentaar:
+    `[__________]`
+
+    **[◌ Jätka ]()** Sulge
+
+    ~~"Jätka" viib patternini~~ _OverlayConfirm_
+
+- title: SSH avalike võtmete haldamine
+  id: ssh_manage
+  body: |
+  
+    # ◌ Lisa avalik võti
+
+    Siin saab hallata SSH kasutaja virt59090 avalikke võtmeid. Lisada on võimalik RSA võtmeid pikkusega 2048 ja 4096 bitti.
+
+    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+
+    |Kuupäev|Kirjeldus|Tellimus|Kokku|Staatus|
+    |---|---|---|---|---|
+    |Sa veel ei kasuta seda teenust|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+    > Näitan ridu 0 kuni 0 Eelmine Järgmine
+
+- title: ...
+  id: ssh_manage_add
+  body: |
+
+    Algoritm:
+    `[RSA_______]` ~~Ainut üks valik ongi, dropdown mittevajalik~~ 
+
+    Kommentaar : 
+    `[__________]`
+
+    Avalik võti :
+    ```
+
+
+
+
+    ```
+
+    **[◌ Jätka ]()** Sulge
+
 
 - title: ZoneCloud
   id: zonecloud
@@ -1753,3 +3009,22 @@
     |ZoneCloud konto|Andmete maht|Premium|
     |---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|
+
+    > Andmemahu statistikat uuendatakse kord tunnis.
+
+    # LOGO
+
+    ## Reklaamivaba töölaud Zone pilves. Säilita ja jaga faile. Sünkrooni andmeid seadmete vahel.
+
+    > Pilve paigutatud andmed on sinu käeulatuses 24/7 nii veebilehitsejas, nutiseadmes kui ka lauaarvutis. Olgu su platvormiks Windows, Mac, Linux, iOS või Android.
+
+    > Sinu ja ZoneCloud töölaua vahel liikuvaid andmeid kaitseb TLS tehnoloogia 2048 bitise krüptovõtmega. Andmeid varundatakse regulaarselt off-site andmekeskusesse.
+
+    > ZoneCloud töölaud on ühilduv avatud standarditega nagu WebDAV, CalDAV ja CardDAV.
+
+    **[ZoneCloud veebileht ◌]()**
+
+    ## Lae alla rakendus oma seadmele
+
+    **[◌ Desktop app]()** **[◌ Google Play]()** **[◌ App Store]()**
+

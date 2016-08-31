@@ -1,19 +1,69 @@
 - title: Teenuste ülevaade
   id: dashboard
+  comments: true
+- title: Kasutajakonto
+  id: account
+  items:
+    - title: Kasutajakonto
+      id: account
+      comments: true
+    - title: Kontaktandmed
+      id: account_contact
+      comments: true
+    - title: Seotud indentiteedid
+      id: account_identities
+      comments: true
+    - title: Teated
+      id: notifications
+      comments: true
+    - title: Teated → Vaata 
+      id: notifications_view
+      comments: true
 - title: Domeenid
   id: domains
   items:
     - title: Minu domeenid
+      id: domains
+      comments: true
+    - title: Nimeserverid
+      items:
+      - title: Nimeserverid
+        id: domains_nameservers
+        comments: true
+      - title: Nimeserverid → DNS
+        id: domains_nameservers_dns
+        comments: true
+      - title: Nimeserverid → Zonefile
+        id: domains_nameservers_zonefile
+        comments: true
+      - title: Kontaktid
+        id: domains_contacts
+        comments: true
+      - title: Kontaktid → Muuda
+        id: domains_contacts_edit
+        comments: true
     - title: Tellimused
+      id: domains_orders
+      comments: true
     - title: Pikenda
+      id: domains_extend
+      comments: true
     - title: Too domeen üle
+      id: domains_transfer
+      comments: true
     - title: Vaheta omanikku
+      id: domains_trade
+      comments: true
     - title: Registreeri
+      id: domains_register
+      comments: true
 - title: Virtuaalserverid
   id: shared
   items:
     - title: Serveri ülevaade
       id: shared
+    - title: Lisa virtuaalserver
+      id: shared_add
     - title: Kasutajakonto
       items:
         - title: Delegeerimised
@@ -44,6 +94,7 @@
           id: settings_change_errors
         - title: Seaded → Muuda → Webalizer
           id: settings_change_webalizer
+          comments: true
         - title: Seaded → Muuda → PHP laiendused
           id: settings_change_phpext
         - title: Seaded → Muuda → Apache dir.
@@ -82,15 +133,20 @@
         - title: E-posti aadressid
           id: emailaccounts
         - title: E-posti aadressid → Muuda
-          PUUDU: emailaccounts_edit
+          id: emailaccounts_edit
         - title: E-posti aliased
           id: emailaliases
         - title: E-posti aliased → Muuda
-          PUUDU: emailaliases_edit
+          id: emailaliases_edit
+        - title: E-posti aliased → Suuna
+          id: emailaliases_redirect
+        - title: E-posti aliased → Automaatvastaja
+          id: emailaliases_schedule
+          comments: true
         - title: Postiloendid
           id: emaillists
         - title: Postiloendid → Muuda
-          PUUDU: emaillists_edit
+          id: emaillists_edit
         - title: Väärposti suunamine
           id: emailredirect
         - title: Viirusetõrje
@@ -117,12 +173,15 @@
       items:
         - title: MYSQL
           id: mysql
+          comments: true
         - title: MYSQL → Muuda
           id: mysql_edit
+          comments: true
         - title: phpMyAdmin
           id: phpmyadmin
         - title: Redis
           id: redis
+          comments: true
     - title: Nimeserver
       items:
         - title: Tsoonifail
@@ -133,8 +192,10 @@
           id: aaaa_edit
         - title: CNAME / Canonical name
           id: cname
+          comments: true
         - title: CNAME / Canonical name → Muuda
           id: cname_edit
+          comments: true
         - title: MX / Mail eXchanger
           id: mx
         - title: MX / Mail eXchanger → Muuda
@@ -151,8 +212,10 @@
       items:
         - title: Apache access_log
           id: accesslog
+          comments: true
         - title: Apache access_log → Muuda
           id: accesslog_edit
+          comments: true
         - title: Apache error_log
           id: errorlog
         - title: Apache error_log → Muuda
@@ -161,21 +224,74 @@
           id: ftplog
 - title: Pilveserverid
   id: cloud
+  items:
+    - title: Pilveserverid
+      id: cloud
+    - title: Telli Pilveserver PRO SSD
+      id: cloud_prossd_add
+      comments: true
+    - title: Telli Pilveserver VPS
+      id: cloud_vps_add
+      comments: true
+    - title: Pilveserver VPS → Muuda
+      id: cloud_vps_edit  
 - title: Privaatserverid
   id: private
+  items:
+    - title: Privaatserverid
+      id: private
+    - title: Telli Privaatserver
+      id: private_regular_add
+      comments: true
+    - title: Telli Nutikas Privaatserver
+      id: private_smart_add
+      comments: true
 - title: SSL Sertifikaadid
   id: ssl
   items:
     - title: Minu Sertifikaadid
+      id: ssl
+    - title: Telli sertifikaat → 1
+      id: ssl_order_1
+    - title: Telli sertifikaat → 2
+      id: ssl_order_2
+      comments: true
+    - title: Telli sertifikaat → 3
+      id: ssl_order_3
+    - title: Telli sertifikaat → 4
+      id: ssl_order_4
+    - title: Telli sertifikaat → 5
+      id: ssl_order_5
+    - title: Telli sertifikaat → 6
+      id: ssl_order_6
+      comments: true
     - title: Tellimused
+      id: ssl_orders
     - title: Pikendamine
+      id: ssl_extending
+      comments: true
     - title: CSR genereerimine
+      id: ssl_csr
+      comments: true
     - title: Lisa serverile
+      id: ssl_server
     - title: Abi
 - title: Zone+
   id: zoneplus
 - title: SSH
   id: ssh
+  items:
+    - title: SSH haldamine
+      id: ssh
+    - title: SSH haldamine → Lisa
+      id: ssh_add
+      comments: true
+    - title: SSH haldamine → Halda
+      id: ssh_manage
+    - title: SSH haldamine → Halda → Lisa
+      id: ssh_manage_add
+      comments: true
 - title: ZoneCloud
   id: zonecloud
+
 

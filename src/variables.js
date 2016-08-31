@@ -8,7 +8,12 @@ var colors = {
     red: 'rgb(184, 6, 6)',
     blue: 'rgb(43, 45, 66)',
     cool: 'rgb(141, 153, 174)',
-    gray: 'rgb(237, 242, 244)'
+    gray: 'rgb(237, 242, 244)',
+    'gray-light': 'rgba(141, 153, 174, 0.6)',
+    green: 'rgb(11, 168, 105)',
+    'green-light': 'rgba(10, 135, 84, 0.1)',
+    yellow: 'rgb(255, 232, 117)',
+    'yellow-dark': 'rgb(175, 160, 80)'
 }
 
 // Spacing
@@ -55,6 +60,7 @@ _.assign(fonts, _
 )
 
 fonts['font-code-md'] = `normal ${textSizes.md}px / 100% "${fontFamilies.code}", monospace`
+fonts['font-comment-sm'] = `normal ${textSizes.sm}px / 100% "${fontFamilies.comment}", sans-serif`
 fonts['font-comment-md'] = `normal ${textSizes.lg}px / 100% "${fontFamilies.comment}", sans-serif`
 fonts['font-logo-title'] = `bold ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
 fonts['font-logo-subtitle'] = `normal ${headingSizes.lg}px / 100% "${fontFamilies.heading}", sans-serif`
