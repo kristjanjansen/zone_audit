@@ -8,7 +8,14 @@
 
         </div>
 
-        <div class="maincontent__body" v-html="activeContent.body"></div>
+        <div
+            class="maincontent__body"
+            :class="{
+                maincontent__show: displayComments,
+                maincontent__hide: !displayComments
+            }"
+            v-html="activeContent.body"
+        ></div>
 
     </div>
 
@@ -27,7 +34,8 @@
         data() {
             return {
                 content: [],
-                activeContent: {} 
+                activeContent: {},
+                displayComments: true
             };
         },
         created: function () {
@@ -40,6 +48,9 @@
             })
             this.$events.$on('menuSelected', id => {
                 this.activeContent = this.content.find(item => item.id == id)
+            })
+            this.$events.$on('toggleComments', state => {
+                this.displayComments = state
             })
         }
     }
@@ -141,12 +152,28 @@
         text-decoration: none;
     }
     .maincontent__body del {
-        background: yellow;
+        background: $yellow;
+        color: $yellow-dark;
         text-decoration: none;
         font: $font-comment-md;
         padding-right: $padding-xs;
         padding-left: $padding-xs;
-        opacity: $opacity-lg;
+    }
+    .maincontent__body em {
+        background: $green-light;
+        color: $green;
+        font-style: normal;
+        font: $font-comment-md;
+        padding-right: $padding-xs;
+        padding-left: $padding-xs;
+    }
+    .maincontent__show del,
+    .maincontent__show em {
+        display: inline;
+    }
+    .maincontent__hide del,
+    .maincontent__hide em {
+        display: none;
     }
 
 </style>

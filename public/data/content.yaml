@@ -4,11 +4,15 @@
     
     ## ◌ Kontoseis ◌ Teated ◌ Seaded
 
+    _Pattern: ActionBar_
+
     # Virtuaalserverid
     
-    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver
+    ## ◌ Halda virtuaalservereid ◌ Telli uus virtuaalserver _Pattern: ActionBar_
 
-    Näita ```[10 ▾]``` rida | Otsing ```[__________]```
+    _Pattern: Table_
+
+    Näita ```[10 ▾]``` rida ~~Ajast ja arust, selleks on pager vms~~ | Otsing ```[__________]```
 
     |Nimi|Pakett|Kiirviited||
     |---|---|---|---|

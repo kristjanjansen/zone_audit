@@ -8,7 +8,11 @@ var colors = {
     red: 'rgb(184, 6, 6)',
     blue: 'rgb(43, 45, 66)',
     cool: 'rgb(141, 153, 174)',
-    gray: 'rgb(237, 242, 244)'
+    gray: 'rgb(237, 242, 244)',
+    green: 'rgb(11, 168, 105)',
+    'green-light': 'rgba(10, 135, 84, 0.1)',
+    yellow: 'rgb(255, 232, 117)',
+    'yellow-dark': 'rgb(175, 160, 80)'
 }
 
 // Spacing
