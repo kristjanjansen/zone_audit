@@ -2416,9 +2416,199 @@
     |---|---|---|---|
     |Sa ei kasuta veel seda teenust|&nbsp;|&nbsp;|&nbsp;|
 
-- title: Minu Sertifikaadid → Telli
-  id: ssl_order
+- title: Sertifikaadi valimine
+  id: ssl_order_1
   body: |
+  
+    ## Sellel lehel saate alustada endale sobiva SSL sertifikaadi tellimist. Valige soovitud sertifikaadi tüüp.
+
+    ---
+
+    # ◌
+
+    ## SSL sertifikaat
+    
+    **Hinnad alates 15 € + km aastas**
+
+    SSL sertifikaat võimaldab turvata kasutajate andmeid, e-kaubandust ja ühenduskanaleid.
+    * Valik erinevate väljastajate sertifikaate aitab leida sobiva hinna ja usaldusväärsuse suhte.
+    
+    **[Vali »]()**
+
+    ---
+
+    # ◌
+
+    ## "Wildcard" SSL sertifikaat
+    
+    **Hinnad alates 99 € + km aastas**
+
+    Erinevalt tavapärasest SSL sertifikaadist on "wildcard" sertifikaadi abil võimalik kaitsta mitmeid samasse domeeni kuuluvaid servereid.
+    * Suure hulga turvatavate serverite korral on selline (*.domeen.tld) sertifikaat eraldi ostetavatest sertifikaatidest soodsam.
+
+    **[Vali »]()**
+
+    ---
+
+    ## Põhjalikult valideeritud (EV) SSL sertifikaat
+    
+    **Hinnad alates 249 € + km aastas**
+
+    Põhjalikult valideeritud sertifikaadi saamiseks tuleb sooritada märkimisväärne investeering ja läbida põhjalikum audit. Klientide täiendav usaldus võib selle loomulikult üles kaaluda.
+    * Põhjalikult valideeritud sertifikaat on ainus, mis kuvab kasutajale turvalise e-kaubanduse sümboliks muutunud rohelist aadressiriba.
+
+    **[Vali »]()**
+
+- title: Sertifikaadi väljastaja ja tüübi valimine
+  id: ssl_order_2
+  body: |
+
+    ## Sertifikaadi hind sõltub selle töökindlusest ja väljastaja brändi usaldusväärsusest.
+    
+    ```(●)``` **RapidSSL - RapidSSL 15 € + km**
+    
+    > Hea usaldustase. Domeenipõhine valideerimine. Väljastamisaeg tavaliselt tundides. IDN tugi puudub. 99% tugi veebilehitsejates. Sisestades serveri nime kujul www.domeen.tld, kehtib sertifikaat ka serveri nimele domeen.tld.
+    
+    ```( )``` **Comodo - Essential 16.99 € + km**
+    
+    > Hea usaldustase. Domeenipõhine valideerimine. Väljastamisaeg tavaliselt tundides. IDN tugi olemas. 99% tugi veebilehitsejates.
+    
+    ```( )``` **VeriSign - Secure Site 319 € + km**
+    
+    > Kõrge usaldustase. Organisatsioonipõhine valideerimine. Väljastamisaeg tavaliselt päevades. IDN tugi. 99% tugi veebilehitsejates.
+
+    Serveri tüüp:
+
+    [Apache + MOD SSL ▾]
+
+    > Zone Virtuaalserveri või Nutika Privaatserveri kasutamisel valige Apache + MOD SSL. TÄHELEPANU! Virtuaalserveri I teenuspakett SSL teenuse kasutamist ei võimalda. Virtuaalserveri teenuspaketi vahetamiseks saatke kiri info@zone.ee.
+
+    ~~Siin leiab mahuka veebiserverite ajaloo:
+    Apache + Raven
+    Apache + SSLeay
+    C2Net Stronghold
+    IBM HTTP
+    iPlanet Server 4.1
+    Lotus Domino Go 4.6.2.51
+    Lotus Domino Go 4.6.2.6+
+    Lotus Domino 4.6+
+    Microsoft IIS 4.0
+    Microsoft IIS 5.0
+    Netscape Enterprise/FastTrack
+    Zeus v3+
+    Other
+    Apache + OpenSSL
+    Apache 2
+    Apache + ApacheSSL
+    Cobalt Series
+    Cpanel
+    Ensim
+    Hsphere
+    Ipswitch
+    Plesk
+    Jakart-Tomcat
+    WebLogic
+    O’Reilly WebSite Professional
+    WebStar
+    Microsoft IIS 6.0~~
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Serveri nime (CN) sisestamine
+  id: ssl_order_3
+  body: |
+
+    ## Valitud sertifikaadi klass kinnitab vaid ühe nime usaldusväärsust. Seetõttu on ülimalt oluline sisestada see korrektselt.
+
+    ```[Serveri nimi (CN)__________]```
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Sertifikaaditaotluse (CSR) koostamine
+  id: ssl_order_4
+  body: |
+
+    ## Lisaks serveri nimele peab sertifikaadis olema info selle kasutaja kohta ning see võetakse sertifikaadi allkirjastamise taotlusest. Siin lehel on võimalik valida sertifikaadi allkirjastamise taotluse koostamise moodus. TÄHELEPANU! Kui kasutate eelnevalt koostatud sertifikaaditaotluse (CRS) faili, siis palume taotluse koostamisel täpitähti mitte kasutada.
+
+    **[1. Andmete käsitsi sisestamine]()**
+
+    **[2. Eelnevalt koostatud sertifikaaditaotluse faili üleslaadimine]()**
+
+    **[« Tagasi]()**
+
+- title: Sertifikaadi kasutaja andmed
+  id: ssl_order_5
+  body: |
+
+    ## Sertifikaadi kasutaja andmed on eeltäidetud ZoneID andmetega (kui need on olemas). Neid andmeid saab soovi korral muuta.
+
+    Riik:
+    `[EE -Eesti ▾]`
+
+    Maakond:
+    `[__________]`
+
+    Aadress:
+    `[__________]`
+
+    Organisatsioon:
+    `[__________]`
+
+    Allüksus:
+    `[__________]`
+
+    E-post:
+    `[__________]`
+
+    **[« Tagasi]()** **[Edasi »]()**
+
+- title: Tellimuse eelvaade 
+  id: ssl_order_6
+  body: |
+
+    # Turvasertifikaadi tellimuse andmed
+    
+    ## Kasutajanimi: **kika**
+    
+    ## CN (domeen): **kristjanjansen.ee**
+    
+    **[Muuda]()**
+
+    ---
+
+    ## Riik: **EE**
+    
+    ## Maakond: **...**
+    
+    ## Aadress: **...**
+    
+    ## Organisatsioon: **...**
+    
+    ## Allüksus: **...**
+    
+    ## E-post: **...**
+
+    **[Muuda]()**
+
+    ---
+
+    ## Sertifikaat: **RapidSSL - RapidSSL**
+
+    ## Serveri tüüp: **Apache + MOD SSL**
+
+    **Sertifikaadi tulevase kasutaja valideerimiseks võtab väljastaja kasutajaga eelnevalt fikseeritud aadressil ühendust. Veenduge, et teie valitud postkast kindlasti eksisteeriks. Kui vaja, tekitage see oma serveri haldusliideses ENNE sertifikaadi taotluse esitamist.**
+
+    Periood `[1 aasta - 15 € + km ▾]`
+    
+    Tellimuse kinnitaja e-post `[admin@kristjanjansen.ee ▾]`
+
+    ~~Valikud on admin@, administrator@, hostmaster@, webmaster@, postmaster@ - kas ise vabalt aadressi valida ei saa?~~
+
+    `[ ]` Kinnitan, et olen läbi lugenud, aru saanud ning nõustun täielikult nimetatud lepingutega 
+
+    Olen tutvunud ja nõustun [sertifikaaditeenuste üldtingimustega]().
+
+    **[« Tagasi]()** **[Edasi »]()**
 
 - title: Tellimused
   id: ssl_orders

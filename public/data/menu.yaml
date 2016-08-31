@@ -201,8 +201,18 @@
   items:
     - title: Minu Sertifikaadid
       id: ssl
-    - title: Minu Sertifikaadid → Telli
-      id: ssl_order
+    - title: Telli sertifikaat → 1
+      id: ssl_order_1
+    - title: Telli sertifikaat → 2
+      id: ssl_order_2
+    - title: Telli sertifikaat → 3
+      id: ssl_order_3
+    - title: Telli sertifikaat → 4
+      id: ssl_order_4
+    - title: Telli sertifikaat → 5
+      id: ssl_order_5
+    - title: Telli sertifikaat → 6
+      id: ssl_order_6
     - title: Tellimused
       id: ssl_orders
     - title: Pikendamine
