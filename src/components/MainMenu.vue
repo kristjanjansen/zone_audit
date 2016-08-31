@@ -28,7 +28,7 @@
                     
                     {{ item2.title }} 
 
-                    <span v-if="showComments && item2.comments" class="mainmenu__comments">!</span>
+                    <span v-if="showComments && item2.comments" class="mainmenu__comments">●</span>
                 
                 </div>
     
@@ -43,6 +43,8 @@
 
                     {{ item3.title }}
                     
+                    <span v-if="showComments && item3.comments" class="mainmenu__comments">●</span>
+
                     </div>
                 
                 </div>
@@ -128,11 +130,6 @@
         white-space: nowrap;
     }
     .mainmenu__comments {
-        background: $yellow;
-        color: $yellow-dark;
-        font: $font-comment-sm;
-        padding-right: $padding-xs;
-        padding-left: $padding-xs;
-        line-height: 0;
+        color: $yellow;
     }
 </style>
