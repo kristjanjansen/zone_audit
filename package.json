@@ -24,7 +24,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index",
-    "build": "gulp"
+    "start": "node index"
   }
 }
