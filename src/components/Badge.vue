@@ -5,10 +5,9 @@
         <div class="badge__backicon">
 
         <icon
-            :size="size"
             :icon="backicon"
-            color="#ccc"
             :size="size"
+            color="#ccc"
         ></icon> 
 
         </div>
@@ -16,10 +15,10 @@
         <div class="badge__fronticon">
 
         <icon
-            :size="size * 0.5"
-            :icon="fronticon"
-            color="white"
             :background="color"
+            :icon="fronticon"
+            :size="size * 0.5"
+            color="white"
         ></icon> 
 
         </div>

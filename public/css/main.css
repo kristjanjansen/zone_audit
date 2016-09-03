@@ -680,6 +680,14 @@ body {
       flex-shrink: 0;
 }
 
+.margin-left {
+    margin-left: 24px;
+}
+
+.margin-right {
+    margin-right: 24px;
+}
+
 @font-face {
     font-family: Rubik;
     font-style: italic;
@@ -745,17 +753,22 @@ body {
     border: 1px solid #555;
     border-radius: 2px;
     font: normal 14px / 100% Rubik, sans-serif;
+    line-height: 130%;
+}
+.pod h2 {
+    font: normal 16px / 100% "Rubik", sans-serif;
+    text-transform: uppercase;
+    color: #aaa;
+    margin: 0 0 0.5em 0;
 }
 .pod__top {
     height: 4em;
     padding: 1em;
 }
 .pod__bottom {
-    height: 10em;
     border-top: 1px solid #555;
     padding: 1em;
 }
-
 
 
 
@@ -808,7 +821,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
 }
-
 
 
 

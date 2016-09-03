@@ -146,4 +146,12 @@
       flex-shrink: 0;
     }
 
+    .margin-left {
+        margin-left: $margin-md;
+    }
+
+    .margin-right {
+        margin-right: $margin-md;
+    }
+
 </style>

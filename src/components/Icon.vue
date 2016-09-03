@@ -25,7 +25,6 @@
             iconSize: function() {
                 return this.background ? this.size * 0.6 : this.size
             }
-            //iconSize: () => 2
         },
         props: {
             icon: {required: true},
