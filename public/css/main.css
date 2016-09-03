@@ -519,6 +519,167 @@ body {
 .main {
     padding-top: 2em;
 }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-stretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  width: 0;
+  min-width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-1 {
+  width: calc(100% * 1 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-2 {
+  width: calc(100% * 2 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-3 {
+  width: calc(100% * 3 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-4 {
+  width: calc(100% * 4 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-5 {
+  width: calc(100% * 5 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-6 {
+  width: calc(100% * 6 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-7 {
+  width: calc(100% * 7 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-8 {
+  width: calc(100% * 8 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-9 {
+  width: calc(100% * 9 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-10 {
+  width: calc(100% * 10 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.col-11 {
+  width: calc(100% * 11 / 12);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 @font-face {
     font-family: Rubik;
     font-style: italic;
@@ -581,30 +742,71 @@ body {
 }
 .pod {
     width: 100%;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #555;
+    border-radius: 2px;
+    font: normal 14px / 100% Rubik, sans-serif;
 }
-.pod__icon {
-    margin-right: 6px;
+.pod__top {
+    height: 4em;
+    padding: 1em;
 }
-.pod__title {
-    font: normal 24px / 100% "Rubik", sans-serif;
-    margin-right: 6px;
+.pod__bottom {
+    height: 10em;
+    border-top: 1px solid #555;
+    padding: 1em;
 }
-.pod__subtitle {
-    font: normal 24px / 100% "Rubik", sans-serif;
-    color: rgb(11, 168, 105);
-}
-.pod__content {
-    height: 5em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -625,4 +827,47 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.badge {
+    position: relative;
+}
+.badge__backicon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.badge__fronticon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 

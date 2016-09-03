@@ -8,7 +8,7 @@
             }
         ">
             
-            <component class="pod__icon" is="Icon" icon="laptop"></component> 
+            <component class="pod__icon" is="Icon" icon="globe"></component> 
             
             <div class="pod__title">minuserver.ee</div> 
             
