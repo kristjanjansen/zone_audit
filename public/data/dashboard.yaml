@@ -11,6 +11,12 @@ domain2: |
   Staatus: Registreeritud
   Registreerija: Martti Varik
 
+  ## Siia suunatud domeenid
+
+  * maris.ee
+  * zone.ee
+  * potisepp.ee
+
   ## Nimeserverid
 
   ns.zone.eu
@@ -25,8 +31,30 @@ server1: |
 
   ## Pakett
 
-  Virtuaalserver I
+  # Virtuaalserver I
 
   [Muuda]()
 
   ## Kettad
+
+soft1: |
+
+  ## Tarkvara
+
+  MySQL host: `d28171.mysql.zone.ee`
+  PHP 7.0 
+
+  SSH kasutaja: `virt28476`
+  http + https
+  /data02/virt28476/
+  domeenid/www.tehnokratt.net/htdocs
+
+  ---
+  
+soft2: |
+
+  ---
+
+  ## Zone+
+
+  # Laravel

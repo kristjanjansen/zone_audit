@@ -40,11 +40,7 @@
                     
                 </div>
 
-                <div
-                    class="col-3"
-                    v-html="content.domain2"
-                >
-                </div>
+                <div class="col-3" v-html="content.domain2"></div>
 
                 <div class="col-1">
 
@@ -90,31 +86,42 @@
                     >
                     </component>
 
+                    <div v-html="content.server2"></div>
+
                 </div>
 
                 <div class="col-1">
 
                     <badge
                         class="margin-left"
-                        backicon="lock"
-                        fronticon="warning"
-                        color="orange"
+                        backicon="cube"
+                        fronticon="check"
+                        color="#888"
                     ></badge> 
                     
                 </div>
 
                 <div class="col-3">
 
-                <div class="row row-middle">
-                    <div class="col-8">
+                    <div v-html="content.soft1"></div>
+
+                    <div class="row row-middle">
                         
-                        Lets Encrypt installeeritud
+                        <div class="col-8">
+                            
+                            Lets Encrypt installeeritud
+
+                        </div>
+
+                        <div class="col-4">
+                        
+                            <component is="Toggle"></component>
+                        
+                        </div>
 
                     </div>
-                    <div class="col-4">
-                        <component is="Toggle"></component>
-                    </div>
-                </div>
+
+                    <div v-html="content.soft2"></div>
                     
                 </div>
 
@@ -175,6 +182,11 @@
         text-transform: uppercase;
         color: #aaa;
         margin: 0 0 0.5em 0;
+    }
+    .pod hr {
+        border-top: 1px solide #bbb;
+        width: 0;
+        margin-bottom: 1em;
     }
     .pod__top {
         height: 4em;
