@@ -583,13 +583,16 @@ body {
     width: 100%;
     border: 1px solid #f7f7f7;
 }
+.pod__icon {
+    margin-right: 6px;
+}
 .pod__title {
     font: normal 24px / 100% "Rubik", sans-serif;
+    margin-right: 6px;
 }
 .pod__subtitle {
     font: normal 24px / 100% "Rubik", sans-serif;
     color: rgb(11, 168, 105);
-    margin-left: 6px;
 }
 .pod__content {
     height: 5em;
@@ -603,3 +606,23 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

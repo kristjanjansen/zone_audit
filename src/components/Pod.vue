@@ -5,14 +5,15 @@
             class="pod__content"
             :style="{
                 backgroundImage: 'linear-gradient(to right, #f7f7f7 0%, #f7f7f7 ' + width + '%, #fff ' + width + '%, #fff 100%)'
-            }">
+            }
+        ">
+            
+            <component class="pod__icon" is="Icon" icon="laptop"></component> 
+            
+            <div class="pod__title">minuserver.ee</div> 
+            
+            <div class="pod__subtitle" v-if="width < 100">{{ status }}</div>
 
-            <div class="pod__title">
-                ◌ minuserver.ee
-            </div> 
-            <div class="pod__subtitle" v-if="width < 100">
-                {{ status }}
-            </div>
         </div>
     </div>
 
@@ -21,8 +22,12 @@
 <script>
 
     import dynamics from 'dynamics.js'
+    import Icon from '../components/Icon.vue'
 
     export default {
+        components: {
+            Icon
+        },
         data() {
             return { width: 0 };
         },
@@ -49,13 +54,16 @@
         width: 100%;
         border: 1px solid #f7f7f7;
     }
+    .pod__icon {
+        margin-right: $margin-xs;
+    }
     .pod__title {
         font: $font-heading-lg;
+        margin-right: $margin-xs;
     }
     .pod__subtitle {
         font: $font-heading-lg;
         color: $green;
-        margin-left: $margin-xs;
     }
     .pod__content {
         height: 5em;
