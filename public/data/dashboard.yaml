@@ -33,28 +33,38 @@ server1: |
 
   # Virtuaalserver I
 
-  [Muuda]()
-
-  ## Kettad
+  ## Ressursid
 
 soft1: |
 
-  ## Tarkvara
-
-  MySQL host: `d28171.mysql.zone.ee`
-  PHP 7.0 
-
-  SSH kasutaja: `virt28476`
-  http + https
-  /data02/virt28476/
-  domeenid/www.tehnokratt.net/htdocs
-
-  ---
-  
-soft2: |
-
-  ---
 
   ## Zone+
 
   # Laravel
+
+  ## Veebiserver
+
+  Nginx + PHP-FPM 4.2, PHP 7.1
+
+  ---
+
+  HTTPS ja HTTP/2 **JAH**
+
+  ---
+
+soft2: |
+
+  ---
+
+  ## MySQL
+
+  Versioon: 5.7.1
+  Host: `d28171.mysql.zone.ee`
+
+  ## Ligipääs
+
+  SFTP: `virt28476`
+  Avalik võti olemas: JAH
+  Kataloog: `/data02/virt28476/
+  domeenid/www.tehnokratt.net/htdocs`
+

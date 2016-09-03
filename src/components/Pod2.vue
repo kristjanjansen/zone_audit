@@ -177,6 +177,13 @@
         font: $font-text-sm;
         line-height: $line-height-md;
     }
+    .pod h1 {
+        font: $font-text-lg;
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em auto;
+        border: 1px dotted #ccc;
+    }
     .pod h2 {
         font: $font-heading-sm;
         text-transform: uppercase;
@@ -184,9 +191,10 @@
         margin: 0 0 0.5em 0;
     }
     .pod hr {
-        border-top: 1px solide #bbb;
-        width: 0;
-        margin-bottom: 1em;
+        border: 0;
+        border-top: 1px solid #ccc;
+        height: 0;
+        margin: 1em 0;
     }
     .pod__top {
         height: 4em;
