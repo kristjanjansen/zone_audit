@@ -766,13 +766,19 @@ body {
     font: normal 16px / 100% "Rubik", sans-serif;
     text-transform: uppercase;
     color: #aaa;
-    margin: 0 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 .pod hr {
     border: 0;
     border-top: 1px solid #ccc;
     height: 0;
     margin: 1em 0;
+}
+.pod table {
+    width: 100%;
+}
+.pod td:last {
+    text-align: right;
 }
 .pod__top {
     height: 4em;
@@ -896,3 +902,59 @@ body {
     right: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.featuretoggle {
+    padding: 1rem 0;
+}

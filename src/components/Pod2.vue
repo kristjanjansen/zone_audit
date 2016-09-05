@@ -30,63 +30,121 @@
 
             <div class="row">
 
-                <div class="col-1">
+                <div class="col-4">
 
-                    <badge
-                        backicon="world"
-                        fronticon="check"
-                        color="green"
-                    ></badge> 
-                    
+                    <div class="row row-around">
+
+                        <div class="col-2">
+                       
+                            <badge
+                                backicon="globe"
+                                fronticon="check"
+                                color="green"
+                            ></badge> 
+                       
+                        </div> 
+
+                        <div class="col-9" v-html="content.domain2"></div>
+
+                    </div>
+
                 </div>
 
-                <div class="col-3" v-html="content.domain2"></div>
-
-                <div class="col-1">
-
-                    <badge
-                        backicon="server"
-                        fronticon="warning"
-                        color="red"
-                    ></badge> 
-                    
-                </div>
-
-                <div class="col-3">
+                <div class="col-4">
             
-                    <div v-html="content.server1"></div>
+                    <div class="row row-around">
 
-                    <component
-                        is="Progressbar2"
-                        label="Kettaruumi kasutus"
-                        color="#ccc"
-                        value="80"
-                        max="120"
-                        unit="GB"
-                    >
-                    </component>
+                        <div class="col-2">
 
-                    <component
-                        is="Progressbar2"
-                        label="Andmebaaside maht"
-                        color="#ccc"
-                        value="15"
-                        max="40"
-                        unit="GB"
-                    >
-                    </component>
+                            <badge
+                                backicon="server"
+                                fronticon="check"
+                                color="green"
+                            ></badge> 
+                        
+                        </div>
 
-                    <component
-                        is="Progressbar2"
-                        label="Inodede arv"
-                        color="red"
-                        value="100000"
-                        max="100000"
-                        icon="warning"
-                    >
-                    </component>
+                        <div class="col-9">
 
-                    <div v-html="content.server2"></div>
+                            <div v-html="content.server1"></div>
+
+                            <component
+                                is="Progressbar2"
+                                label="Failide kettaruum"
+                                color="#aaa"
+                                value="80"
+                                max="120"
+                                unit="GB"
+                            >
+                            </component>
+
+                            <component
+                                is="Progressbar2"
+                                label="Andmebaaside kettaruum"
+                                color="#aaa"
+                                value="15"
+                                max="40"
+                                unit="GB"
+                            >
+                            </component>
+
+                            <component
+                                is="Progressbar2"
+                                label="Inodede arv"
+                                color="red"
+                                value="100000"
+                                max="100000"
+                                icon="warning"
+                            >
+                            </component>
+
+                            <div v-html="content.server2"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="row row-around">
+
+                        <div class="col-2">
+
+                            <badge
+                                backicon="envelope"
+                                fronticon="check"
+                                color="green"
+                            ></badge> 
+                        
+                        </div>
+
+                        <div class="col-9">
+
+                            <div v-html="content.email1"></div>
+
+                            <component
+                                is="Progressbar2"
+                                label="E-maili kettaruum"
+                                color="#ccc"
+                                value="20"
+                                max="80"
+                                unit="GB"
+                            >
+                            </component>
+
+                            <div v-html="content.email2"></div>
+
+                            <component
+                                is="FeatureToggle"
+                                title="Väärposti suunamine"
+                                button="Seadista"
+                                status="Jah"
+                            ></component>
+
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -143,13 +201,15 @@
     import Badge from '../components/Badge.vue'
     import Progressbar2 from '../components/Progressbar2.vue'
     import Toggle from '../components/Toggle.vue'
+    import FeatureToggle from '../components/FeatureToggle.vue'
 
     export default {
         components: {
             Icon,
             Badge,
             Progressbar2,
-            Toggle
+            Toggle,
+            FeatureToggle
         },
         data() {
             return {
@@ -188,13 +248,19 @@
         font: $font-heading-sm;
         text-transform: uppercase;
         color: #aaa;
-        margin: 0 0 0.5em 0;
+        margin: 0.5em 0 0.5em 0;
     }
     .pod hr {
         border: 0;
         border-top: 1px solid #ccc;
         height: 0;
         margin: 1em 0;
+    }
+    .pod table {
+        width: 100%;
+    }
+    .pod td:last {
+        text-align: right;
     }
     .pod__top {
         height: 4em;
