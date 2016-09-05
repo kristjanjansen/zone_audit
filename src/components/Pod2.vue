@@ -199,7 +199,7 @@
 
     import Icon from '../components/Icon.vue'
     import Badge from '../components/Badge.vue'
-    import Progressbar2 from '../components/Progressbar2.vue'
+    import BarGraph from '../components/BarGraph.vue'
     import Toggle from '../components/Toggle.vue'
     import FeatureToggle from '../components/FeatureToggle.vue'
 
@@ -207,7 +207,7 @@
         components: {
             Icon,
             Badge,
-            Progressbar2,
+            BarGraph,
             Toggle,
             FeatureToggle
         },

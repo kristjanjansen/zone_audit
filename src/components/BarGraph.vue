@@ -1,22 +1,20 @@
 <template>
     
-    <div :style="{marginBottom: '1em'}">
+    <div>
         
-        <div
-            :style="{
-                display: 'flex',
-                justifyContent: 'space-between',
+        <div :style="{
+            display: 'flex',
+            justifyContent: 'space-between',
         }">
            
-            <div :style="{opacity: '0.5'}">
-                {{ label }}
+            <div>
+                {{ title }}
             </div>
             
 
             <div :style="{marginBottom: '0.5em', display: 'flex'}">
 
                 <div :style="{
-                    fontWeight: 'bold',
                     color: '#ccc', 
                     marginRight: '0.5em'
                 }">
@@ -34,7 +32,6 @@
                 "></component>
 
                 <div :style="{
-                    fontWeight: 'bold',
                     color: color, 
                 }">
                 {{ percentage }}%
@@ -68,10 +65,10 @@
             Icon
         },
         props: {
-            color: { default: ''},
+            color: { default: '#ccc'},
             value: { default: 0},
             max: { default: 0},
-            label: { default: ''},
+            title: { default: ''},
             unit: { default: ''},
             icon: { default: ''}
         },

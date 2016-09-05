@@ -8,20 +8,7 @@
 
         </div>
 
-        <div :style="{ fontWeight: 'bold', color: '#888', textTransform: 'uppercase'}">
-
-            {{ status }}
-
-        </div>
-        
-        <component is="Toggle" v-if="show"></component>
-
-
-        <div :style="{ color: '#ddd', background: '#444', padding: '0.25em 0.5em', borderRadius: '3px'}">
-
-            {{ button }}
-
-        </div>
+         <component is="Toggle"></component>
         
     </div>
 
@@ -35,23 +22,9 @@
         components: {
             Toggle
         },
-        data: function() {
-            return {
-                show: !! this.toggle
-            } 
-        },
         props: {
-            title: { default: ''},
-            status: { default: ''},
-            toggle: { default: ''},
-            button: { default: ''}
+            title: { default: ''}
         }
     }
 
 </script>
-
-<style>
-    .featuretoggle {
-        padding: 1rem 0;
-    }
-</style>

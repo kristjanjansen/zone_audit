@@ -45,8 +45,8 @@
         <div :style="{
             fontWeight: 'bold',
             marginLeft: '7px',
-            color: 'rgb(103,148,54)',
-            opacity: String(offset + 0.2)
+            color: 'green',
+            opacity: String(offset + 0.1)
         }">
             JAH
         </div>
