@@ -39,7 +39,7 @@
             backicon: {default: ''},
             fronticon: {default: ''},
             size: {default: 4},
-            color: {default: ''},
+            color: {default: '#888'},
         }
     }
 

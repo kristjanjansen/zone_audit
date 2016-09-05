@@ -12,8 +12,23 @@
 
                 <div class="col-4">
                 
-                    <component is="Renderer" :components="content.domain">
-                
+                    <component is="PodItem">
+
+                        <component
+                            is="Badge"
+                            slot="badge"
+                            backicon="globe"
+                            fronticon="check">
+                        </component>
+                        <component
+                            slot="content"
+                            is="Renderer"
+                            :components="content.domain"
+                        >
+                        </component>
+
+                    </component>
+
                 </div>
 
                 <div class="col-4">
@@ -40,11 +55,15 @@
 
     import yaml from 'js-yaml';
 
-    import Renderer from '../components/Renderer.vue'
+    import Badge from './Badge.vue'
+    import Renderer from './Renderer.vue'
+    import PodItem from './PodItem.vue'
 
     export default {
         components: {
-            Renderer
+            Badge,
+            Renderer,
+            PodItem
         },
         data() {
             return {

@@ -4,18 +4,14 @@
 
         <div class="col-2">
        
-            <badge
-                backicon="globe"
-                fronticon="check"
-                color="green"
-            ></badge> 
-       
+            <slot name="badge"></slot>
+
         </div> 
 
         <div class="col-9">
 
-            <slot />
-            
+            <slot name="content"></slot>
+
         </div>
 
     </div>
