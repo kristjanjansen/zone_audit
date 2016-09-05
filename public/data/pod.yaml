@@ -4,6 +4,8 @@ domain:
     props:
       text: |
 
+        # Domeen
+
         **minuplaneet.ee**
         Aegub 1.7.2016
         
@@ -35,6 +37,8 @@ server:
     props:
       text: |
       
+        # Server
+
         ## Pakett
 
         Virtuaalserver I
@@ -70,6 +74,12 @@ server:
 
 email:
 
+  - component: Markdown 
+    props:
+      text: |
+      
+        # Email
+
   - component: BarGraph 
     props:
       title: E-maili kettaruum
@@ -79,7 +89,7 @@ email:
 
   - component: FeatureToggle
     props:
-      title: Spämmifilter
+      title: Väärposti suunamine
 
 
 other:

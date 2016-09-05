@@ -6,7 +6,7 @@
         
         <div class="main">
 
-            <component is="Pod2"></component>
+            <component is="Pod"></component>
 
         </div>
 
@@ -17,12 +17,12 @@
 <script>
 
     import Logo from '../components/Logo.vue'
-    import Pod2 from '../components/Pod2.vue'
+    import Pod from '../components/Pod.vue'
 
     export default {
         components: {
             Logo,
-            Pod2
+            Pod
         }
     }
 
