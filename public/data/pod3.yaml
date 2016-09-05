@@ -68,6 +68,20 @@ server:
       icon: warning
       color: red
 
+email:
+
+  - component: BarGraph 
+    props:
+      title: E-maili kettaruum
+      value: 20
+      max: 80
+      unit: GB
+
+  - component: FeatureToggle
+    props:
+      title: Spämmifilter
+
+
 other:
   
   - component: Markdown 

@@ -1,6 +1,6 @@
 <template>
     
-    <div class="row row-around">
+    <div class="row row-around" :style="{marginBottom: '1em'}">
 
         <div class="col-2">
        

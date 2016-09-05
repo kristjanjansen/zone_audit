@@ -18,7 +18,8 @@
                             is="Badge"
                             slot="badge"
                             backicon="globe"
-                            fronticon="check">
+                            fronticon="check"
+                        >
                         </component>
                         <component
                             slot="content"
@@ -33,17 +34,67 @@
 
                 <div class="col-4">
 
-                    <component is="Renderer" :components="content.server">
+                    <component is="PodItem">
+
+                        <component
+                            is="Badge"
+                            slot="badge"
+                            backicon="server"
+                            fronticon="check"
+                        >
+                        </component>
+                        <component
+                            slot="content"
+                            is="Renderer"
+                            :components="content.server"
+                        >
+                        </component>
+
+                    </component>
+
+                    <component is="PodItem">
+
+                        <component
+                            is="Badge"
+                            slot="badge"
+                            backicon="envelope"
+                            fronticon="check"
+                        >
+                        </component>
+                        <component
+                            slot="content"
+                            is="Renderer"
+                            :components="content.email"
+                        >
+                        </component>
+
+                    </component>
 
                 </div>
 
                 <div class="col-4">
 
-                    <component is="Renderer" :components="content.other">
+                    <component is="PodItem">
 
-                </div>
+                        <component
+                            is="Badge"
+                            slot="badge"
+                            backicon="cube"
+                            fronticon="check"
+                        >
+                        </component>
+                        <component
+                            slot="content"
+                            is="Renderer"
+                            :components="content.other"
+                        >
+                        </component>
 
-            </div>
+                    </component>
+
+                </div> <!-- col -->
+
+            </div> <!-- row -->
 
         </div>
                         
