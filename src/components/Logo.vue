@@ -38,8 +38,6 @@
             patterneid
             </div>
 
-        </div>
-
     </div>
 
 </template>

@@ -1,0 +1,132 @@
+domain:
+ 
+  - component: Markdown 
+    props:
+      text: |
+
+        # Domeen
+
+        **minuplaneet.ee**
+        Aegub 1.7.2016
+        
+        ## Registreeritud
+        
+        Loodud: 25.07.2013 / Aegub 01.12.2013 - Pikenda kohe
+        Staatus: Registreeritud
+        Registreerija: Martti Varik
+
+        ## Siia suunatud domeenid
+
+        * maris.ee
+        * zone.ee
+        * potisepp.ee
+
+        ## Nimeserverid
+
+        ns.zone.eu
+        ns2.zone.ee
+        ns3.zonedata.net
+
+        ## DNSSEC turvalisus
+
+        [Mis see on?]()
+
+server:
+
+  - component: Markdown 
+    props:
+      text: |
+      
+        # Server
+
+        ## Pakett
+
+        Virtuaalserver I
+
+        [Muuda]()
+
+        ## Ressursid
+ 
+
+  - component: BarGraph 
+    props:
+      title: Failide kettaruum
+      value: 60
+      max: 120
+      unit: GB
+
+
+  - component: BarGraph 
+    props:
+      title: Andmebaaside kettaruum
+      value: 15
+      max: 40
+      unit: GB
+
+  - component: BarGraph 
+    props:
+      title: Inodede arv
+      value: 100000
+      max: 100000
+      unit: GB
+      icon: warning
+      color: red
+
+email:
+
+  - component: Markdown 
+    props:
+      text: |
+      
+        # Email
+
+  - component: BarGraph 
+    props:
+      title: E-maili kettaruum
+      value: 20
+      max: 80
+      unit: GB
+
+  - component: FeatureToggle
+    props:
+      title: Väärposti suunamine
+
+
+other:
+  
+  - component: Markdown 
+    props:
+      text: |
+
+          ## Zone+
+
+          # Laravel
+
+          ## Veebiserver
+
+          Nginx + PHP-FPM 4.2, PHP 7.1
+
+          HTTPS ja HTTP/2 **JAH**
+
+  - component: FeatureToggle
+    props:
+      title: Let's Encrypt
+
+  - component: Markdown 
+    props:
+      text: |
+
+          ## MySQL
+
+          Versioon: 5.7.1
+          Host: `d28171.mysql.zone.ee`
+
+          ## Ligipääs
+
+          SFTP: `virt28476`
+          Avalik võti olemas: JAH
+          Kataloog: `/data02/virt28476/
+          domeenid/www.tehnokratt.net/htdocs`
+
+
+ 
