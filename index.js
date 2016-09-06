@@ -8,5 +8,8 @@ var root = __dirname + '/public'
 app.use(express.static(root))
 app.use(fallback('index.html', { root: root }))
 
-server.listen(8001);
+var port = 8001
+
+server.listen(port)
+console.log('Listening in ' + post)
 
