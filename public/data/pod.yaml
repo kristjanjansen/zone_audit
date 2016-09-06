@@ -98,15 +98,27 @@ other:
     props:
       text: |
 
-          ## Zone+
+          # Zone +
 
-          # Laravel
+          Laravel
 
-          ## Veebiserver
+          # Veebiserver
 
-          Nginx + PHP-FPM 4.2, PHP 7.1
+  - component: FeatureStatus
+    props:
+      title: Versioonid
+      status: Nginx + PHP-FPM 4.2, PHP 7.1
 
-          HTTPS ja HTTP/2 **JAH**
+  - component: Markdown 
+    props:
+      text: |
+
+        # Turvalisus
+
+  - component: FeatureStatus
+    props:
+      title: HTTPS ja HTTP/2
+      status: Jah
 
   - component: FeatureToggle
     props:

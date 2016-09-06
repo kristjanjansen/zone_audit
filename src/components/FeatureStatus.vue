@@ -4,7 +4,7 @@
         
         <div>
             
-            {{ feature }}
+            {{ title }}
 
         </div>
 
@@ -12,6 +12,12 @@
         <div>
 
             <a href="">{{ button }}</a>
+
+        </div>
+
+        <div>
+
+            {{ value }}
 
         </div>
 
@@ -29,7 +35,8 @@
     
     export default {
         props: {
-            feature: { default: ''},
+            title: { default: ''},
+            value: { default: ''},
             status: { default: ''},
             button: { default: ''}
         }
