@@ -11,5 +11,5 @@ app.use(fallback('index.html', { root: root }))
 var port = 8001
 
 server.listen(port)
-console.log('Listening in ' + post)
+console.log('Listening in ' + port)
 
