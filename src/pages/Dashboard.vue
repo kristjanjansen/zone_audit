@@ -37,9 +37,17 @@
         padding-top: 2em;
     }
 
+    
+    .container {
+      margin: 0 auto;
+      max-width: $largedesktop-width;
+      width: 90%;
+    }
+
     .row {
       display: flex;
       flex-wrap: wrap;
+      display: block ?if $mobile;
     }
 
     .row-middle {
@@ -86,6 +94,7 @@
 
     .col {
       width: 0;
+      width: 100% ?if $mobile;
       min-width: 0;
       flex-grow: 1;
       flex-shrink: 0;
@@ -93,56 +102,67 @@
 
     .col-1 {
       width: calc(100% * 1 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-2 {
       width: calc(100% * 2 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-3 {
       width: calc(100% * 3 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-4 {
       width: calc(100% * 4 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-5 {
       width: calc(100% * 5 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-6 {
       width: calc(100% * 6 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-7 {
       width: calc(100% * 7 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-8 {
       width: calc(100% * 8 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-9 {
       width: calc(100% * 9 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-10 {
       width: calc(100% * 10 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 
     .col-11 {
       width: calc(100% * 11 / 12);
+      width: 100% ?if $mobile;
       flex-shrink: 0;
     }
 

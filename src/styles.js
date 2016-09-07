@@ -80,6 +80,19 @@ var opacities = _
     .mapKeys((value, key) => 'opacity-' + key)
     .value()
 
+var mediaWidths = {
+    'mobile-width': '34rem',
+    'tablet-width': '48rem',
+    'desktop-width': '62rem',
+    'largedesktop-width': '74rem'
+}
+
+var mediaQueries = {
+    mobile: `media (max-width: ${mediaWidths['mobile-width']})`,
+    tablet: `media (max-width: ${mediaWidths['tablet-width']})`,
+    desktop: `media (max-width: ${mediaWidths['desktop-width']})`,
+    largedesktop: `media (max-width: ${mediaWidths['largedesktop-width']})`
+}
 // Export
 
 module.exports = _.assign(
@@ -90,5 +103,7 @@ module.exports = _.assign(
     paddings,
     fonts,
     lineHeights,
-    opacities
+    opacities,
+    mediaWidths,
+    mediaQueries
 )
