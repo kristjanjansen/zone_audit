@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Logo" subtitle="Komponendid"></component>
+        <component is="Logo" subtitle="Dashboard"></component>
         
         <div class="main">
 
