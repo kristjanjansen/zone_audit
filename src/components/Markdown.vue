@@ -37,6 +37,8 @@
     }
     .markdown a {
         color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
     }
     .markdown strong {
         font-weight: 600;
@@ -49,14 +51,23 @@
         font: $font-text-sm;
         padding: 0.05rem 0.3rem;
         text-decoration: none;
+        border: none;
+    }
+    .markdown em a {
+        border-radius: 1em;
+        border: 1px solid #aaa;
+        font: $font-text-xs;
+        padding: 0.1rem 0.5rem;
+        text-decoration: none;
     }
     .markdown del a {
         background: red;
         border-radius: 4px;
         color: white;
-        font: $font-text-sm;
-        padding: 0.05rem 0.3rem;
+        font: $font-text-xs;
+        padding: 0.2rem 0.5rem;
         text-decoration: none;
+        border: none;
     }
 
 </style>

@@ -43,7 +43,7 @@ var fontFamilies = {
     comment: 'Gochi Hand'
 }
 
-var textSizes = { sm: 14, md: 16, lg: 20 }
+var textSizes = { xs: 13, sm: 14, md: 16, lg: 20 }
 var fonts = _
     .chain(textSizes)
     .mapKeys((value, key) => 'font-text-' + key)

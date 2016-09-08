@@ -27,11 +27,10 @@
 <style>
 
     .comment {
-        display: inline-block;
+        display: inline;
         background: $yellow;
         color: $yellow-dark;
         font: $font-comment-md;
-        padding: $padding-xs;
     }
     
 </style>

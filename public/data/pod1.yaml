@@ -9,7 +9,7 @@ domain_top:
   - component: Markdown 
     props:
       text: |
-        **miljonivaade.ee** ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]()
+        **miljonivaade.ee** ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
 
 domain_bottom:
  
@@ -27,9 +27,9 @@ domain_bottom:
 
         |||
         |---|---|---|
-        | [miljonivaated.ee]() | ✒️ |
-        | [oceanview.ee]() | ✒️ |
-        | [oceanview.com]() | ✒️ |
+        | [miljonivaated.ee]() | ◌ |
+        | [oceanview.ee]() | ◌ |
+        | [oceanview.com]() | ◌ |
 
   - component: Comment 
     props:
@@ -90,7 +90,7 @@ server_bottom:
       title: Inodede arv
       value: 100000
       max: 100000
-      unit: GB
+      unit:
       icon: warning
       color: red
 
