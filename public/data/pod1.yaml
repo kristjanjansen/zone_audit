@@ -19,26 +19,35 @@ domain_bottom:
 
         # Domeen
 
-        **minuplaneet.ee**
-        Aegub 1.7.2016
-        
-        ## Registreeritud
-        
-        Loodud: 25.07.2013 / Aegub 01.12.2013 - Pikenda kohe
-        Staatus: Registreeritud
-        Registreerija: Martti Varik
+        **miljonivaade.ee**
+        Loodud: 25.07.2013
+        ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
 
         ## Siia suunatud domeenid
 
-        * maris.ee
-        * zone.ee
-        * potisepp.ee
+        |||
+        |---|---|---|
+        | [miljonivaated.ee]() | ✒️ |
+        | [oceanview.ee]() | ✒️ |
+        | [oceanview.com]() | ✒️ |
 
+  - component: Comment 
+    props:
+      comment: Kas suunatud domeenide puhul tuleks samuti nende staatust näidata?
+
+  - component: Markdown 
+    props:
+      text: |
+    
         ## Nimeserverid
 
         ns.zone.eu
         ns2.zone.ee
         ns3.zonedata.net
+
+        ## Kontaktid
+
+        Registreerija: Martti Varik
 
         ## DNSSEC turvalisus
 

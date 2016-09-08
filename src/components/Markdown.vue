@@ -24,12 +24,22 @@
 <style>
     .markdown p {
         margin: 0;
+        margin-bottom: 1rem;
+        color: #888;
+        line-height: $line-height-lg;
+    }
+    .markdown p:last-child {
+        margin: 0;
     }
     .markdown del {
         color: red;
         text-decoration: none;
     }
     .markdown a {
+        color: #333;
+    }
+    .markdown strong {
+        font-weight: 600;
         color: #333;
     }
     .markdown strong a {

@@ -83,13 +83,13 @@
         font: $font-heading-lg;
         font-weight: 600;
         text-transform: uppercase;
-        margin-right: $margin-sm;
+        margin-right: $margin-xs;
     }
     .header__subtitle {
         font: $font-heading-lg;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: uppercase;
-        margin-right: $margin-sm;
+        margin-right: $margin-xs;
     }
     .header__subtitle a {
         text-decoration: none;
