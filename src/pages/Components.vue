@@ -12,7 +12,7 @@
 
         <div class="margin-top">
 
-            <component is="Pod1" datafile="pod2.yaml"></component>
+            <component is="Pod2" datafile="pod2.yaml"></component>
 
         </div>
       
@@ -24,11 +24,13 @@
 
     import Header from '../components/Header.vue'
     import Pod1 from '../components/Pod1.vue'
+    import Pod2 from '../components/Pod2.vue'
 
     export default {
         components: {
             Header,
-            Pod1
+            Pod1,
+            Pod2
         }
     }
 

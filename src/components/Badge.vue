@@ -15,6 +15,7 @@
         <div class="badge__fronticon">
 
         <icon
+            v-if="fronticon"
             :background="color"
             :icon="fronticon"
             :size="size * 0.5"
