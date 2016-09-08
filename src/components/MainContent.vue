@@ -45,12 +45,12 @@
                     return item
                 })
                 this.activeContent = this.content.find(item => item.id == 'dashboard')
-                this.$events.$emit('toggleComments', true)
+                this.$events.$emit('showComments', false)
             })
             this.$events.$on('menuSelected', id => {
                 this.activeContent = this.content.find(item => item.id == id)
             })
-            this.$events.$on('toggleComments', state => {
+            this.$events.$on('showComments', state => {
                 this.showComments = state
             })
         }

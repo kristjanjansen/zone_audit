@@ -19,36 +19,8 @@
 
         <div class="header__right">
             
-            <div
-                @click="toggleComments"
-                class="header__comment"
-                v-if="displayComments && toggles"
-            >
-            Peida kommentaarid ja
-            </div>
-
-            <div
-                @click="toggleComments"
-                class="header__pattern"
-                v-if="displayComments && toggles"
-            >
-            patternid
-            </div>
-
-            <div
-                @click="toggleComments"
-                class="header__comment"
-                v-if="!displayComments && toggles"
-            >
-            Näita kommentaare ja
-            </div>
-
-            <div
-                @click="toggleComments"
-                class="header__pattern"
-                v-if="!displayComments && toggles"
-            >
-            patterneid
+            <div @click="toggleComments" class="header__comment">
+                {{ commentText }}
             </div>
 
         </div>
@@ -62,7 +34,7 @@
     export default {
         data() {
             return {
-                displayComments: true,
+                showComments: false,
                 routes: {
                     '/': 'Audit',
                     '/components': 'Komponendid' 
@@ -73,12 +45,23 @@
             toggles: {default: false},
             active: {default: ''}
         },
+        computed: {
+            commentText: function() {
+                return this.showComments ? 'Peida kommentaarid' : 'Näita kommentaare'
+            }
+        },
         methods: {
             toggleComments() {
-                this.displayComments = !this.displayComments
-                this.$events.$emit('toggleComments', this.displayComments)
+                this.showComments = ! this.showComments
+                this.$events.$emit('showComments', this.showComments)
             }
+        },
+        created() {
+            this.$events.$on('showComments', state => {
+                this.showComments = state
+            })
         }
+
     }
 
 </script>
@@ -118,14 +101,6 @@
     .header__comment  {
         background: $yellow;
         color: $yellow-dark;
-        font: $font-comment-md;
-        padding-right: $padding-xs;
-        padding-left: $padding-xs;
-        cursor: pointer;
-    }
-    .header__pattern  {
-        background: $green-light;
-        color: $green;
         font: $font-comment-md;
         padding-right: $padding-xs;
         padding-left: $padding-xs;
