@@ -4,6 +4,32 @@
         
         <div class="pod__top" @click="open = ! open">
 
+            <div class="row">
+
+                <div class="col-1">
+                        <component
+                            is="Icon"
+                            icon="check"
+                            color="white"
+                            background="#888"
+                        >
+                        </component>
+
+                </div>
+
+                <div class="col-4">
+
+                        <component
+                            slot="content"
+                            is="Renderer"
+                            :components="content.domain_top"
+                        >
+                        </component>
+
+                </div>
+
+            </div>
+
         </div>
 
         <div class="pod__bottom" v-show="open">
@@ -24,7 +50,7 @@
                         <component
                             slot="content"
                             is="Renderer"
-                            :components="content.domain"
+                            :components="content.domain_bottom"
                         >
                         </component>
 
@@ -46,7 +72,7 @@
                         <component
                             slot="content"
                             is="Renderer"
-                            :components="content.server"
+                            :components="content.server_bottom"
                         >
                         </component>
 
@@ -64,7 +90,7 @@
                         <component
                             slot="content"
                             is="Renderer"
-                            :components="content.email"
+                            :components="content.email_bottom"
                         >
                         </component>
 
@@ -86,7 +112,7 @@
                         <component
                             slot="content"
                             is="Renderer"
-                            :components="content.other"
+                            :components="content.other_bottom"
                         >
                         </component>
 
@@ -106,15 +132,17 @@
 
     import yaml from 'js-yaml';
 
-    import Renderer from './Renderer.vue'
     import Badge from './Badge.vue'
+    import Icon from './Icon.vue'
     import PodItem from './PodItem.vue'
+    import Renderer from './Renderer.vue'
 
     export default {
         components: {
             Badge,
+            Icon,
+            PodItem,
             Renderer,
-            PodItem
         },
         data() {
             return {

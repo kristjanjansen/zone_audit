@@ -1,4 +1,11 @@
-domain:
+domain_top:
+ 
+  - component: Markdown 
+    props:
+      text: |
+        **minuplaneet.ee**
+
+domain_bottom:
  
   - component: Markdown 
     props:
@@ -31,7 +38,7 @@ domain:
 
         [Mis see on?]()
 
-server:
+server_bottom:
 
   - component: Markdown 
     props:
@@ -72,7 +79,7 @@ server:
       icon: warning
       color: red
 
-email:
+email_bottom:
 
   - component: Markdown 
     props:
@@ -92,7 +99,7 @@ email:
       title: Väärposti suunamine
 
 
-other:
+other_bottom:
   
   - component: Markdown 
     props:

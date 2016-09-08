@@ -30,7 +30,7 @@
 
     Näita ```[10 ▾]``` rida | Otsing ```[__________]```
 
-    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC ~~Arusaamatu~~|
+    |Domeen|Staatus|Kiirviited|Aegub|DNSSEC ~~?~~|
     |---|---|---|---|---|
     |kristjanjansen.ee|Registreeritud ~~Siia sobiks staatusele vastav värvikood, ● vms~~|**[Kiirviited ▾]()**|07.08.2017|◌ ~~Kas kuskilt mujalt ka siia lingini jõuab?~~|
 
@@ -477,6 +477,51 @@
     Postiindeks: ```[__________]``` * 
 
     **[« Tagasi]()** **[Muuda]()**
+
+
+- title: DNSSEC kaitse domeenil kristjanjansen.ee
+  id: domains_dnssec
+  body: |
+    
+    ~~Miks ma ei saa siia lehel kuskilt mujalt kui Minu Zone esilehelt?~~
+
+    **Hetkestaatus:** DNSSEC on aktiveerimata
+
+    # **[Aktiveeri]()**
+
+    Täpsemat seadistused ▾ ~~Uus pattern~~ _CollapsibleDetails_
+
+    # Hetkel aktiivsed võtmeid
+
+    |Võtme silt|Võtme tüüp|Algoritm|Allkirjastamise võti|Kustuta|
+    |---|---|---|---|---|
+    |&nbsp;|&nbsp;|&nbsp;|&nbsp;|**[+]()**|
+
+    **[Kinnita muudatus]()**
+
+- title: DNSSEC kaitse domeenil kristjanjansen.ee
+  id: domains_dnssec_processing
+  body: |
+
+      **Hetkestaatus:** DNSSEC on aktiveerimata
+
+      ```
+      Eesootavad muutused: DNSSEC aktiveeritakse 
+      ```
+
+      Täpsemat seadistused ▾
+
+      ---
+
+      **DNSSEC võtmed peale muudatust**
+
+      ---
+
+      NB! Kasutatakse registripidaja loodud võtmeid! ~~Miks see nii oluline on?~~
+
+      ---
+
+      **[Tühista muudatus]()**
 
 - title: Tellimused ja arved
   id: domains_orders

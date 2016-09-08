@@ -153,6 +153,13 @@
         text-decoration: none;
         white-space: nowrap;
     }
+    .maincontent__body h1 strong a {
+        font: $font-heading-lg;
+    }
+    .maincontent__body h2 strong a,
+    .maincontent__body h3 strong a {
+        font: $font-heading-md;
+    }
     .maincontent__body del {
         background: $yellow;
         color: $yellow-dark;

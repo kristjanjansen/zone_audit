@@ -42,6 +42,12 @@
       - title: Kontaktid → Muuda
         id: domains_contacts_edit
         comments: true
+    - title: DNSSEC
+      id: domains_dnssec
+      comments: true
+    - title: DNSSEC → Aktiveerimisel
+      id: domains_dnssec_processing
+      comments: true
     - title: Tellimused
       id: domains_orders
       comments: true
