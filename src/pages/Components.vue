@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Header" subtitle="Dashboard"></component>
+        <component is="Header" active="/components"></component>
         
         <div class="main">
 

@@ -3,14 +3,14 @@ import VueResource from 'vue-resource'
 import VueEvents from 'vue-events';
 
 import Audit from './pages/Audit.vue'
-import Dashboard from './pages/Dashboard.vue'
+import Components from './pages/Components.vue'
 
 Vue.use(VueResource)
 Vue.use(VueEvents)
 
 const routes = {
   '/': Audit,
-  '/dashboard': Dashboard
+  '/components': Components
 }
 
 new Vue({

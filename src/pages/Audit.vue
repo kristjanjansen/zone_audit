@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Header" subtitle="Sisuaudit" toggles="true"></component>
+        <component is="Header" active="/" toggles="true"></component>
         
         <div class="main">
 

@@ -6,7 +6,14 @@
 
             <div class="header__title">Zone.ee</div>
 
-            <div class="header__subtitle">{{ subtitle }}</div> 
+            <div
+                v-for="(value, key) in routes"
+                class="header__subtitle"
+                :class="{'header__subtitle--active': active === key}"
+            >
+                <a :href="key">{{value}}</a>
+            </div> 
+
 
         </div>
 
@@ -54,11 +61,17 @@
     
     export default {
         data() {
-            return { displayComments: true }
+            return {
+                displayComments: true,
+                routes: {
+                    '/': 'Audit',
+                    '/components': 'Komponendid' 
+                }
+            }
         },
         props: {
             toggles: {default: false},
-            subtitle: {default: ''}
+            active: {default: ''}
         },
         methods: {
             toggleComments() {
@@ -87,14 +100,20 @@
         font: $font-heading-lg;
         font-weight: 500;
         text-transform: uppercase;
-        margin-right: $margin-xs;
+        margin-right: $margin-sm;
     }
     .header__subtitle {
-        color: $cool;
         font: $font-heading-lg;
         font-weight: 500;
         text-transform: uppercase;
         margin-right: $margin-sm;
+    }
+    .header__subtitle a {
+        text-decoration: none;
+        color: $gray;
+    }
+    .header__subtitle.header__subtitle--active a {
+        color: $cool;
     }
     .header__comment  {
         background: $yellow;
