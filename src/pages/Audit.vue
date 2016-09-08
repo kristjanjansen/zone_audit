@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Logo" subtitle="Sisuaudit" toggles="true"></component>
+        <component is="Header" subtitle="Sisuaudit" toggles="true"></component>
         
         <div class="main">
 
@@ -26,13 +26,13 @@
 
 <script>
 
-    import Logo from '../components/Logo.vue'
+    import Header from '../components/Header.vue'
     import MainMenu from '../components/MainMenu.vue'
     import MainContent from '../components/MainContent.vue'
 
     export default {
         components: {
-            Logo,
+            Header,
             MainMenu,
             MainContent
         }

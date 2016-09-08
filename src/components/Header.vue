@@ -1,14 +1,20 @@
 <template>
 
-    <div class="logo">
+    <div class="header">
         
-        <div class="logo__title">Zone.ee</div>
+        <div class="header__left">
 
-        <div class="logo__subtitle">{{ subtitle }}</div> 
+            <div class="header__title">Zone.ee</div>
+
+            <div class="header__subtitle">{{ subtitle }}</div> 
+
+        </div>
+
+        <div class="header__right">
             
             <div
                 @click="toggleComments"
-                class="logo__comment"
+                class="header__comment"
                 v-if="displayComments && toggles"
             >
             Peida kommentaarid ja
@@ -16,7 +22,7 @@
 
             <div
                 @click="toggleComments"
-                class="logo__pattern"
+                class="header__pattern"
                 v-if="displayComments && toggles"
             >
             patternid
@@ -24,7 +30,7 @@
 
             <div
                 @click="toggleComments"
-                class="logo__comment"
+                class="header__comment"
                 v-if="!displayComments && toggles"
             >
             Näita kommentaare ja
@@ -32,11 +38,13 @@
 
             <div
                 @click="toggleComments"
-                class="logo__pattern"
+                class="header__pattern"
                 v-if="!displayComments && toggles"
             >
             patterneid
             </div>
+
+        </div>
 
     </div>
 
@@ -63,23 +71,32 @@
 </script>
 
 <style>
-    .logo {
+    .header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
-    .logo__title {
+    .header__left {
+        display: flex;
+    }
+    .header__right {
+        display: flex;
+    }
+    .header__title {
         color: $red;
-        font: $font-logo-title;
+        font: $font-heading-lg;
+        font-weight: 500;
         text-transform: uppercase;
         margin-right: $margin-xs;
     }
-    .logo__subtitle {
+    .header__subtitle {
         color: $cool;
-        font: $font-logo-subtitle;
+        font: $font-heading-lg;
+        font-weight: 500;
         text-transform: uppercase;
         margin-right: $margin-sm;
     }
-    .logo__comment  {
+    .header__comment  {
         background: $yellow;
         color: $yellow-dark;
         font: $font-comment-md;
@@ -87,7 +104,7 @@
         padding-left: $padding-xs;
         cursor: pointer;
     }
-    .logo__pattern  {
+    .header__pattern  {
         background: $green-light;
         color: $green;
         font: $font-comment-md;

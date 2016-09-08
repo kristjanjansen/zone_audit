@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Logo" subtitle="Dashboard"></component>
+        <component is="Header" subtitle="Dashboard"></component>
         
         <div class="main">
 
@@ -16,12 +16,12 @@
 
 <script>
 
-    import Logo from '../components/Logo.vue'
+    import Header from '../components/Header.vue'
     import Pod from '../components/Pod.vue'
 
     export default {
         components: {
-            Logo,
+            Header,
             Pod
         }
     }
