@@ -9,7 +9,7 @@ domain_top:
   - component: Markdown 
     props:
       text: |
-        **miljonivaade.ee** ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
+        **miljonivaade.ee** ~~Aegub 1.dets.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
 
 domain_bottom:
  
