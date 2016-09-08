@@ -155,9 +155,12 @@
     }
     .pod__top {
         padding: 1em;
-        display: flex;
     }
-    .pod__top > * {
+    .pod__top > div {
+        display: flex;
+        align-items: center;
+    }
+    .pod__top > div > * {
         margin-right: $margin-sm;
     }
     .pod__bottom {

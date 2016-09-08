@@ -1,9 +1,15 @@
 domain_top:
  
+  - component: Icon 
+    props:
+      icon: check
+      color: white
+      background: green
+
   - component: Markdown 
     props:
       text: |
-        **midagimuud.ee** ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]()
+        **midagimuud.ee** Aegumiseni 8 kuud [DNS]() [Kontaktid]()
 
   - component: Comment 
     props:
