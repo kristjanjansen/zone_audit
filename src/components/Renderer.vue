@@ -1,24 +1,30 @@
 <script>
 
-    import Markdown from './Markdown.vue'
-    import FeatureToggle from './FeatureToggle.vue'
-    import FeatureStatus from './FeatureStatus.vue'
     import BarGraph from './BarGraph.vue'
+    import Comment from './Comment.vue'
+    import FeatureStatus from './FeatureStatus.vue'
+    import FeatureToggle from './FeatureToggle.vue'
+    import Markdown from './Markdown.vue'
+    import Icon from './Icon.vue'
 
     export default {
         components: {
-            Markdown,
-            FeatureToggle,
+            BarGraph,
+            Comment,
             FeatureStatus,
-            BarGraph
+            FeatureToggle,
+            Markdown,
+            Icon
         },
         props: {
-            components: { default: () => []}
+            components: { default: () => []},
+            margin: { default: false }
         },
         render: function(h) {
+            var margin = !! this.margin
             return h('div', this.components.map(function(component) {
                 return h(component.component, {
-                    style: { marginBottom: '2em' },
+                    style: { marginBottom: margin ? '2em' : false },
                     props: component.props
                 })
             }))

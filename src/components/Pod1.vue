@@ -4,31 +4,12 @@
         
         <div class="pod__top" @click="open = ! open">
 
-            <div class="row">
-
-                <div class="col-1">
-                        <component
-                            is="Icon"
-                            icon="check"
-                            color="white"
-                            background="#888"
-                        >
-                        </component>
-
-                </div>
-
-                <div class="col-4">
-
-                        <component
-                            slot="content"
-                            is="Renderer"
-                            :components="content.domain_top"
-                        >
-                        </component>
-
-                </div>
-
-            </div>
+            <component
+                slot="content"
+                is="Renderer"
+                :components="content.domain_top"
+            >
+            </component>
 
         </div>
 
@@ -50,6 +31,7 @@
                         <component
                             slot="content"
                             is="Renderer"
+                            margin="true"
                             :components="content.domain_bottom"
                         >
                         </component>
@@ -72,6 +54,7 @@
                         <component
                             slot="content"
                             is="Renderer"
+                            margin="true"
                             :components="content.server_bottom"
                         >
                         </component>
@@ -90,6 +73,7 @@
                         <component
                             slot="content"
                             is="Renderer"
+                            margin="true"
                             :components="content.email_bottom"
                         >
                         </component>
@@ -112,6 +96,7 @@
                         <component
                             slot="content"
                             is="Renderer"
+                            margin="true"
                             :components="content.other_bottom"
                         >
                         </component>
@@ -144,14 +129,15 @@
             PodItem,
             Renderer,
         },
+        props: ['datafile'],
         data() {
             return {
-                open: true,
+                open: false,
                 content: {}
             };
         },
         created() {
-            this.$http.get('./data/pod.yaml').then(res => {
+            this.$http.get('./data/' + this.datafile).then(res => {
                 this.content = yaml.safeLoad(res.data)
             })
         }
@@ -168,8 +154,11 @@
         line-height: $line-height-md;
     }
     .pod__top {
-        height: 4em;
         padding: 1em;
+        display: flex;
+    }
+    .pod__top > * {
+        margin-right: $margin-sm;
     }
     .pod__bottom {
         border-top: 1px solid #555;

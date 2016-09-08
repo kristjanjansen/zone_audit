@@ -2,14 +2,20 @@
 
     <div>
     
-        <component is="Header" active="/components"></component>
+        <component is="Header" active="/components" toggler="true"></component>
         
-        <div class="main">
+        <div class="margin-top">
 
-            <component is="Pod"></component>
+            <component is="Pod1" datafile="pod1.yaml"></component>
 
         </div>
 
+        <div class="margin-top">
+
+            <component is="Pod1" datafile="pod2.yaml"></component>
+
+        </div>
+      
     </div>
 
 </template>
@@ -17,12 +23,12 @@
 <script>
 
     import Header from '../components/Header.vue'
-    import Pod from '../components/Pod.vue'
+    import Pod1 from '../components/Pod1.vue'
 
     export default {
         components: {
             Header,
-            Pod
+            Pod1
         }
     }
 
@@ -164,6 +170,14 @@
       width: calc(100% * 11 / 12);
       width: 100% ?if $mobile;
       flex-shrink: 0;
+    }
+
+    .margin-top {
+        margin-top: $margin-md;
+    }
+
+    .margin-bottom {
+        margin-bottom: $margin-md;
     }
 
     .margin-left {

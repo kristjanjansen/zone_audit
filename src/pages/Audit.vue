@@ -2,7 +2,7 @@
 
     <div>
     
-        <component is="Header" active="/" toggles="true"></component>
+        <component is="Header" active="/" toggler="true"></component>
         
         <div class="main">
 

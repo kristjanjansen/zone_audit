@@ -28,7 +28,7 @@
         },
         props: {
             icon: {required: true},
-            size: {default: 1},
+            size: {default: 1.75},
             color: {default: 'black'},
             background: {default: ''},
             rounded: {default: true}

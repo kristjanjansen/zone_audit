@@ -20,7 +20,7 @@ var colors = {
 
 var spacer = 12;
 
-var ratios = { xs: 0.5, sm: 1, md: 2, lg: 3, xl: 4 }
+var ratios = { xxs: 0.25, xs: 0.5, sm: 1, md: 2, lg: 3, xl: 4 }
 
 var margins = _
     .chain(ratios)

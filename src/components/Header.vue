@@ -19,7 +19,7 @@
 
         <div class="header__right">
             
-            <div @click="toggleComments" class="header__comment">
+            <div @click="toggleComments" class="header__comment" v-if="!!toggler">
                 {{ commentText }}
             </div>
 
@@ -42,7 +42,7 @@
             }
         },
         props: {
-            toggles: {default: false},
+            toggler: {default: false},
             active: {default: ''}
         },
         computed: {
@@ -81,7 +81,7 @@
     .header__title {
         color: $red;
         font: $font-heading-lg;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         margin-right: $margin-sm;
     }
@@ -93,10 +93,10 @@
     }
     .header__subtitle a {
         text-decoration: none;
-        color: $gray;
+        color: #ddd;
     }
     .header__subtitle.header__subtitle--active a {
-        color: $cool;
+        color: #9a9a9a;
     }
     .header__comment  {
         background: $yellow;

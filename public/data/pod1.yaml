@@ -1,9 +1,19 @@
 domain_top:
- 
+
+  - component: Icon 
+    props:
+      icon: warning
+      color: white
+      background: red
+
   - component: Markdown 
     props:
       text: |
-        **minuplaneet.ee**
+        **miljonivaade.ee** ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]()
+
+  - component: Comment 
+    props:
+      comment: Info ühele reale surumine ei ole põhjendatud, 2-realine info ei tee moodulit palju kõrgemaks kuid annab tunduvalt rohkem mänguruumi
 
 domain_bottom:
  

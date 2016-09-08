@@ -79,7 +79,7 @@
         },
         data: function() {
             return {
-                radius: 0.3
+                radius: 0.2
             }
         }
     }
