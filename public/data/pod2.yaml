@@ -1,37 +1,81 @@
-domain:
+- row:
 
-  - backicon: globe
-    fronticon: warning
-    color: red
-    components:
-      - component: Markdown 
-        props:
-          text: |
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
 
-            ## Domeen
+              ## Domeen
 
-            **miljonivaade.ee**
-            Loodud: 25.07.2013
-            ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+              **miljonivaade.ee**
+              Loodud: 25.07.2013
+              ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
 
-  - backicon: globe
-    components:
-      - component: Markdown 
-        props:
-          text: |
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
 
-            ## Nimeserverid
+              ## Nimeserverid
 
-            ns.zone.eu
-            ns2.zone.ee
-            ns3.zonedata.net
+              ns.zone.eu
+              ns2.zone.ee
+              ns3.zonedata.net
 
-  - backicon: globe
-    components:
-      - component: Markdown 
-        props:
-          text: |
-            
-            ## Aktiveeri DNSSEC turvalisus
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
+              
+              ## Aktiveeri DNSSEC turvalisus
 
-            [Mis see on?]()
+              [Mis see on?]()
+
+- row:
+
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
+
+              ## Domeen
+
+              **miljonivaade.ee**
+              Loodud: 25.07.2013
+              ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
+
+              ## Nimeserverid
+
+              ns.zone.eu
+              ns2.zone.ee
+              ns3.zonedata.net
+
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
+              
+              ## Aktiveeri DNSSEC turvalisus
+
+              [Mis see on?]()
+
+- row:
+  
+    - backicon: globe
+      components:
+        - component: Markdown 
+          props:
+            text: |
+
+              ## Aliased

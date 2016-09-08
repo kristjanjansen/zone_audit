@@ -15,9 +15,9 @@
 
         <div class="pod__bottom" v-show="open">
 
-            <div class="row">
+            <div class="row" v-for="row in content">
 
-                <div class="col-4" v-for="col in content.domain">
+                <div class="col-4" v-for="col in row.row">
                 
                     <component is="PodItem">
 
@@ -69,7 +69,7 @@
         data() {
             return {
                 open: false,
-                content: {}
+                content: []
             };
         },
         created() {
