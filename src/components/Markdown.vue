@@ -97,5 +97,8 @@
     .markdown td:last {
         text-align: right;
     }
+    .markdown pre {
+        overflow: scroll;
+    }
 
 </style>

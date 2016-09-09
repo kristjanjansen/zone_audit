@@ -57,6 +57,11 @@
 
     - backicon: 
       components:
+
+        - component: Comment
+          props:
+            comment: PAKETT?
+
         - component: Markdown 
           props:
             text: |
@@ -71,6 +76,10 @@
 
     - backicon:
       components:
+
+        - component: Comment
+          props:
+            comment: RESSURSID?
 
         - component: BarGraph 
           props:
@@ -120,7 +129,31 @@
 
         - component: Comment
           props:
-            comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka (?) / linki mis on Let's Encrypt
+            comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"
+
+        - component: FeatureStatus
+          props:
+            title: HTTP+HTTPS
+            status: Jah
+
+        - component: Markdown 
+          props:
+            text: |
+
+                ```
+                MySQL host: d28171.mysql.zone.ee | PHP 7.0 
+                Grupi nimi / SSH kasutaja: virt28476
+                http + https
+                /data02/virt28476/domeenid/www.tehnokratt.net/htdocs
+                ```
+
+        - component: Comment
+          props:
+            comment: |
+
+                Täiesti kujundamata ja juhuslik kogum teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
+
+                [Vt näiteks kuidas Panthenon seda teeb](/screenshots/panthenon_connection.png)
 
 - row:
   

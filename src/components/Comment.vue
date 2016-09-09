@@ -2,9 +2,7 @@
 
     <div class="comment" v-if="showComment">
     
-        <div class="comment__content">
-            {{ comment }}
-        </div>
+        <div class="comment__content" v-html="renderedComment"></div>
 
     </div>
 
@@ -12,11 +10,18 @@
 
 <script>
 
+    import marked from 'marked';
+
+    marked.setOptions({ breaks: true })
+
     export default {
         data() {
             return {
                 showComment: false
             };
+        },
+        computed: {
+            renderedComment: function() { return marked(this.comment) }
         },
         props: ['comment'],
         created: function () {
@@ -26,15 +31,25 @@
         }
     }
 
+
 </script>
 
 <style>
 
-    .comment__content {
+    .comment__content p {
         display: inline;
         background: $yellow;
         color: $yellow-dark;
         font: $font-comment-md;
+    }
+    .comment__content a {
+        color: $yellow-dark;
+        text-underline-position: under;
+    }
+    .comment__content img {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
     }
     
 </style>
