@@ -48,8 +48,8 @@
         background: $cool;
         border-radius: 4px;
         color: white;
-        font: $font-text-sm;
-        padding: 0.05rem 0.3rem;
+        font: $font-text-xs;
+        padding: 0.2rem 0.5rem;
         text-decoration: none;
         border: none;
     }
@@ -57,14 +57,14 @@
         border-radius: 1em;
         border: 1px solid #aaa;
         font: $font-text-xs;
-        padding: 0.1rem 0.5rem;
+        padding: 0.2rem 0.5rem;
         text-decoration: none;
-        background: #eee;
     }
     .markdown h1 em a {
         font: $font-text-lg;
         padding: 0.5rem 1rem;
         text-transform: none;
+        line-height: $line-height-lg;
     }
     .markdown del a {
         background: red;

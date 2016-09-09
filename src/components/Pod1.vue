@@ -24,8 +24,7 @@
                         <component
                             is="Badge"
                             slot="badge"
-                            backicon="globe"
-                            fronticon="check"
+                            backicon="world"
                         >
                         </component>
                         <component
@@ -48,7 +47,6 @@
                             is="Badge"
                             slot="badge"
                             backicon="server"
-                            fronticon="check"
                         >
                         </component>
                         <component
@@ -67,7 +65,6 @@
                             is="Badge"
                             slot="badge"
                             backicon="envelope"
-                            fronticon="check"
                         >
                         </component>
                         <component
@@ -90,7 +87,6 @@
                             is="Badge"
                             slot="badge"
                             backicon="cube"
-                            fronticon="check"
                         >
                         </component>
                         <component

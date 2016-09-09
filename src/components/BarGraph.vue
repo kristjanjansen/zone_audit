@@ -24,6 +24,7 @@
                 <component
                     is="Icon"
                     v-if="icon"
+                    size="1"
                     :icon="icon"
                     :color="color"
                     :style="{

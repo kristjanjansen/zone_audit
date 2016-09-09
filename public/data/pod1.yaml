@@ -18,26 +18,23 @@ domain_bottom:
     props:
       text: |
 
-        ## Domeen
+        # Domeen
 
         **miljonivaade.ee**
-        Loodud: 1. dets. 2013
-        ~~Aegub: 1. dets. 2016~~ ~~[Pikenda]()~~
-
-        Registreerija: Martti Varik
-        [Muuda kontaktandmeid]()
+        Loodud: 1. dets. 2016
+        Aegub: 1. dets. 2017
 
         ## Siia suunatud domeenid
 
         |||
         |---|---|---|
-        | [miljonivaated.ee]() | ◌ |
-        | [oceanview.ee]() | ◌ |
-        | [oceanview.com]() | ◌ |
+        | [miljonivaated.ee]() | ◌ ◌ |
+        | [oceanview.ee]() | ◌ ◌ |
+        | [oceanview.com]() | ◌ ◌ |
 
   - component: Comment 
     props:
-      comment: Kas suunatud domeenide puhul tuleks samuti nende staatust näidata?
+      comment: Mida siin suunatud domeenidega teha saab? Minna domeenilehele / domeenisuunamislehele või saab siin kohe otse midagi teha? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?
 
   - component: Markdown 
     props:
@@ -49,9 +46,18 @@ domain_bottom:
         ns2.zone.ee
         ns3.zonedata.net
 
+  - component: Comment 
+    props:
+      comment: Siin peaks olema nimeserverite muutmise nupp?
+
+  - component: Markdown 
+    props:
+      text: |
+
         ## Kontaktid
 
         Registreerija: Martti Varik
+        [Muuda kontaktandmeid]()
 
         ## DNSSEC turvalisus
 
@@ -67,13 +73,12 @@ server_bottom:
 
         ## Pakett
 
-        Virtuaalserver I
+        # _[Virtuaalserver III]()_
 
         [Muuda]()
 
         ## Ressursid
  
-
   - component: BarGraph 
     props:
       title: Failide kettaruum
@@ -81,6 +86,14 @@ server_bottom:
       max: 120
       unit: GB
 
+  - component: BarGraph 
+    props:
+      title: Inodede arv
+      value: 384000
+      max: 384000
+      unit:
+      icon: warning
+      color: red
 
   - component: BarGraph 
     props:
@@ -88,15 +101,6 @@ server_bottom:
       value: 15
       max: 40
       unit: GB
-
-  - component: BarGraph 
-    props:
-      title: Inodede arv
-      value: 100000
-      max: 100000
-      unit:
-      icon: warning
-      color: red
 
 email_bottom:
 
@@ -117,7 +121,6 @@ email_bottom:
     props:
       title: Väärposti suunamine
 
-
 other_bottom:
   
   - component: Markdown 
@@ -126,14 +129,15 @@ other_bottom:
 
           # Zone +
 
-          Laravel
+          # _[PrestaShop]()_
+          # _[phpBB]()_
+          # _[Gallery]()_
 
-          # Veebiserver
+          [Lisa uus]()
 
-  - component: FeatureStatus
+  - component: Comment 
     props:
-      title: Versioonid
-      status: Nginx + PHP-FPM 4.2, PHP 7.1
+      comment: Mis siin veel peaks Zone+ pakettide all näitama? Versiooninumbreid? Soovituslikke uuendusi?
 
   - component: Markdown 
     props:
@@ -143,28 +147,35 @@ other_bottom:
 
   - component: FeatureStatus
     props:
-      title: HTTPS ja HTTP/2
+      title: HTTP ja HTTPS
       status: Jah
 
   - component: FeatureToggle
     props:
       title: Let's Encrypt
 
+  - component: FeatureToggle
+    props:
+      title: HTTP/2
+
+  - component: Comment 
+    props:
+      comment: |
+        
+        HTTP/2te vist niisama lihtsalt sisse ei lülita?
+
+
   - component: Markdown 
     props:
       text: |
 
-          ## MySQL
+          # Ligipääs
 
-          Versioon: 5.7.1
-          Host: `d28171.mysql.zone.ee`
-
-          ## Ligipääs
-
-          SFTP: `virt28476`
+          ```
+          SFTP: virt28476
           Avalik võti olemas: JAH
-          Kataloog: `/data02/virt28476/
-          domeenid/www.tehnokratt.net/htdocs`
-
+          Kataloog: /data02/virt28476/
+          domeenid/www.tehnokratt.net/htdocs
+          ```
 
  

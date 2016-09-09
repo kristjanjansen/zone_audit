@@ -15,7 +15,7 @@
 
         </div>
 
-        <div>
+        <div :style="{ fontWeight: 500, color: '#777' }">
 
             {{ value }}
 
