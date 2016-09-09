@@ -11,6 +11,8 @@
             >
             </component>
 
+            <component is="Comment" :comment="content.domain_top_comment"></component>
+
         </div>
 
         <div class="pod2__bottom" v-show="open">
@@ -57,6 +59,7 @@
     import Icon from './Icon.vue'
     import PodItem from './PodItem.vue'
     import Renderer from './Renderer.vue'
+    import Comment from './Comment.vue'
 
     export default {
         components: {
@@ -64,6 +67,7 @@
             Icon,
             PodItem,
             Renderer,
+            Comment
         },
         props: ['datafile'],
         data() {

@@ -9,7 +9,8 @@ domain_top:
   - component: Markdown 
     props:
       text: |
-        **miljonivaade.ee** ~~Aegub 1.dets.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
+
+        **kinnisvara.ee** Registreeritud [DNS]() [Kontaktid]() [...]() | _[Virtuaalserver III]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[PrestaShop]()_ _[phpBB]()_ _[Gallery]()_ [Lisa uus]()
 
 domain_bottom:
  
@@ -17,11 +18,14 @@ domain_bottom:
     props:
       text: |
 
-        # Domeen
+        ## Domeen
 
         **miljonivaade.ee**
-        Loodud: 25.07.2013
-        ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+        Loodud: 1. dets. 2013
+        ~~Aegub: 1. dets. 2016~~ ~~[Pikenda]()~~
+
+        Registreerija: Martti Varik
+        [Muuda kontaktandmeid]()
 
         ## Siia suunatud domeenid
 

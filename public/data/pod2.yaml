@@ -9,7 +9,10 @@ domain_top:
     - component: Markdown 
       props:
         text: |
-            **miljonivaade.ee** ~~Aegub 1.dets.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
+            **miljonivaade.ee** ~~Aegub 1. dets. 2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() [...]() | _[Virtuaalserver I]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]()
+
+domain_top_comment: |
+    Mis selle domeenisektsiooni "..." taga on? Dropdown-menüü nagu Orbude kodu "Vali serveri pakett"? Mis käsud seal on?<br />Kas Zone+ pakettidel võib olla ka "probleemne staatus" (vajalik turvauuendus vms)?
 
 domain_bottom:
 
@@ -26,9 +29,8 @@ domain_bottom:
                     ## Domeen
 
                     **miljonivaade.ee**
-                    Loodud: 25.07.2013
-                    Staatus: Registreeritud
-                    ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+                    Loodud: 1. dets. 2013
+                    ~~Aegub: 1. dets. 2016~~ ~~[Pikenda]()~~
 
                     Registreerija: Martti Varik
                     [Muuda kontaktandmeid]()

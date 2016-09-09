@@ -59,6 +59,7 @@
         font: $font-text-xs;
         padding: 0.1rem 0.5rem;
         text-decoration: none;
+        background: #eee;
     }
     .markdown h1 em a {
         font: $font-text-lg;
