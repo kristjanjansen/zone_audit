@@ -1,6 +1,8 @@
 - row:
 
-    - backicon: globe
+    - backicon: circle
+      fronticon: warning
+      color: red
       components:
         - component: Markdown 
           props:
@@ -24,8 +26,13 @@
               ns2.zone.ee
               ns3.zonedata.net
 
-    - backicon: globe
+        - component: Comment 
+          props:
+            comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas ma võiks siit saada nimeserverite kirjeid muutma? Kas me võiks kasutada "DNS / Nimeserverid" koos või pole see päris sama asi?
+
+    - backicon: lock
       components:
+
         - component: Markdown 
           props:
             text: |
@@ -33,6 +40,10 @@
               ## Aktiveeri DNSSEC turvalisus
 
               [Mis see on?]()
+
+        - component: Comment 
+          props:
+            comment: Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see peal on?
 
 - row:
 
