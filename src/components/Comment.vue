@@ -1,7 +1,11 @@
 <template>
-    
+
     <div class="comment" v-if="showComment">
-        {{ comment }}
+    
+        <div class="comment__content">
+            {{ comment }}
+        </div>
+
     </div>
 
 </template>
@@ -26,7 +30,7 @@
 
 <style>
 
-    .comment {
+    .comment__content {
         display: inline;
         background: $yellow;
         color: $yellow-dark;

@@ -61,31 +61,66 @@
           props:
             text: |
 
-              # _[Virtuaalserver I: Algaja]()_
+                # _[Virtuaalserver I]()_
 
-              [Muuda]()
+                [Muuda]()
 
-    - backicon: globe
-      components:
-        - component: Markdown 
+        - component: Comment 
           props:
-            text: |
+            comment: Tooks siia välja meeldetuletusena ka paketi peamised featuurid "128 GiB HDD, piiramatu hulk postkaste." vms. Kas ma saan virtuaalserverit upgradeda parema paketi peale?
 
-              ## Nimeserverid
+    - backicon:
+      components:
 
-              ns.zone.eu
-              ns2.zone.ee
-              ns3.zonedata.net
+        - component: BarGraph 
+          props:
+            title: Kettakasutus
+            value: 34
+            max: 120
+            unit: GB
+
+        - component: Comment
+          props:
+            comment: Zone kasutab läbivalt GiB ühikut, kuid soovitan siiski maalähedasemat GBd
+
+        - component: BarGraph 
+          props:
+            title: Inodede arv
+            value: 10
+            max: 384000
+            unit:
+
+        - component: Comment
+          props:
+            comment: Ei leia kuskilt head infot miks on inoded olulised, kui tõenäoline on limiidi ületus ning mida siis tegema peaks 
+
+        - component: BarGraph 
+          props:
+            title: MySQL baasid
+            value: 2
+            max: 3
+            unit: GB
+
+        - component: Comment
+          props:
+            comment: Kas MySQLi baasi ei jaga mitte kettaruumi ja seda eraldi ei trackitagi? 
 
     - backicon: globe
       components:
+
         - component: Markdown 
           props:
             text: |
               
-              ## Aktiveeri DNSSEC turvalisus
+                ## Muu info
 
-              [Mis see on?]()
+        - component: FeatureToggle
+          props:
+            title: Let's Encrypt paigaldatud
+
+        - component: Comment
+          props:
+            comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka (?) / linki mis on Let's Encrypt
 
 - row:
   
