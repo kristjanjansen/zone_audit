@@ -60,6 +60,11 @@
         padding: 0.1rem 0.5rem;
         text-decoration: none;
     }
+    .markdown h1 em a {
+        font: $font-text-lg;
+        padding: 0.5rem 1rem;
+        text-transform: none;
+    }
     .markdown del a {
         background: red;
         border-radius: 4px;
@@ -68,6 +73,29 @@
         padding: 0.2rem 0.5rem;
         text-decoration: none;
         border: none;
+    }
+    .markdown h1 {
+        font: $font-heading-lg;
+        text-transform: uppercase;
+        color: #444;
+    }
+    .markdown h2 {
+        font: $font-heading-sm;
+        text-transform: uppercase;
+        color: #aaa;
+        margin: 0.5em 0 0.5em 0;
+    }
+    .markdown hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        height: 0;
+        margin: 1em 0;
+    }
+    .markdown table {
+        width: 100%;
+    }
+    .markdown td:last {
+        text-align: right;
     }
 
 </style>

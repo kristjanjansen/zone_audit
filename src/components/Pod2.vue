@@ -1,8 +1,8 @@
 <template>
     
-    <div class="pod">
+    <div class="pod2">
         
-        <div class="pod__top" @click="open = ! open">
+        <div class="pod2__top" @click="open = ! open">
 
             <component
                 slot="content"
@@ -13,7 +13,7 @@
 
         </div>
 
-        <div class="pod__bottom" v-show="open">
+        <div class="pod2__bottom" v-show="open">
 
             <div class="row" v-for="row in content">
 
@@ -82,48 +82,34 @@
 </script>
 
 <style>
-    .pod {
+    .pod2 {
         width: 100%;
-        border: 1px solid #555;
+        border: 1px solid #777;
         border-radius: 3px;
         font: $font-text-sm;
         line-height: $line-height-md;
     }
-    .pod__top {
+    .pod2__top {
         padding: 1em;
     }
-    .pod__top > div {
+    .pod2__top > div {
         display: flex;
         align-items: center;
     }
-    .pod__top > div > * {
+    .pod2__top > div > * {
         margin-right: $margin-sm;
     }
-    .pod__bottom {
+    .pod2__bottom {
         border-top: 1px solid #555;
-        padding: 1em;
+        ppadding: 1em;
     }
-    .pod h1 {
-        font: $font-heading-lg;
-        text-transform: uppercase;
-        color: #444;
+    .pod2__bottom > .row {
+        border-bottom: 1px solid #777;
+        margin-bottom: 1rem;
+        padding: 1rem;
     }
-    .pod h2 {
-        font: $font-heading-sm;
-        text-transform: uppercase;
-        color: #aaa;
-        margin: 0.5em 0 0.5em 0;
-    }
-    .pod hr {
+    .pod2__bottom > .row:last-child {
         border: 0;
-        border-top: 1px solid #ccc;
-        height: 0;
-        margin: 1em 0;
-    }
-    .pod table {
-        width: 100%;
-    }
-    .pod td:last {
-        text-align: right;
+        margin: 0;
     }
 </style>

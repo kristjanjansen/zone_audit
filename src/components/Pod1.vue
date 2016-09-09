@@ -164,7 +164,7 @@
         margin-right: $margin-sm;
     }
     .pod__bottom {
-        border-top: 1px solid #555;
+        border-top: 1px solid #777;
         padding: 1em;
     }
     .pod h1 {

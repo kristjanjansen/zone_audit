@@ -8,11 +8,19 @@
           props:
             text: |
 
-              ## Domeen
+                ## Domeen
 
-              **miljonivaade.ee**
-              Loodud: 25.07.2013
-              ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+                **miljonivaade.ee**
+                Loodud: 25.07.2013
+                Staatus: Registreeritud
+                ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+
+                Registreerija: Martti Varik
+                [Pikenda]()
+
+        - component: Comment 
+          props:
+            comment: Ma tooks selle kontaktinfo staatusest / aegumise CTAst allapoole, lisaksin veel natuke andmeid ja lisaksin kontaktandmete muutmise nupu
 
     - backicon: globe
       components:
@@ -47,17 +55,15 @@
 
 - row:
 
-    - backicon: globe
+    - backicon: 
       components:
         - component: Markdown 
           props:
             text: |
 
-              ## Domeen
+              # _[Virtuaalserver I: Algaja]()_
 
-              **miljonivaade.ee**
-              Loodud: 25.07.2013
-              ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+              [Muuda]()
 
     - backicon: globe
       components:
