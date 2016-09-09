@@ -31,7 +31,7 @@ domain_bottom:
                     ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
 
                     Registreerija: Martti Varik
-                    [Pikenda]()
+                    [Muuda kontaktandmeid]()
 
             - component: Comment 
               props:
@@ -70,7 +70,7 @@ domain_bottom:
 
     - row:
 
-        - backicon: 
+        - backicon: circle
           components:
 
             - component: Comment
@@ -89,7 +89,7 @@ domain_bottom:
               props:
                 comment: Tooks siia välja meeldetuletusena ka paketi peamised featuurid "128 GiB HDD, piiramatu hulk postkaste." vms. Kas ma saan virtuaalserverit upgradeda parema paketi peale?
 
-        - backicon:
+        - backicon: circle
           components:
 
             - component: Comment
@@ -129,7 +129,7 @@ domain_bottom:
               props:
                 comment: Kas MySQLi baasi ei jaga mitte kettaruumi ja seda eraldi ei trackitagi? 
 
-        - backicon: globe
+        - backicon: circle
           components:
 
             - component: Markdown 
@@ -172,10 +172,28 @@ domain_bottom:
 
     - row:
       
-        - backicon: globe
+        - backicon: circle
           components:
             - component: Markdown 
               props:
                 text: |
 
                   ## Aliased
+
+            - component: Comment
+              props:
+                comment: Tulekul
+
+    - row:
+      
+        - backicon: circle
+          components:
+            - component: Markdown 
+              props:
+                text: |
+
+                  ## Alamdomeenid
+
+            - component: Comment
+              props:
+                comment: Tulekul

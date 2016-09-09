@@ -65,7 +65,7 @@
             Icon
         },
         props: {
-            color: { default: '#ccc'},
+            color: { default: 'green'},
             value: { default: 0},
             max: { default: 0},
             title: { default: ''},

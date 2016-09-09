@@ -3,16 +3,29 @@
     <div>
     
         <component is="Header" active="/components" toggler="true"></component>
-        
+
+
         <div class="margin-top">
 
-            <component is="Pod1" datafile="pod1.yaml"></component>
+            <component is="Comment" comment="Dashboardi rida, horisontaalne layout:"></component>
 
         </div>
 
         <div class="margin-top">
 
             <component is="Pod2" datafile="pod2.yaml"></component>
+
+        </div>
+        
+        <div class="margin-top">
+
+            <component is="Comment" comment="Dashboardi rida, vertikaalne layout:"></component>
+
+        </div>
+
+        <div class="margin-top">
+
+            <component is="Pod1" datafile="pod1.yaml"></component>
 
         </div>
       
@@ -22,12 +35,14 @@
 
 <script>
 
+    import Comment from '../components/Comment.vue'
     import Header from '../components/Header.vue'
     import Pod1 from '../components/Pod1.vue'
     import Pod2 from '../components/Pod2.vue'
 
     export default {
         components: {
+            Comment,
             Header,
             Pod1,
             Pod2
