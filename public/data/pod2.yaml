@@ -1,166 +1,181 @@
-- row:
+domain_top:
 
-    - backicon: circle
-      fronticon: warning
-      color: red
-      components:
-        - component: Markdown 
-          props:
-            text: |
+    - component: Icon 
+      props:
+        icon: warning
+        color: white
+        background: red
 
-                ## Domeen
+    - component: Markdown 
+      props:
+        text: |
+            **miljonivaade.ee** ~~Aegub 1.dets.2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() | _[Virtuaalserver]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]() 
 
-                **miljonivaade.ee**
-                Loodud: 25.07.2013
-                Staatus: Registreeritud
-                ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
+domain_bottom:
 
-                Registreerija: Martti Varik
-                [Pikenda]()
+    - row:
 
-        - component: Comment 
-          props:
-            comment: Ma tooks selle kontaktinfo staatusest / aegumise CTAst allapoole, lisaksin veel natuke andmeid ja lisaksin kontaktandmete muutmise nupu
+        - backicon: circle
+          fronticon: warning
+          color: red
+          components:
+            - component: Markdown 
+              props:
+                text: |
 
-    - backicon: globe
-      components:
-        - component: Markdown 
-          props:
-            text: |
+                    ## Domeen
 
-              ## Nimeserverid
+                    **miljonivaade.ee**
+                    Loodud: 25.07.2013
+                    Staatus: Registreeritud
+                    ~~Aegub 01.12.2013~~ ~~[Pikenda]()~~
 
-              ns.zone.eu
-              ns2.zone.ee
-              ns3.zonedata.net
+                    Registreerija: Martti Varik
+                    [Pikenda]()
 
-        - component: Comment 
-          props:
-            comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas ma võiks siit saada nimeserverite kirjeid muutma? Kas me võiks kasutada "DNS / Nimeserverid" koos või pole see päris sama asi?
+            - component: Comment 
+              props:
+                comment: Ma tooks selle kontaktinfo staatusest / aegumise CTAst allapoole, lisaksin veel natuke andmeid ja lisaksin kontaktandmete muutmise nupu
 
-    - backicon: lock
-      components:
+        - backicon: globe
+          components:
+            - component: Markdown 
+              props:
+                text: |
 
-        - component: Markdown 
-          props:
-            text: |
-              
-              ## Aktiveeri DNSSEC turvalisus
+                  ## Nimeserverid
 
-              [Mis see on?]()
+                  ns.zone.eu
+                  ns2.zone.ee
+                  ns3.zonedata.net
 
-        - component: Comment 
-          props:
-            comment: Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see peal on?
+            - component: Comment 
+              props:
+                comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas ma võiks siit saada nimeserverite kirjeid muutma? Kas me võiks kasutada "DNS / Nimeserverid" koos või pole see päris sama asi?
 
-- row:
+        - backicon: lock
+          components:
 
-    - backicon: 
-      components:
+            - component: Markdown 
+              props:
+                text: |
+                  
+                  ## Aktiveeri DNSSEC turvalisus
 
-        - component: Comment
-          props:
-            comment: PAKETT?
+                  [Mis see on?]()
 
-        - component: Markdown 
-          props:
-            text: |
+            - component: Comment 
+              props:
+                comment: Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see peal on?
 
-                # _[Virtuaalserver I]()_
+    - row:
 
-                [Muuda]()
+        - backicon: 
+          components:
 
-        - component: Comment 
-          props:
-            comment: Tooks siia välja meeldetuletusena ka paketi peamised featuurid "128 GiB HDD, piiramatu hulk postkaste." vms. Kas ma saan virtuaalserverit upgradeda parema paketi peale?
+            - component: Comment
+              props:
+                comment: PAKETT?
 
-    - backicon:
-      components:
+            - component: Markdown 
+              props:
+                text: |
 
-        - component: Comment
-          props:
-            comment: RESSURSID?
+                    # _[Virtuaalserver I]()_
 
-        - component: BarGraph 
-          props:
-            title: Kettakasutus
-            value: 34
-            max: 120
-            unit: GB
+                    [Muuda]()
 
-        - component: Comment
-          props:
-            comment: Zone kasutab läbivalt GiB ühikut, kuid soovitan siiski maalähedasemat GBd
+            - component: Comment 
+              props:
+                comment: Tooks siia välja meeldetuletusena ka paketi peamised featuurid "128 GiB HDD, piiramatu hulk postkaste." vms. Kas ma saan virtuaalserverit upgradeda parema paketi peale?
 
-        - component: BarGraph 
-          props:
-            title: Inodede arv
-            value: 10
-            max: 384000
-            unit:
+        - backicon:
+          components:
 
-        - component: Comment
-          props:
-            comment: Ei leia kuskilt head infot miks on inoded olulised, kui tõenäoline on limiidi ületus ning mida siis tegema peaks 
+            - component: Comment
+              props:
+                comment: RESSURSID?
 
-        - component: BarGraph 
-          props:
-            title: MySQL baasid
-            value: 2
-            max: 3
-            unit: GB
+            - component: BarGraph 
+              props:
+                title: Kettakasutus
+                value: 34
+                max: 120
+                unit: GB
 
-        - component: Comment
-          props:
-            comment: Kas MySQLi baasi ei jaga mitte kettaruumi ja seda eraldi ei trackitagi? 
+            - component: Comment
+              props:
+                comment: Zone kasutab läbivalt GiB ühikut, kuid soovitan siiski maalähedasemat GBd
 
-    - backicon: globe
-      components:
+            - component: BarGraph 
+              props:
+                title: Inodede arv
+                value: 10
+                max: 384000
+                unit:
 
-        - component: Markdown 
-          props:
-            text: |
-              
-                ## Muu info
+            - component: Comment
+              props:
+                comment: Ei leia kuskilt head infot miks on inoded olulised, kui tõenäoline on limiidi ületus ning mida siis tegema peaks 
 
-        - component: FeatureToggle
-          props:
-            title: Let's Encrypt paigaldatud
+            - component: BarGraph 
+              props:
+                title: MySQL baasid
+                value: 2
+                max: 3
+                unit: GB
 
-        - component: Comment
-          props:
-            comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"
+            - component: Comment
+              props:
+                comment: Kas MySQLi baasi ei jaga mitte kettaruumi ja seda eraldi ei trackitagi? 
 
-        - component: FeatureStatus
-          props:
-            title: HTTP+HTTPS
-            status: Jah
+        - backicon: globe
+          components:
 
-        - component: Markdown 
-          props:
-            text: |
+            - component: Markdown 
+              props:
+                text: |
+                  
+                    ## Muu info
 
-                ```
-                MySQL host: d28171.mysql.zone.ee | PHP 7.0 
-                Grupi nimi / SSH kasutaja: virt28476
-                http + https
-                /data02/virt28476/domeenid/www.tehnokratt.net/htdocs
-                ```
+            - component: FeatureToggle
+              props:
+                title: Let's Encrypt paigaldatud
 
-        - component: Comment
-          props:
-            comment: |
+            - component: Comment
+              props:
+                comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"
 
-                Täiesti kujundamata ja juhuslik kogum teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
+            - component: FeatureStatus
+              props:
+                title: HTTP+HTTPS
+                status: Jah
 
-                [Vt näiteks kuidas Panthenon seda teeb](/screenshots/panthenon_connection.png)
+            - component: Markdown 
+              props:
+                text: |
 
-- row:
-  
-    - backicon: globe
-      components:
-        - component: Markdown 
-          props:
-            text: |
+                    ```
+                    MySQL host: d28171.mysql.zone.ee | PHP 7.0 
+                    Grupi nimi / SSH kasutaja: virt28476
+                    http + https
+                    /data02/virt28476/domeenid/www.tehnokratt.net/htdocs
+                    ```
 
-              ## Aliased
+            - component: Comment
+              props:
+                comment: |
+
+                    Täiesti kujundamata ja juhuslik kogum teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
+
+                    [Vt näiteks kuidas Panthenon seda teeb](/screenshots/panthenon_connection.png)
+
+    - row:
+      
+        - backicon: globe
+          components:
+            - component: Markdown 
+              props:
+                text: |
+
+                  ## Aliased

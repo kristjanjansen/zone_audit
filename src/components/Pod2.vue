@@ -15,7 +15,7 @@
 
         <div class="pod2__bottom" v-show="open">
 
-            <div class="row" v-for="row in content">
+            <div class="row" v-for="row in content.domain_bottom">
 
                 <div class="col-4" v-for="col in row.row">
                 
