@@ -2,9 +2,9 @@ domain_top:
 
   - component: Icon 
     props:
-      icon: warning
+      icon: check
       color: white
-      background: red
+      background: green
 
   - component: Markdown 
     props:
@@ -34,7 +34,13 @@ domain_bottom:
 
   - component: Comment 
     props:
-      comment: Mida siin suunatud domeenidega teha saab? Minna domeenilehele / domeenisuunamislehele või saab siin kohe otse midagi teha? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?
+      comment: |
+        
+        Mida siin suunatud domeenidega teha saab? Minna domeenilehele / domeenisuunamislehele või saab siin kohe otse midagi teha? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?<br><br>
+
+        A L A M D O M E E N I D<br><br>
+
+        / Alamdomeenid peaks ka vist siin all olema ? /
 
   - component: Markdown 
     props:
@@ -58,6 +64,7 @@ domain_bottom:
 
         Registreerija: Martti Varik
         [Muuda kontaktandmeid]()
+
 
         ## DNSSEC turvalisus
 
@@ -117,9 +124,16 @@ email_bottom:
       max: 80
       unit: GB
 
-  - component: FeatureToggle
+  - component: Comment
     props:
-      title: Väärposti suunamine
+      comment: |
+
+            Ma tooks E-maili teemad eraldi välja:<br><br>
+
+            Kontode arv + lisamine<br><br>
+
+            Listide arv + lisamine
+
 
 other_bottom:
   
@@ -162,7 +176,11 @@ other_bottom:
     props:
       comment: |
         
-        HTTP/2te vist niisama lihtsalt sisse ei lülita?
+        HTTP/2te vist niisama lihtsalt sisse ei lülita?<br><br>
+
+        A N D M E B A A S<br><br>
+
+        / siin vahel ka andmebaasiinfo /
 
 
   - component: Markdown 
@@ -177,5 +195,12 @@ other_bottom:
           Kataloog: /data02/virt28476/
           domeenid/www.tehnokratt.net/htdocs
           ```
+
+  - component: Comment 
+    props:
+      comment: |
+        
+        See osa peaks kasutatavaks muutma, copytavad snippetid jne
+
 
  
