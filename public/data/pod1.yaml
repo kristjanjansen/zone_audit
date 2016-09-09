@@ -78,8 +78,6 @@ server_bottom:
       
         # Server
 
-        ## Pakett
-
         # _[Virtuaalserver III]()_
 
         [Muuda]()
@@ -151,7 +149,7 @@ other_bottom:
 
   - component: Comment 
     props:
-      comment: Mis siin veel peaks Zone+ pakettide all näitama? Versiooninumbreid? Soovituslikke uuendusi?
+      comment: Mis siin veel peaks Zone+ pakettide all näitama? Versiooninumbreid? Kas pakettidel võib olla ka "probleemne staatus" (vajalik turvauuendus vms)?
 
   - component: Markdown 
     props:
@@ -176,7 +174,7 @@ other_bottom:
     props:
       comment: |
         
-        HTTP/2te vist niisama lihtsalt sisse ei lülita?<br><br>
+        HTTP/2te vist niisama lihtsalt sisse ei lülita? :)<br><br>
 
         A N D M E B A A S<br><br>
 

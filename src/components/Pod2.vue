@@ -88,7 +88,7 @@
 <style>
     .pod2 {
         width: 100%;
-        border: 1px solid #777;
+        border: 1px solid #bbb;
         border-radius: 3px;
         font: $font-text-sm;
         line-height: $line-height-md;
@@ -104,11 +104,11 @@
         margin-right: $margin-sm;
     }
     .pod2__bottom {
-        border-top: 1px solid #555;
+        border-top: 1px solid #bbb;
         ppadding: 1em;
     }
     .pod2__bottom > .row {
-        border-bottom: 1px solid #777;
+        border-bottom: 1px solid #bbb;
         margin-bottom: 1rem;
         padding: 1rem;
     }

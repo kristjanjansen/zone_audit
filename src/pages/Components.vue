@@ -7,19 +7,7 @@
 
         <div class="margin-top">
 
-            <component is="Comment" comment="Dashboardi rida, horisontaalne layout:"></component>
-
-        </div>
-
-        <div class="margin-top">
-
             <component is="Pod2" datafile="pod2.yaml"></component>
-
-        </div>
-        
-        <div class="margin-top">
-
-            <component is="Comment" comment="Dashboardi rida, vertikaalne layout:"></component>
 
         </div>
 

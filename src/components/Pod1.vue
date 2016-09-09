@@ -128,7 +128,7 @@
         props: ['datafile'],
         data() {
             return {
-                open: true,
+                open: false,
                 content: {}
             };
         },
@@ -142,9 +142,12 @@
 </script>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
     .pod {
         width: 100%;
-        border: 1px solid #555;
+        border: 1px solid #bbb;
         border-radius: 3px;
         font: $font-text-sm;
         line-height: $line-height-md;
@@ -160,8 +163,14 @@
         margin-right: $margin-sm;
     }
     .pod__bottom {
-        border-top: 1px solid #777;
+        border-top: 1px solid #bbb;
+    }
+    .pod__bottom .col-4 {
+        border-right: 1px solid #bbb;
         padding: 1em;
+    }
+    .pod__bottom .col-4:last-child {
+        border: none;
     }
     .pod h1 {
         font: $font-heading-lg;
@@ -171,12 +180,12 @@
     .pod h2 {
         font: $font-heading-sm;
         text-transform: uppercase;
-        color: #aaa;
+        color: #bbb;
         margin: 0.5em 0 0.5em 0;
     }
     .pod hr {
         border: 0;
-        border-top: 1px solid #ccc;
+        border-top: 1px solid #bbb;
         height: 0;
         margin: 1em 0;
     }

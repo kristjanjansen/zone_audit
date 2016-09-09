@@ -11,8 +11,7 @@ domain_top:
         text: |
             **miljonivaade.ee** ~~Aegub 1. dets. 2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() [...]() | _[Virtuaalserver I]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]()
 
-domain_top_comment: |
-    Mis selle domeenisektsiooni "..." taga on? Dropdown-menüü nagu Orbude kodu "Vali serveri pakett"? <br />Kas Zone+ pakettidel võib olla ka "probleemne staatus" (vajalik turvauuendus vms)?
+domain_top_comment: Mis selle domeenisektsiooni "..."-menüü taga on? Dropdown nagu Orbude kodu "Vali serveri pakett"? 
 
 domain_bottom:
 
@@ -77,7 +76,7 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: PAKETT?
+                comment: P A K E T T ?
 
             - component: Markdown 
               props:
@@ -96,7 +95,7 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: RESSURSID?
+                comment: R E S S U R S I D ?
 
             - component: BarGraph 
               props:
@@ -134,11 +133,24 @@ domain_bottom:
         - backicon: circle
           components:
 
-            - component: Markdown 
+            - component: Comment
               props:
-                text: |
+                comment: T U R V A L I S U S ?
+
+            - component: FeatureStatus
+              props:
+                title: HTTP+HTTPS
+                status: Jah
+            
+            - component: FeatureToggle
+              props:
+                title: HTTP/2
+
+            - component: Comment 
+              props:
+                comment: |
                   
-                    ## Muu info
+                  HTTP/2te vist niisama lihtsalt sisse ei lülita? :)
 
             - component: FeatureToggle
               props:
@@ -146,13 +158,10 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"
-
-            - component: FeatureStatus
-              props:
-                title: HTTP+HTTPS
-                status: Jah
-
+                comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"<br><br>
+                    
+                    L I G I P Ä Ä S ?
+            
             - component: Markdown 
               props:
                 text: |
@@ -160,7 +169,6 @@ domain_bottom:
                     ```
                     MySQL host: d28171.mysql.zone.ee | PHP 7.0 
                     Grupi nimi / SSH kasutaja: virt28476
-                    http + https
                     /data02/virt28476/domeenid/www.tehnokratt.net/htdocs
                     ```
 
@@ -168,7 +176,7 @@ domain_bottom:
               props:
                 comment: |
 
-                    Täiesti kujundamata ja juhuslik kogum teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
+                    Täiesti kujundamata ja juhuslik kogum ligipääsu-teemalist teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
 
                     [Vt näiteks kuidas Panthenon seda teeb](/screenshots/panthenon_connection.png)
 
@@ -182,9 +190,7 @@ domain_bottom:
 
                   ## Aliased
 
-            - component: Comment
-              props:
-                comment: Tulekul
+                  / ... /
 
     - row:
       
@@ -196,6 +202,20 @@ domain_bottom:
 
                   ## Alamdomeenid
 
+                  / ... /
+
+    - row:
+      
+        - backicon: circle
+          components:
+            - component: Markdown 
+              props:
+                text: |
+
+                  ## Zone+
+
+                  / ... /
+                  
             - component: Comment
               props:
-                comment: Tulekul
+                comment: Kas see liiga allotsa / pildilt ära ei jää?
