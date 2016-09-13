@@ -36,7 +36,7 @@
             return {
                 content: [],
                 activeContent: {},
-                showComments: null
+                showComments: true
             };
         },
         created: function () {
@@ -46,7 +46,6 @@
                     return item
                 })
                 this.activeContent = this.content.find(item => item.id == 'dashboard')
-                this.$events.$emit('showComments', false)
             })
             this.$events.$on('menuSelected', id => {
                 this.activeContent = this.content.find(item => item.id == id)

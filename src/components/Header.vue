@@ -57,6 +57,7 @@
             }
         },
         created() {
+            this.showComments = true
             this.$events.$on('showComments', state => {
                 this.showComments = state
             })
