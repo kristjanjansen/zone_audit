@@ -11,7 +11,7 @@ domain_top:
         text: |
             **miljonivaade.ee** ~~Aegub 1. dets. 2013~~ ~~[Pikenda]()~~ [DNS]() [Kontaktid]() [...]() | _[Virtuaalserver I]()_ [E-post]() [Andmebaasid]() [PHPMyAdmin]() | _[Wordpress]()_ _[Kayako]()_ [Lisa uus]()
 
-domain_top_comment: Mis selle domeenisektsiooni "..."-menüü taga on? Dropdown nagu Orbude kodu "Vali serveri pakett"? 
+domain_top_comment: ''
 
 domain_bottom:
 
@@ -36,9 +36,9 @@ domain_bottom:
 
             - component: Comment 
               props:
-                comment: Ma tooks selle kontaktinfo staatusest / aegumise CTAst allapoole, lisaksin veel natuke andmeid ja lisaksin kontaktandmete muutmise nupu
+                comment: Ma lisaksin veel natuke kontaktandmeid ning andmete muutmise nupu
 
-        - backicon: globe
+        - backicon: world
           components:
             - component: Markdown 
               props:
@@ -52,7 +52,7 @@ domain_bottom:
 
             - component: Comment 
               props:
-                comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas ma võiks siit saada nimeserverite kirjeid muutma? Kas me võiks kasutada "DNS / Nimeserverid" koos või pole see päris sama asi?
+                comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas siin võiks olla nimeserverikirjete muutmise nupp?
 
         - backicon: lock
           components:
@@ -67,7 +67,7 @@ domain_bottom:
 
             - component: Comment 
               props:
-                comment: Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see peal on?
+                comment: Siin peaks ju DNSSEC sisselülitamise nupp ka olema?<br><br>Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see **on** enabletud?
 
     - row:
 
@@ -106,7 +106,7 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: Zone kasutab läbivalt GiB ühikut, kuid soovitan siiski maalähedasemat GBd
+                comment: Zone kasutab läbivalt "**GiB**" ühikut, kuid soovitan siiski maalähedasemat "**GB**"d
 
             - component: BarGraph 
               props:
@@ -128,7 +128,7 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: Kas MySQLi baasi ei jaga mitte kettaruumi ja seda eraldi ei trackitagi? 
+                comment: Kas MySQLi baasi kettaruum ei ole mitte virtuaalserveri kettaruumi osa ning seda eraldi ei quotatagi? 
 
         - backicon: circle
           components:
@@ -144,22 +144,14 @@ domain_bottom:
             
             - component: FeatureToggle
               props:
-                title: HTTP/2
-
-            - component: Comment 
-              props:
-                comment: |
-                  
-                  HTTP/2te vist niisama lihtsalt sisse ei lülita? :)
-
-            - component: FeatureToggle
-              props:
                 title: Let's Encrypt paigaldatud
 
             - component: Comment
               props:
                 comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"<br><br>
                     
+                    HTTP/2te sisselülitamine on vist tulevikuteema?<br><br>
+
                     L I G I P Ä Ä S ?
             
             - component: Markdown 
@@ -176,7 +168,7 @@ domain_bottom:
               props:
                 comment: |
 
-                    Täiesti kujundamata ja juhuslik kogum ligipääsu-teemalist teksti. Mis on siin oluline? Mis informeerib, mis aitab commandline snippeteid kopeerida jne? 
+                    Täiesti kujundamata ja juhuslik kogum ligipääsu-teemalist teksti. Mis on siin kasutajale oluline? 
 
                     [Vt näiteks kuidas Panthenon seda teeb](/screenshots/panthenon_connection.png)
 

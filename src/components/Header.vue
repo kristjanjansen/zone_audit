@@ -34,7 +34,7 @@
     export default {
         data() {
             return {
-                showComments: false,
+                showComments: true,
                 routes: {
                     '/': 'Audit',
                     '/components': 'Komponendid' 
@@ -57,6 +57,7 @@
             }
         },
         created() {
+            this.showComments = true
             this.$events.$on('showComments', state => {
                 this.showComments = state
             })

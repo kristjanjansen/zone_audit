@@ -28,19 +28,19 @@ domain_bottom:
 
         |||
         |---|---|---|
-        | [miljonivaated.ee]() | ◌ ◌ |
-        | [oceanview.ee]() | ◌ ◌ |
-        | [oceanview.com]() | ◌ ◌ |
+        | [miljonivaated.ee]() | `Q ×` |
+        | [oceanview.ee]() | `Q ×` |
+        | [oceanview.com]() | `Q ×` |
 
   - component: Comment 
     props:
       comment: |
         
-        Mida siin suunatud domeenidega teha saab? Minna domeenilehele / domeenisuunamislehele või saab siin kohe otse midagi teha? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?<br><br>
+        Mida siin suunatud domeenidega teha saab? Mida otsinguikoon tähendab? Mida kustutamisikoon? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?<br><br>
 
         A L A M D O M E E N I D<br><br>
 
-        / Alamdomeenid peaks ka vist siin all olema ? /
+        / Mida peaks siin alamdomeenidega teha saama? Kuidas vajalik info ära mahuks? /
 
   - component: Markdown 
     props:
@@ -166,16 +166,10 @@ other_bottom:
     props:
       title: Let's Encrypt
 
-  - component: FeatureToggle
-    props:
-      title: HTTP/2
-
   - component: Comment 
     props:
       comment: |
         
-        HTTP/2te vist niisama lihtsalt sisse ei lülita? :)<br><br>
-
         A N D M E B A A S<br><br>
 
         / siin vahel ka andmebaasiinfo /

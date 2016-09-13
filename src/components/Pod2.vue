@@ -72,7 +72,7 @@
         props: ['datafile'],
         data() {
             return {
-                open: false,
+                open: true,
                 content: []
             };
         },

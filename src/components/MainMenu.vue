@@ -23,10 +23,13 @@
                     @click="selectSecondThirdMenu(item2.id)"
                     v-if="item1.show"
                     class="mainmenu__second"
-                    :class="{mainmenu__disabled: !item2.id}"
+                    :class="{
+                        mainmenu__disabled: !item2.id,
+                        mainmenu__active: item2.id === selectedId
+                    }"
                 >
                     
-                    {{ item2.title }} 
+                    <span class="mainmenu__title">{{ item2.title }}</span>
 
                     <span v-if="showComments && item2.comments" class="mainmenu__comments">●</span>
                 
@@ -38,10 +41,13 @@
                         @click="selectSecondThirdMenu(item3.id)"
                         v-if="item1.show"
                         class="mainmenu__third"
-                        :class="{mainmenu__disabled: !item3.id}"
+                        :class="{
+                            mainmenu__disabled: !item3.id,
+                            mainmenu__active: item3.id === selectedId
+                        }"
                     >
 
-                    {{ item3.title }}
+                    <span class="mainmenu__title">{{ item3.title }}</span>
                     
                     <span v-if="showComments && item3.comments" class="mainmenu__comments">●</span>
 
@@ -65,7 +71,8 @@
         data() {
             return {
                 items: {},
-                showComments: true
+                showComments: true,
+                selectedId: null
             };
         },
         methods: {
@@ -80,6 +87,7 @@
             },
             selectSecondThirdMenu: function(id) {
                 this.$events.$emit('menuSelected', id)
+                this.selectedId = id
             }
         },
         created: function () {
@@ -117,17 +125,19 @@
         font: $font-heading-sm;
         margin-bottom: $margin-sm;
         margin-left: $margin-lg;
-        opacity: $opacity-lg;
+        color: $blue-light;
         white-space: nowrap;
     }
     .mainmenu__third {
-        color: $blue;
+        color: $blue-lighter;
         cursor: pointer;
         font: $font-heading-xs;
         margin-bottom: $margin-sm;
         margin-left: $margin-xl;
-        opacity: $opacity-md;
         white-space: nowrap;
+    }
+    .mainmenu__active .mainmenu__title {
+        border-bottom: 2px solid $blue-lightest;
     }
     .mainmenu__comments {
         color: $yellow;
