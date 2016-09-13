@@ -25,6 +25,7 @@
 
     import yaml from 'js-yaml';
     import marked from 'marked';
+    import jump from 'jump.js'
 
     marked.setOptions({
         breaks: true
@@ -49,6 +50,9 @@
             })
             this.$events.$on('menuSelected', id => {
                 this.activeContent = this.content.find(item => item.id == id)
+                jump('body', {
+                    duration: 200,
+                })
             })
             this.$events.$on('showComments', state => {
                 this.showComments = state

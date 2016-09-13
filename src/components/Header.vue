@@ -34,7 +34,7 @@
     export default {
         data() {
             return {
-                showComments: false,
+                showComments: true,
                 routes: {
                     '/': 'Audit',
                     '/components': 'Komponendid' 

@@ -8,6 +8,7 @@
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "gulp": "^3.9.1",
     "js-yaml": "^3.6.1",
+    "jump.js": "^1.0.1",
     "laravel-elixir": "^6.0.0-10",
     "laravel-elixir-vue": "^0.1.6",
     "laravel-elixir-webpack-official": "^1.0.4",

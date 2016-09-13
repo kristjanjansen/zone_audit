@@ -15,5 +15,8 @@ const routes = {
 
 new Vue({
   el: '#app',
-  render: h => h(routes[window.location.pathname])
+  render: h => h(routes[window.location.pathname]),
+  created() {
+    this.$events.$emit('showComments', true)
+  }
 })
