@@ -1400,7 +1400,10 @@
 
     > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
     Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
-    Lokaalne osa võib sisaldada märke **a..z, 0..9**, punkti '**.**', sidekriipsu '**-**' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+    ~~Ebavajalik~~
+    
+    > Lokaalne osa võib sisaldada märke **a..z, 0..9**, punkti '**.**', sidekriipsu '**-**' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+    ~~Ainus asjakohane abitekst~~
 
     Kommentaar/nimi: ```[__________]```
 
@@ -1408,9 +1411,13 @@
 
     Piirsuurus: ```[______1024] MiB(max. 12288 MiB)```
 
+    ~~Raskestihoomatavad ühikud, mugavam oleks mahu-slider~~ _FormRange_ ~~1-12GB vahemikus nagu see VPS setupis ja mujal kasutusel on~~
+    
     > Maksimaalne postkasti suurus.
 
     Mail-To-HTTP URL: ```[__________]```
+
+    ~~Legacy teenus, mis läheb ilmselget uuendamisele (JSON webhook vms). Kui sellel teenusel on endiselt kasutajaid, liigutaks selle allapoole,~~_CollapsibleDetails_~~komponendiks, hiljem aga asendaks selle automaatselt genereeritud API dokumentatsiooniga~~
 
     > ?    Mail-To-HTTP URL
     Kui soovid, et kõik sellele aadressile tulnud kirjad edastataks domeeni kodulehele, siis sisesta siis täpne kodulehe skripti aadress (URL).
@@ -1426,7 +1433,7 @@
 
     > Kasutajanimi e-posti kontosse sisse logimisel.
 
-    Sisesta salasõna: ```[__________]```  
+    Sisesta ~~Soovitud?~~ salasõna: ```[__________]```**[Genereeri]()**  
     
     > Salasõna peab sisaldama väikseid ja suuri tähti ning numbreid
     
@@ -1435,6 +1442,8 @@
     ```[ ]``` Parooli muutmine veebimailist keelatud
     
     ```[ ]``` Suunamiste muutmine veebimailist keelatud
+
+    ~~Selged valikud aga mis see use case on (suunamiste puhul?~~
 
     **[lisa]()** **[sulge aken]()**
 
@@ -1449,7 +1458,9 @@
 
     > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
     Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
-    Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+    ~~Ebavajalik~~
+
+    > Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
 
     ## Kasutusel olevad e-posti aadressid
 
@@ -1457,9 +1468,9 @@
 
     ```[E-posti aadressi otsing]``` **[otsi]()**
 
-    || Aadress/kasutajanimi |Näita ```[20 kaupa ▾]```|
+    || Aadress/kasutajanimi |Näita ```[20 kaupa ▾]``` ~~Muutub oluliseks alles 10+ aliase puhul~~|
     |---|---|---|
-    |**[‹]()** **[›]()**|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
+    |**[‹]()** **[›]()** ~~Täiesti arusaamatu ikonograafia ja funktionaalsus~~|test@kristjanjansen.ee|**[muuda]()** **[suuna]()** **[automaatvastaja]()** **[x]()**|
     |&nbsp;|&nbsp;|Lehekülgi (1)|
 
 - title: E-posti aliase muutmine
@@ -1470,7 +1481,9 @@
 
     > E-posti aadress koosneb lokaalsest osast, @ märgist ja domeeninimest.
     Domeen lisatakse automaatselt, muuta on võimalik vaid aadressi lokaalset osa (enne @ märki).
-    Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
+    ~~Ebavajalik~~
+
+    > Lokaalne osa võib sisaldada märke **a..z, 0..9,** punkti '.', sidekriipsu '-' ning alakriipsu '_' (täpitähti sisaldada ei tohi).
 
     Kommentaar/nimi: ```[__________]```
 
@@ -1537,8 +1550,11 @@
   id: emailaliases_redirect
   body: |
 
+    ~~VÄGA segane ja kehva kasutusmugavusega vorm~~
+
     Suunamisi kõigil e-posti kontodel
     # **0**
+    ~~Miks see kasutajale oluline on, tundub kontekstist väljas info~~
 
     Suunamisi test@kristjanjansen.ee kontol
     # **0**

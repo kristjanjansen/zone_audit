@@ -138,8 +138,10 @@
       items:
         - title: E-posti aadressid
           id: emailaccounts
+          comments: true
         - title: E-posti aadressid → Muuda
           id: emailaccounts_edit
+          comments: true
         - title: E-posti aliased
           id: emailaliases
         - title: E-posti aliased → Muuda
