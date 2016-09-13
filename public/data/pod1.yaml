@@ -36,7 +36,7 @@ domain_bottom:
     props:
       comment: |
         
-        Mida siin suunatud domeenidega teha saab? Mida otsinguikoon tähendab? Mida kustutamisikoon? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?<br><br>
+        Mida siin suunatud domeenidega teha saab? Mida tähendab otsinguikoon? Mida tähendab kustutamisikoon? Kas suunatud domeenide puhul tuleks samuti nende aegumisstaatust näidata?<br><br>
 
         A L A M D O M E E N I D<br><br>
 
@@ -126,11 +126,11 @@ email_bottom:
     props:
       comment: |
 
-            Ma tooks E-maili teemad eraldi välja:<br><br>
+            Kontode arv + lisamisnupp<br><br>
 
-            Kontode arv + lisamine<br><br>
+            Listide arv + lisamisnupp<br><br>
 
-            Listide arv + lisamine
+            Suunamiste arv + lisamisnupp?<br><br>
 
 
 other_bottom:
@@ -149,7 +149,7 @@ other_bottom:
 
   - component: Comment 
     props:
-      comment: Mis siin veel peaks Zone+ pakettide all näitama? Versiooninumbreid? Kas pakettidel võib olla ka "probleemne staatus" (vajalik turvauuendus vms)?
+      comment: Kas pakettidel võib olla ka "probleemne staatus" (vajalik turvauuendus vms)?
 
   - component: Markdown 
     props:
@@ -172,7 +172,7 @@ other_bottom:
         
         A N D M E B A A S<br><br>
 
-        / siin vahel ka andmebaasiinfo /
+        /... MySQL host jne .../
 
 
   - component: Markdown 

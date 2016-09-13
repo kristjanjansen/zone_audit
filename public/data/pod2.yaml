@@ -52,7 +52,7 @@ domain_bottom:
 
             - component: Comment 
               props:
-                comment: Miks ma neid nimeserveriaadresse pean vaatama? Kas siin võiks olla nimeserverikirjete muutmise nupp?
+                comment: Kas siin võiks olla nimeserverikirjete muutmise nupp?
 
         - backicon: lock
           components:
@@ -67,7 +67,7 @@ domain_bottom:
 
             - component: Comment 
               props:
-                comment: Siin peaks ju DNSSEC sisselülitamise nupp ka olema?<br><br>Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see **on** enabletud?
+                comment: Siin peaks ju DNSSEC sisselülitamise link ka olema?<br><br>Kui oluline seda featuuri pushida on? Kas tuleks näidata seda punase ohumärgina, kui seda enabletud pole? Või vastupidi, rohelisena kui see **on** enabletud?
 
     - row:
 
@@ -117,7 +117,7 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: Ei leia kuskilt head infot miks on inoded olulised, kui tõenäoline on limiidi ületus ning mida siis tegema peaks 
+                comment: Ei leia kuskilt head infot, miks on inoded olulised, kui tõenäoline on limiidi ületus ning mida siis tegema peaks 
 
             - component: BarGraph 
               props:
@@ -148,9 +148,9 @@ domain_bottom:
 
             - component: Comment
               props:
-                comment: Siia on vaja vahele vahestaatust, mis liigutab nupu keskele, disable selle, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"<br><br>
+                comment: Siia on vaja vahele nn "vahestaatust", mis liigutab nupu keskele, näitab spinnerit ning ütleb "PAIGALDAN". Lisaks on vaja ka linki "Mis on Let's Encrypt"<br><br>
                     
-                    HTTP/2te sisselülitamine on vist tulevikuteema?<br><br>
+                    HTTP/2e sisselülitamine on vist tulevikuteema?<br><br>
 
                     L I G I P Ä Ä S ?
             
